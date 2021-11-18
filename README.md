@@ -10,5 +10,5 @@ See [LICENSE](https://gitee.com/polarised/insurgency-theater/raw/master/LICENSE)
 
 ## ▷Contact
 
-Mail to me: alzofint@foxmail.com,or [QQ](tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=983874293&website=www.oicqzone.com)
+Mail to me: alzofint@foxmail.com,or find me in QQ group:348955160
 
