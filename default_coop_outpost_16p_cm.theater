@@ -427,6 +427,7 @@
 				"weapon"				"weapon_ak74"
 				"weapon"				"weapon_m16a4"
 				"weapon"				"weapon_m4a1"
+				"weapon"				"weapon_rpk"//人手机枪
 				"weapon"				"weapon_c4_clicker"
 				"weapon"				"weapon_c4_ied"
 				"weapon"				"weapon_m18"
@@ -467,7 +468,7 @@
 				}
 			}
 		}
-		"template_support_security_cm"
+		"template_support_security_cm"					//SUPPORT火力手
 		{
 			"team"					"security"
 			"print_name"				"#Squad_Fireteam_Support"
@@ -492,15 +493,25 @@
 				"weapon"				"weapon_m249"
 				"weapon"				"weapon_m18"
 			}
-			"allowed_items"
+			"allowed_items"													//机枪、冲锋枪、可以架脚架的步枪
 			{
 				"weapon"				"weapon_m249"
-				"weapon"				"weapon_m4a1"
 				"weapon"				"weapon_rpk"
-				"weapon"				"weapon_fal"
 				"weapon"				"weapon_galil_sar"
-				"weapon"				"weapon_m18"
-				"weapon"				"weapon_anm14"
+				"weapon"				"weapon_m249"
+				"weapon"				"weapon_sterling"
+				"weapon"				"weapon_mp5"
+				"weapon"				"weapon_ump45"
+				"weapon"				"weapon_mp40"
+				"weapon"				"weapon_ump45"
+				"weapon"				"weapon_aks74u"						//特例哦
+				"weapon"				"weapon_m14"
+				"weapon"				"weapon_fal"
+				//"weapon"				"weapon_model10"
+				"weapon"				"weapon_m9"
+				"weapon"				"weapon_m45"
+				"weapon"				"weapon_m1911"
+				"weapon"				"weapon_makarov"
 				"weapon_upgrade"			"underbarrel_foregrip_sec1"
 				"weapon_upgrade"			"underbarrel_foregrip_sec2"
 				"weapon_upgrade"			"underbarrel_foregrip_ins1"
@@ -530,7 +541,7 @@
 				}
 			}
 		}
-		"template_demolitions_security_cm"
+		"template_demolitions_security_cm"				//DEMOLITIONS爆破手
 		{
 			"team"					"security"
 			"print_name"				"#Squad_Fireteam_Demolitions"
@@ -556,18 +567,19 @@
 				"weapon"				"weapon_m16a4"
 				"weapon_upgrade"			"underbarrel_m203_he"
 			}
-			"allowed_items"
+			"allowed_items"														//火箭筒、魔改武器、冲锋枪和喷子
 			{
-				"weapon"				"weapon_ump45"
-				"weapon"				"weapon_m590"
-				"weapon"				"weapon_m4a1"
-				"weapon"				"weapon_m16a4"
-				"weapon"				"weapon_ak74"
-				"weapon"				"weapon_mp5"
-				"weapon"				"weapon_sterling"
-				"weapon"				"weapon_c4_clicker"
+				"weapon"				"weapon_rpg7"
 				"weapon"				"weapon_at4"
-				"weapon"				"weapon_anm14"
+				"weapon"				"weapon_model10"						//
+				"weapon"				"weapon_toz"
+				"weapon"				"weapon_m590"
+				"weapon"				"weapon_mp5"
+				"weapon"				"weapon_mp40"
+				"weapon"				"weapon_aks74u"
+				"weapon"				"weapon_ump45"
+				"weapon"				"weapon_sterling"
+				"weapon"				"weapon_rpk"//人手机枪
 				"weapon_upgrade"			"underbarrel_m203_he"
 				"weapon_upgrade"			"underbarrel_m203_smoke"
 				"weapon_upgrade"			"underbarrel_gp25_he"
