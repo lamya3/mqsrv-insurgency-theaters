@@ -1316,6 +1316,8 @@
 				"gear"						"ins_chest_rig"
 				"gear"						"ins_chest_carrier"
 				"weapon"					"weapon_gurkha"
+				"gear"						"cb_sheavy_armor"
+				"gear"						"cb_slight_armor"
 			}
 			"cost_modifiers"
 			{
@@ -1329,12 +1331,15 @@
 					"weapon_mosin"						"8"//9
 					"weapon_model10"					"2"//2
 					"weapon_molotov"					"-2"//0
+					"cb_sheavy_armor"					"-10"
+					"cb_slight_armor"					"-10"
 				}
 				"gear"
 				{
 					//					"sec_heavy_armor"					"-2"
 					"ins_chest_rig"						"2"//3
 					"ins_chest_carrier"					"2"//4
+					
 				}
 				"weapon_upgrade"
 				{
