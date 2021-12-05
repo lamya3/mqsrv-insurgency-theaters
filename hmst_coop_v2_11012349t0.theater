@@ -1781,7 +1781,7 @@
 				"MeleeDamage"				"256"//def.=60
 				"MeleeDamageBehindBonus"		"400"//def.=200
 				"MeleeDamageType"			"DMG_SLASH"
-				"MeleeWeaponIdleTime"			"0.5"//def.=1
+				"MeleeWeaponIdleTime"			"0.1"//def.=1
 				"SwingAttacks"
 				{
 					"slash1"
@@ -1789,9 +1789,9 @@
 						"Activity"				"ACT_VM_HITCENTER"
 						"PlayerAtivity"				"ACT_SHOOT_E2W_BAT"
 						"PlayerActivityIdle"			"ACT_SHOOT_E2W_IDLE_BAT"
-						"StartTime"				"0.05"//def.0.1
-						"EndTime"				"0.24"//def.0.34
-						"Duration"				"0.5"//def.0.9
+						"StartTime"				"0.01"//def.0.1
+						"EndTime"				"0.02"//def.0.34
+						"Duration"				"0.01"//def.0.9
 						"StartDirection"			"E"
 						"EndDirection"				"W"
 						"ForceDirection"			"15 -40 0"
@@ -2209,12 +2209,12 @@
 			"DamageHitgroups"//增强装甲减伤
 			{
 				"HITGROUP_HEAD"				"0.20"
-				"HITGROUP_CHEST"			"0.10"
-				"HITGROUP_STOMACH"			"0.10"
-				"HITGROUP_LEFTARM"			"0.30"
-				"HITGROUP_RIGHTARM"			"0.30"
-				"HITGROUP_LEFTLEG"			"0.30"
-				"HITGROUP_RIGHTLEG"			"0.30"
+				"HITGROUP_CHEST"			"0.15"
+				"HITGROUP_STOMACH"			"0.15"
+				"HITGROUP_LEFTARM"			"0.10"
+				"HITGROUP_RIGHTARM"			"0.10"
+				"HITGROUP_LEFTLEG"			"0.10"
+				"HITGROUP_RIGHTLEG"			"0.10"
 			}
 			
 			"player_model_override"		"models/characters/civilian_vip_security.mdl"
@@ -2224,24 +2224,24 @@
 		}
 		"cb_sheavy_armor"
 		{
-			"print_name"				"T72"
+			"print_name"				"铁头功铁布衫秘籍"
 			"print_desc"				"经过改造，你终于不做人了"
 			"gear_slot"				"armor"
-			"gear_cost"				"23"//增加费用
+			"gear_cost"				"19"//增加费用
 			"gear_weight"				"300"	// 75 (7.5kg) + 250 encumbrance增加重量
 			
 			"DamageHitgroups"//增强装甲减伤
 			{
-				"HITGROUP_HEAD"				"0.02"
-				"HITGROUP_CHEST"			"0.01"
-				"HITGROUP_STOMACH"			"0.01"
-				"HITGROUP_LEFTARM"			"0.03"
-				"HITGROUP_RIGHTARM"			"0.03"
-				"HITGROUP_LEFTLEG"			"0.03"
-				"HITGROUP_RIGHTLEG"			"0.03"
+				"HITGROUP_HEAD"				"0.05"
+				"HITGROUP_CHEST"			"0.03"
+				"HITGROUP_STOMACH"			"0.02"
+				"HITGROUP_LEFTARM"			"0.00"
+				"HITGROUP_RIGHTARM"			"0.00"
+				"HITGROUP_LEFTLEG"			"0.00"
+				"HITGROUP_RIGHTLEG"			"0.00"
 			}
 			
-			"player_model_override"		"models/vehicles/t72_chasis.mdl"
+			"player_model_override"		"models/characters/security_heavy.mdl"
 			"viewmodel_hands_override"	"models/weapons/v_hands_vip.mdl"
 			
 			"team_access"				"security,insurgent"
