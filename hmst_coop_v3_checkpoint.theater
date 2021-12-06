@@ -2282,32 +2282,32 @@
 		}
 		"sec_nightvision"//daymap 可用夜视仪
 		{
-				"print_name"				"#gear_nvg"
-				"print_desc"				"#gear_nvg_desc"
-				"gear_slot"				"accessory"
-				"gear_cost"				"1"
-				"gear_weight"				"30"
-				"entity"				"nvg"
-				"model"					"models/characters/a_nightvision.mdl"
-				"class_restricted"			"0"
+			"print_name"				"#gear_nvg"
+			"print_desc"				"#gear_nvg_desc"
+			"gear_slot"				"accessory"
+			"gear_cost"				"1"
+			"gear_weight"				"30"
+			"entity"				"nvg"
+			"model"					"models/characters/a_nightvision.mdl"
+			"class_restricted"			"0"
 				
-				"settings"
+			"settings"
 			{
-					"material"				"dev/sec_nightvision"
-					"sound_on"				"Weapon_NVG.NvgOn"
-					"sound_off"				"Weapon_NVG.NvgOff"
-					"chromatic_aberation"			"0"
-					"dust_power"				"1.2"
+				"material"				"dev/sec_nightvision"
+				"sound_on"				"Weapon_NVG.NvgOn"
+				"sound_off"				"Weapon_NVG.NvgOff"
+				"chromatic_aberation"			"0"
+				"dust_power"				"1.2"
 					
-					"fade_in_time"				"0.3"
-					"fade_in_hold"				"0.1"
-					"fade_in_tonemap"			"170"
+				"fade_in_time"				"0.3"
+				"fade_in_hold"				"0.1"
+				"fade_in_tonemap"			"170"
 					
-					"fade_out_time"				"0.5"
-					"fade_out_hold"				"0.1"
+				"fade_out_time"				"0.5"
+				"fade_out_hold"				"0.1"
 			}
 				
-				"team_access"				"security"
+			"team_access"				"security"
 		}
 		"ins_nightvision"//daymap 可用夜视仪
 		{
@@ -2337,7 +2337,6 @@
 			}
 			
 			"team_access"				"insurgent"
-			}
 		}
 	}
 	
