@@ -28,7 +28,7 @@ A repository for game insurgency2,only theaters.
 
   > ~~考虑增加插件 反伤~~
   >
-  > 授予管理员b：故意伤害行为立即处死一次，再犯错kick/ban 10分钟
+  > 授予管理员b：故意TK行为立即slay一次，再犯错kick/ban 10分钟
 
 - [x]  人少不应该开守点 @萌旧
 
