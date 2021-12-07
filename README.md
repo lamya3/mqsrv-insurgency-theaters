@@ -11,7 +11,9 @@ see [Issues](https://gitee.com/polarised/insurgency-theater/issues?assignee_id=&
 ## License
 
 source code base on game "Insrugency",© [New World Interactive](https://newworldinteractive.com/).All rights reserved.
+
 For those new code and changed in this repository,use license [WTFPL v2](https://directory.fsf.org/wiki/License:WTFPL).
+
 For particular,see [LICENSE](https://gitee.com/polarised/insurgency-theater/raw/master/LICENSE) in this repository.
 
 ## Contact
