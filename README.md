@@ -10,7 +10,9 @@ see [Issues](https://gitee.com/polarised/insurgency-theater/issues?assignee_id=&
 
 ## License
 
-See [LICENSE](https://gitee.com/polarised/insurgency-theater/raw/master/LICENSE) in this repository.Only GPLv2.
+See [LICENSE](https://gitee.com/polarised/insurgency-theater/raw/master/LICENSE) in this repository.source code base on game "Insrugency".
+© New World Interactive.All rights reserved.
+For those new code and changed in this repository,use license WTFPL.
 
 ## Contact
 
