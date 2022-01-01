@@ -1848,8 +1848,9 @@
 			"ammo_clip"
 			{
 				"ammo_type"				"grenade_m84ammo"//new type
+				"clip_max"				"2"//try to fix some worng?
 				"clip_max_rounds"			"1"
-				"clip_default"				"2"//?
+				"clip_default"				"2"//try to fix some worng?
 			}
 			"fov"
 			{
