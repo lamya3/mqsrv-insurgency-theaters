@@ -2450,5 +2450,13 @@
 			"obj_reset_tick"			"10"	// defending points given every 10% def.=0
 			"cache_destroyed"			"20"// def.=0
 		}
-	}		
+	}	
+
+	"ammo"
+	{
+		"grenade_m84ammo"//flash bang ammo for p2a18 动能闪光弹
+		{
+			"carry"					"2"//change carry
+		}
+	}	
 }
