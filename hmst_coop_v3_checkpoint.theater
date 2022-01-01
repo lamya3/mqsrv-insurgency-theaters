@@ -1818,7 +1818,7 @@
 		"weapon_p2a18"//"weapon_p2a1"
 		{
 			"import"				"weapon_base"
-			"weapon_class"				"grenade_incendiary"
+			"weapon_class"				"grenade_flash"//try to fix some worng?
 			"weapon_type"				"projectile"
 			//"print_name"				"#weapon_flaregun"
 			//"print_desc"				"#weapon_flaregun_desc"
@@ -1836,9 +1836,9 @@
 			"explosives"
 			{
 				//"entity"				"grenade_flare"
-				"entity"				"grenade_m84"
+				"entity"				"grenade_m84ammo"//try to fix some worng?
 				"GrenadeRollSpeed"			"500"
-				"GrenadeThrowSpeed"			"1000"
+				"GrenadeThrowSpeed"			"2000"//incrase from 1000
 			}
 			"particles"
 			{
@@ -1862,6 +1862,19 @@
 			{
 				"shot_single"				"Weapon_p2a1.Single"
 				"shot_single_local"			"Weapon_p2a1.SingleLocal"
+			}
+			"ironsights"
+			{
+				"in_time"				"0.2"
+				"out_time"				"0.15"
+			}
+			"kitui_offset"
+			{
+				"position"				"13 -5 0"
+			}
+			"attachments"
+			{
+				"attachment_addon"			"pistol"
 			}
 			"team_access"				"security, insurgent"
 		}
