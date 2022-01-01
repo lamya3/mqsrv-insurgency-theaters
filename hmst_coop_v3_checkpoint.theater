@@ -1283,6 +1283,7 @@
 				//"weapon"				"weapon_makarov"
 				//"weapon"				"weapon_f1"
 				"weapon"				"weapon_molotov"
+				"weapon"				"weapon_p2a18"
 				//"weapon"				"weapon_p2a1"
 				//"weapon_upgrade"			"optic_kobra"
 				//"weapon_upgrade"			"optic_eotech"
@@ -1846,9 +1847,9 @@
 			}
 			"ammo_clip"
 			{
-				"ammo_type"				"grenade_m84"
+				"ammo_type"				"grenade_m84ammo"//new type
 				"clip_max_rounds"			"1"
-				"clip_default"				"1"
+				"clip_default"				"2"//?
 			}
 			"fov"
 			{
@@ -1894,6 +1895,35 @@
 				"DetonateSound"				"IED.Explode"
 				"DetonateWaterSound"		"IED.ExplodeWater"
 				"BounceSound"				"Weapon_IED.Bounce"
+			}
+		}
+		"grenade_m84ammo"//flash bang ammo for p2a18 动能闪光弹
+		{
+			"import"				"baseGrenade"
+			"entity_class"				"grenade_flash"
+			"Model"					"models/weapons/w_m84.mdl"
+			"DetonateDamage"			"6.0"
+			"DetonateDamageRadius"			"1500"
+			"DetonateFlashDuration"			"12.0"
+			"DetonatePenetrationRadius"		"64" // this applies only to the deafen effect w/ flashes
+			"RocketStartSpeed"			"1500"//luanch speed?
+			"Cookable"					"0"//could not be cooked?
+			"DetonateUnderwater"		"1"//could be trigger underwater
+			"FlashDelay"				"0.05"
+			"DeafenDelay"				"0.25"
+			"Health"					"50"//entity health
+			"FuseTime"				"1.5"//reduce from 1.8
+			"ReactExplosions"			"1"//Explosions can trigger it
+			"ReactBullets"				"1"//Bullets can trigger it
+			"Particles"
+			{
+				"DetonateParticle"			"ins_flashbang_explosion"
+				"DetonateWaterParticle"			"ins_water_explosion"
+			}
+			"Sounds"
+			{
+				"DetonateSound"				"BaseStunGrenade.Explode"
+				"BounceSound"				"Weapon_M84.Bounce"
 			}
 		}
 	}
