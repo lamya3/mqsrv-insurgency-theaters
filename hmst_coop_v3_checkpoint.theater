@@ -1332,7 +1332,7 @@
 					"weapon_toz"						"8"//9
 					"weapon_mosin"						"8"//9
 					"weapon_model10"					"2"//2
-					"weapon_molotov"					"-2"//0
+					"weapon_molotov"					"-1"//1
 				}
 				"gear"
 				{
@@ -1341,7 +1341,7 @@
 					"ins_chest_carrier"					"2"//4
 					"ins_heavy_armor"					"-1"
 					"cb_sheavy_armor"					"2"
-					"cb_slight_armor"					"1"
+					//"cb_slight_armor"					"1"
 					"sec_nightvision"					"-1"
 				}
 				"weapon_upgrade"
