@@ -1333,15 +1333,16 @@
 					"weapon_mosin"						"8"//9
 					"weapon_model10"					"2"//2
 					"weapon_molotov"					"-2"//0
-					"ins_heavy_armor"					"-1"
 				}
 				"gear"
 				{
 					"sec_heavy_armor"					"-2"
 					"ins_chest_rig"						"2"//3
 					"ins_chest_carrier"					"2"//4
-					"cb_sheavy_armor"					"-5"
-					"cb_slight_armor"					"-5"
+					"ins_heavy_armor"					"-1"
+					"cb_sheavy_armor"					"2"
+					"cb_slight_armor"					"1"
+					"sec_nightvision"					"-1"
 				}
 				"weapon_upgrade"
 				{
@@ -2315,13 +2316,13 @@
 			"class_restricted"			"1"//只有列出配件才能用
 			"team_access"				"security,insurgent"
 		}
-		"cb_slight_armor"
+		"cb_slight_armor"//enhanced armor for cowboy...
 		{
 			"print_name"				"硬化氪金战甲"
 			"print_desc"				"内嵌平底锅，四肢莱阳钢管包裹"
 			"gear_slot"				"armor"
-			"gear_cost"				"17"//增加费用
-			"gear_weight"				"200"	// 75 (7.5kg) + 250 encumbrance增加重量
+			"gear_cost"				"17"//increase cost
+			"gear_weight"				"200"	// 75 (7.5kg) + 250 encumbrance(increase?)
 			"class_restricted"			"1"//只有列出才能用
 			
 			"DamageHitgroups"//增强装甲减伤
@@ -2340,12 +2341,12 @@
 			
 			"team_access"				"security,insurgent"
 		}
-		"cb_sheavy_armor"
+		"cb_sheavy_armor"//what the hell of this?TANK???
 		{
 			"print_name"				"铁头功铁布衫秘籍"
 			"print_desc"				"经过改造，你终于不做人了"
 			"gear_slot"				"armor"
-			"gear_cost"				"19"//增加费用
+			"gear_cost"				"19"//increase cost
 			"gear_weight"				"300"	// 75 (7.5kg) + 250 encumbrance增加重量
 			"class_restricted"			"1"//只有列出才能用
 			
@@ -2365,7 +2366,7 @@
 			
 			"team_access"				"security,insurgent"
 		}
-		"sec_nightvision"//daymap 可用夜视仪
+		"sec_nightvision"//we can use nightvision in daymap
 		{
 			"print_name"				"#gear_nvg"
 			"print_desc"				"#gear_nvg_desc"
@@ -2394,7 +2395,7 @@
 				
 			"team_access"				"security"
 		}
-		"ins_nightvision"//daymap 可用夜视仪
+		"ins_nightvision"//we can use nightvision in daymap
 		{
 			"print_name"				"#gear_nvg"
 			"print_desc"				"#gear_nvg_desc"
@@ -2443,7 +2444,7 @@
 
 	"ammo"
 	{
-		"grenade_p2a18_ammo"//flash bang ammo for p2a18 动能闪光弹
+		"grenade_p2a18_ammo"//flash bang ammo for p2a18
 		{
 			"carry"					"99"//change carry
 		}
