@@ -1333,8 +1333,6 @@
 					"weapon_mosin"						"8"//9
 					"weapon_model10"					"2"//2
 					"weapon_molotov"					"-2"//0
-					"cb_sheavy_armor"					"-5"
-					"cb_slight_armor"					"-5"
 					"ins_heavy_armor"					"-1"
 				}
 				"gear"
@@ -1342,7 +1340,8 @@
 					"sec_heavy_armor"					"-2"
 					"ins_chest_rig"						"2"//3
 					"ins_chest_carrier"					"2"//4
-					
+					"cb_sheavy_armor"					"-5"
+					"cb_slight_armor"					"-5"
 				}
 				"weapon_upgrade"
 				{
@@ -1817,8 +1816,9 @@
 		}
 		"weapon_p2a18"//"weapon_p2a1"
 		{
+			//base on p2a1
 			"import"				"weapon_base"
-			"weapon_class"				"grenade_flash"//try to fix some worng?
+			"weapon_class"				"grenade_flash"
 			"weapon_type"				"projectile"
 			//"print_name"				"#weapon_flaregun"
 			//"print_desc"				"#weapon_flaregun_desc"
@@ -1836,9 +1836,9 @@
 			"explosives"
 			{
 				//"entity"				"grenade_flare"
-				"entity"				"grenade_m84ammo"//try to fix some worng?
+				"entity"				"grenade_p2a18_ammo"//use new ammo(explosives) config
 				"GrenadeRollSpeed"			"500"
-				"GrenadeThrowSpeed"			"2000"//incrase from 1000
+				"GrenadeThrowSpeed"			"1500"//incrase from 1000
 			}
 			"particles"
 			{
@@ -1847,10 +1847,10 @@
 			}
 			"ammo_clip"
 			{
-				"ammo_type"				"grenade_m84ammo"//new type
-				"clip_max"				"2"//try to fix some worng?
-				"clip_max_rounds"			"1"
-				"clip_default"				"2"//try to fix some worng?
+				"ammo_type"				"grenade_m84"//DO NOT change this,"grenade_p2a18_ammo" will be caused infinite ammo!!!
+				"clip_max"				"3"//Max ammo = 3 (ammo - 1)
+				"clip_max_rounds"			"1"//reload when trigger
+				"clip_default"				"3"//Max ammo = 3
 			}
 			"fov"
 			{
@@ -1911,34 +1911,23 @@
 				"BounceSound"				"Weapon_IED.Bounce"
 			}
 		}
-		"grenade_m84ammo"//flash bang ammo for p2a18 动能闪光弹
+		"grenade_p2a18_ammo"
 		{
-			"import"				"baseGrenade"
-			"entity_class"				"grenade_flash"
-			"Model"					"models/weapons/w_m84.mdl"
-			"DetonateDamage"			"6.0"
-			"DetonateDamageRadius"			"1500"
-			"DetonateFlashDuration"			"12.0"
-			"DetonatePenetrationRadius"		"64" // this applies only to the deafen effect w/ flashes
-			"RocketStartSpeed"			"1500"//luanch speed?
-			"Cookable"					"0"//could not be cooked?
-			"DetonateUnderwater"		"1"//could be trigger underwater
-			"FlashDelay"				"0.05"
-			"DeafenDelay"				"0.25"
-			"Health"					"50"//entity health
+			//for details,please refer "explosives" - "grenade_m84"
+			"import"				"grenade_m84"//import flashbang setting
+			//"DetonateDamage"			"6.0"
+			//"DetonateDamageRadius"			"1500"
+			//"DetonateFlashDuration"			"12.0"
+			//"DetonatePenetrationRadius"		"64" // this applies only to the deafen effect w/ flashes
+			"RocketStartSpeed"		"1300"//new add	
 			"FuseTime"				"1.5"//reduce from 1.8
-			"ReactExplosions"			"1"//Explosions can trigger it
-			"ReactBullets"				"1"//Bullets can trigger it
-			"Particles"
-			{
-				"DetonateParticle"			"ins_flashbang_explosion"
-				"DetonateWaterParticle"			"ins_water_explosion"
-			}
-			"Sounds"
-			{
-				"DetonateSound"				"BaseStunGrenade.Explode"
-				"BounceSound"				"Weapon_M84.Bounce"
-			}
+			"DetonateUnderwater"	"1"//could be trigger underwater
+			"Elasticity"			"0.2"//reduce from 0.1,IDK it worked or not
+			"Health"				"50"//entity health
+			"ReactExplosions"		"1"//Explosions can trigger it
+			"ReactBullets"			"1"//Bullets can trigger it
+			"Cookable"				"0"//could not be cooked?
+			"ShakeAmplitude"		"0"//IDK what's this 			
 		}
 	}
 	
@@ -2454,9 +2443,9 @@
 
 	"ammo"
 	{
-		"grenade_m84ammo"//flash bang ammo for p2a18 动能闪光弹
+		"grenade_p2a18_ammo"//flash bang ammo for p2a18 动能闪光弹
 		{
-			"carry"					"2"//change carry
+			"carry"					"99"//change carry
 		}
 	}	
 }
