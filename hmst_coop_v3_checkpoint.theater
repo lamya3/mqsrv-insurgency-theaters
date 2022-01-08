@@ -307,7 +307,7 @@
 				"weapon"				"weapon_makarov"
 				"weapon"				"weapon_m84"
 				"weapon"				"weapon_m67"
-				"weapon"				"weapon_p2a1"
+				//"weapon"				"weapon_p2a1"//cancel
 				"weapon_upgrade"			"barrel_heavybarrel"
 				"weapon_upgrade"			"underbarrel_foregrip_sec1"
 				"weapon_upgrade"			"underbarrel_foregrip_sec2"
@@ -1177,7 +1177,7 @@
 				"weapon"				"weapon_makarov"
 				"weapon"				"weapon_f1"
 				"weapon"				"weapon_molotov"
-				"weapon"				"weapon_p2a1"
+				//"weapon"				"weapon_p2a1"//cancel
 				"weapon_upgrade"			"optic_kobra"
 				//"weapon_upgrade"			"optic_eotech"
 				//"weapon_upgrade"			"optic_aimpoint"
@@ -1254,7 +1254,7 @@
 			"models"
 			{
 				"player"				"models/characters/security_light.mdl"
-				"viewmodel_hands"		"models/weapons/v_hands_vip.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_sec_l.mdl"
 			
 				"bodygroups"
 				{
@@ -1283,7 +1283,7 @@
 				//"weapon"				"weapon_makarov"
 				//"weapon"				"weapon_f1"
 				"weapon"				"weapon_molotov"
-				"weapon"				"weapon_p2a18"
+				"weapon"				"weapon_p2a1"//p2a18
 				//"weapon"				"weapon_p2a1"
 				//"weapon_upgrade"			"optic_kobra"
 				//"weapon_upgrade"			"optic_eotech"
@@ -1318,8 +1318,8 @@
 				"gear"						"ins_chest_rig"
 				"gear"						"ins_chest_carrier"
 				"weapon"					"weapon_gurkha"
-				"gear"						"cb_sheavy_armor"
-				"gear"						"cb_slight_armor"
+				//"gear"						"cb_sheavy_armor"
+				"gear"						"DDF_armor"//"sec_heavy_armor_2"//"cb_slight_armor"
 			}
 			"cost_modifiers"
 			{
@@ -1815,7 +1815,7 @@
 			}
 			"team_access"				"security, insurgent"
 		}
-		"weapon_p2a18"//"weapon_p2a1"
+		"weapon_p2a1"//instead for "weapon_p2a18"
 		{
 			//base on p2a1
 			"import"				"weapon_base"
@@ -2316,10 +2316,11 @@
 			"class_restricted"			"1"//只有列出配件才能用
 			"team_access"				"security,insurgent"
 		}
-		"cb_slight_armor"//enhanced armor for cowboy...
+		"DDF_armor"//enhanced armor for cowboy...
 		{
-			"print_name"				"硬化氪金战甲"
-			"print_desc"				"内嵌平底锅，四肢莱阳钢管包裹"
+			//"import"				"sec_heavy_armor"//not work for fix vgui error...
+			"print_name"				"深邃黑暗幻想战衣"
+			"print_desc"				"过于逼真，不宜展示"
 			"gear_slot"				"armor"
 			"gear_cost"				"17"//increase cost
 			"gear_weight"				"200"	// 75 (7.5kg) + 250 encumbrance(increase?)
@@ -2327,16 +2328,16 @@
 			
 			"DamageHitgroups"//增强装甲减伤
 			{
-				"HITGROUP_HEAD"				"0.20"
-				"HITGROUP_CHEST"			"0.15"
-				"HITGROUP_STOMACH"			"0.15"
-				"HITGROUP_LEFTARM"			"0.10"
-				"HITGROUP_RIGHTARM"			"0.10"
-				"HITGROUP_LEFTLEG"			"0.10"
-				"HITGROUP_RIGHTLEG"			"0.10"
+				"HITGROUP_HEAD"				"0.05"//prev.=0.20
+				"HITGROUP_CHEST"			"0.10"//prev.=0.15
+				"HITGROUP_STOMACH"			"0.10"//prev.=0.15
+				"HITGROUP_LEFTARM"			"0.05"//prev.=0.10
+				"HITGROUP_RIGHTARM"			"0.05"//prev.=0.10
+				"HITGROUP_LEFTLEG"			"0.05"//prev.=0.10
+				"HITGROUP_RIGHTLEG"			"0.05"//prev.=0.10
 			}
 			
-			"player_model_override"		"models/characters/civilian_vip_security.mdl"//使用安全vip
+			"player_model_override"		"models/characters/civilian_vip_insurgent.mdl"//使用安全vip
 			"viewmodel_hands_override"	"models/weapons/v_hands_vip.mdl"
 			
 			"team_access"				"security,insurgent"
