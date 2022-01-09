@@ -2326,7 +2326,7 @@
 			"gear_weight"				"200"	// 75 (7.5kg) + 250 encumbrance(increase?)
 			"class_restricted"			"1"//只有列出才能用
 			
-			"DamageHitgroups"//增强装甲减伤
+			"DamageHitgroups"//增强装甲减伤d
 			{
 				"HITGROUP_HEAD"				"0.05"//prev.=0.20
 				"HITGROUP_CHEST"			"0.10"//prev.=0.15
