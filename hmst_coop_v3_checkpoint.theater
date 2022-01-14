@@ -1923,7 +1923,7 @@
 			"RocketStartSpeed"		"1300"//new add	
 			"FuseTime"				"1.5"//reduce from 1.8
 			"DetonateUnderwater"	"1"//could be trigger underwater
-			"Elasticity"			"0.2"//reduce from 0.1,IDK it worked or not
+			"Elasticity"			"0.2"//reduce from 0.1,I don't know it worked or not
 			"Health"				"50"//entity health
 			"ReactExplosions"		"1"//Explosions can trigger it
 			"ReactBullets"			"1"//Bullets can trigger it
