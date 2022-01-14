@@ -1284,7 +1284,6 @@
 				//"weapon"				"weapon_f1"
 				"weapon"				"weapon_molotov"
 				"weapon"				"weapon_p2a1"//p2a18
-				//"weapon"				"weapon_p2a1"
 				//"weapon_upgrade"			"optic_kobra"
 				//"weapon_upgrade"			"optic_eotech"
 				//"weapon_upgrade"			"optic_aimpoint"
@@ -1319,7 +1318,7 @@
 				"gear"						"ins_chest_carrier"
 				"weapon"					"weapon_gurkha"
 				//"gear"						"cb_sheavy_armor"
-				"gear"						"DDF_armor"//"sec_heavy_armor_2"//"cb_slight_armor"
+				"gear"						"DDF_armor"//"cb_slight_armor"
 			}
 			"cost_modifiers"
 			{
