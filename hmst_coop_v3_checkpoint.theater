@@ -83,7 +83,7 @@
 				// "#Squad_Cell_SharpShooter"					"template_coop_sharpshooter" // Frag
 				
 				"#Cell_Alpha"	// assault team #1 
-				// 尝试通过更改RPG的顺序去避免人少时产生过多RPG
+				// try to tune-up for avoid too much sapper(suicide bomber) spawn when less players playing.
 				{
 					// role name								preset
 					"#Squad_Cell_Leader_Specialist"		"template_coop_specialist"	// Smoke
@@ -1778,7 +1778,7 @@
 				"melee_hit"				"Weapon_Knife.Melee_Hit"
 				"melee_hit_world"			"Weapon_Knife.Melee_HitWorld"
 			}
-			"melee"//尝试修改速度，但是看起来没什么用...
+			"melee"//I've tried to increase knife speed,but not work...
 			{
 				"MeleeRange"				"225"//def.=75
 				"MeleeDamage"				"256"//def.=60
@@ -1940,37 +1940,37 @@
 		"optic_kobra"//眼镜蛇
 		{
 			"team_access"				"security, insurgent"
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 		}
 		
 		"optic_eotech"//全息
 		{
 			"team_access"				"security, insurgent"
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 		}
 		
 		"optic_aimpoint"//红点
 		{
 			"team_access"				"security, insurgent"
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 		}
 		
 		"optic_2xaimpoint"//2x红点
 		{
 			"team_access"				"security, insurgent"
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 		}
 		
 		"optic_elcan"//3.4x
 		{
 			"team_access"				"security, insurgent"
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 		}
 		
 		"optic_po4x24"//4x
 		{
 			"team_access"				"security, insurgent"
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 
 			"allowed_weapons"
 			{
@@ -2209,14 +2209,14 @@
 		//		
 		"barrel_heavybarrel"//重型枪口
 		{
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 		}
 		//
 		//握把
 		//		
 		"underbarrel_foregrip_ins2"//TOZ 握把
 		{
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 		}
 		//
 		//子弹
@@ -2227,54 +2227,54 @@
 		}
 		"ammo_slugs"//独弹头
 		{
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 		}
 		"ammo_ap_mosin"//mosin穿甲弹
 		{
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 		}
 		"magazine_speedloader"//左轮上弹器
 		{
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 		}
 		//
 		//前置下挂
 		//		
 		"siderail_flashlight_band"
 		{
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 		}
 		"siderail_flashlight_pistol"
 		{
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 		}
 		"siderail_flashlight_rail"
 		{
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 		}
 		"siderail_flashlight_shotgun"
 		{
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 		}
 		"siderail_lasersight_band"
 		{
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 		}
 		"siderail_lasersight_pistol"
 		{
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 		}
 		"siderail_lasersight_rail"
 		{
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 		}
 		"siderail_lasersight_shotgun_ins"
 		{
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 		}
 		"siderail_lasersight_shotgun_sec"
 		{
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 		}		
 	}
 
@@ -2282,38 +2282,38 @@
 	{
 		"sec_light_armor"
 		{
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 		}
 		"ins_light_armor"
 		{
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 			"team_access"				"security,insurgent"
 		}
 		"sec_heavy_armor"
 		{
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 		}
 		"ins_heavy_armor"
 		{
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 			"team_access"				"security,insurgent"
 		}
 		"sec_chest_rig"
 		{
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 		}
 		"ins_chest_rig"
 		{
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 			"team_access"				"security,insurgent"
 		}
 		"sec_chest_carrier"
 		{
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 		}
 		"ins_chest_carrier"
 		{
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 			"team_access"				"security,insurgent"
 		}
 		"DDF_armor"//enhanced armor for cowboy...
@@ -2324,9 +2324,9 @@
 			"gear_slot"				"armor"
 			"gear_cost"				"17"//increase cost
 			"gear_weight"				"200"	// 75 (7.5kg) + 250 encumbrance(increase?)
-			"class_restricted"			"1"//只有列出才能用
+			"class_restricted"			"1"//Available when listed ONLY
 			
-			"DamageHitgroups"//增强装甲减伤
+			"DamageHitgroups"//Adjust protection here,Enhance or weaken
 			{
 				"HITGROUP_HEAD"				"0.05"//prev.=0.20
 				"HITGROUP_CHEST"			"0.10"//prev.=0.15
@@ -2337,7 +2337,7 @@
 				"HITGROUP_RIGHTLEG"			"0.05"//prev.=0.10
 			}
 			
-			"player_model_override"		"models/characters/civilian_vip_insurgent.mdl"//使用安全vip
+			"player_model_override"		"models/characters/civilian_vip_insurgent.mdl"//use Insrugent vip model
 			"viewmodel_hands_override"	"models/weapons/v_hands_vip.mdl"
 			
 			"team_access"				"security,insurgent"
@@ -2348,10 +2348,10 @@
 			"print_desc"				"经过改造，你终于不做人了"
 			"gear_slot"				"armor"
 			"gear_cost"				"19"//increase cost
-			"gear_weight"				"300"	// 75 (7.5kg) + 250 encumbrance增加重量
-			"class_restricted"			"1"//只有列出才能用
+			"gear_weight"				"300"	// increased
+			"class_restricted"			"1"//Available when listed ONLY
 			
-			"DamageHitgroups"//增强装甲减伤v
+			"DamageHitgroups"////Adjust protection here,Enhance or weaken
 			{
 				"HITGROUP_HEAD"				"0.05"
 				"HITGROUP_CHEST"			"0.03"
@@ -2362,7 +2362,7 @@
 				"HITGROUP_RIGHTLEG"			"0.00"
 			}
 			
-			"player_model_override"		"models/characters/civilian_vip_insurgent.mdl"//使用叛乱vip
+			"player_model_override"		"models/characters/civilian_vip_insurgent.mdl"//use Insrugent vip model
 			"viewmodel_hands_override"	"models/weapons/v_hands_vip.mdl"
 			
 			"team_access"				"security,insurgent"
