@@ -83,7 +83,7 @@
 				// "#Squad_Cell_SharpShooter"					"template_coop_sharpshooter" // Frag
 				
 				"#Cell_Alpha"	// assault team #1 
-				// 尝试通过更改RPG的顺序去避免人少时产生过多RPG
+				// try to tune-up for avoid too much sapper(suicide bomber) spawn when less players playing.
 				{
 					// role name								preset
 					"#Squad_Cell_Leader_Specialist"		"template_coop_specialist"	// Smoke
@@ -307,7 +307,7 @@
 				"weapon"				"weapon_makarov"
 				"weapon"				"weapon_m84"
 				"weapon"				"weapon_m67"
-				"weapon"				"weapon_p2a1"
+				//"weapon"				"weapon_p2a1"//cancel
 				"weapon_upgrade"			"barrel_heavybarrel"
 				"weapon_upgrade"			"underbarrel_foregrip_sec1"
 				"weapon_upgrade"			"underbarrel_foregrip_sec2"
@@ -1177,7 +1177,7 @@
 				"weapon"				"weapon_makarov"
 				"weapon"				"weapon_f1"
 				"weapon"				"weapon_molotov"
-				"weapon"				"weapon_p2a1"
+				//"weapon"				"weapon_p2a1"//cancel
 				"weapon_upgrade"			"optic_kobra"
 				//"weapon_upgrade"			"optic_eotech"
 				//"weapon_upgrade"			"optic_aimpoint"
@@ -1254,7 +1254,7 @@
 			"models"
 			{
 				"player"				"models/characters/security_light.mdl"
-				"viewmodel_hands"		"models/weapons/v_hands_vip.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_sec_l.mdl"
 			
 				"bodygroups"
 				{
@@ -1283,7 +1283,7 @@
 				//"weapon"				"weapon_makarov"
 				//"weapon"				"weapon_f1"
 				"weapon"				"weapon_molotov"
-				//"weapon"				"weapon_p2a1"
+				"weapon"				"weapon_p2a1"//p2a18
 				//"weapon_upgrade"			"optic_kobra"
 				//"weapon_upgrade"			"optic_eotech"
 				//"weapon_upgrade"			"optic_aimpoint"
@@ -1317,8 +1317,8 @@
 				"gear"						"ins_chest_rig"
 				"gear"						"ins_chest_carrier"
 				"weapon"					"weapon_gurkha"
-				"gear"						"cb_sheavy_armor"
-				"gear"						"cb_slight_armor"
+				//"gear"						"cb_sheavy_armor"
+				"gear"						"DDF_armor"//"cb_slight_armor"
 			}
 			"cost_modifiers"
 			{
@@ -1331,17 +1331,17 @@
 					"weapon_toz"						"8"//9
 					"weapon_mosin"						"8"//9
 					"weapon_model10"					"2"//2
-					"weapon_molotov"					"-2"//0
-					"cb_sheavy_armor"					"-5"
-					"cb_slight_armor"					"-5"
-					"ins_heavy_armor"					"-1"
+					"weapon_molotov"					"-1"//1
 				}
 				"gear"
 				{
 					"sec_heavy_armor"					"-2"
 					"ins_chest_rig"						"2"//3
 					"ins_chest_carrier"					"2"//4
-					
+					"ins_heavy_armor"					"-1"
+					"cb_sheavy_armor"					"2"
+					//"cb_slight_armor"					"1"
+					"sec_nightvision"					"-1"
 				}
 				"weapon_upgrade"
 				{
@@ -1777,7 +1777,7 @@
 				"melee_hit"				"Weapon_Knife.Melee_Hit"
 				"melee_hit_world"			"Weapon_Knife.Melee_HitWorld"
 			}
-			"melee"//尝试修改速度，但是看起来没什么用...
+			"melee"//I've tried to increase knife speed,but not work...
 			{
 				"MeleeRange"				"225"//def.=75
 				"MeleeDamage"				"256"//def.=60
@@ -1814,10 +1814,11 @@
 			}
 			"team_access"				"security, insurgent"
 		}
-		"weapon_p2a18"//"weapon_p2a1"
+		"weapon_p2a1"//instead for "weapon_p2a18"
 		{
+			//base on p2a1
 			"import"				"weapon_base"
-			"weapon_class"				"grenade_incendiary"
+			"weapon_class"				"grenade_flash"
 			"weapon_type"				"projectile"
 			//"print_name"				"#weapon_flaregun"
 			//"print_desc"				"#weapon_flaregun_desc"
@@ -1835,9 +1836,9 @@
 			"explosives"
 			{
 				//"entity"				"grenade_flare"
-				"entity"				"grenade_m84"
+				"entity"				"grenade_p2a18_ammo"//use new ammo(explosives) config
 				"GrenadeRollSpeed"			"500"
-				"GrenadeThrowSpeed"			"1000"
+				"GrenadeThrowSpeed"			"1500"//incrase from 1000
 			}
 			"particles"
 			{
@@ -1846,9 +1847,10 @@
 			}
 			"ammo_clip"
 			{
-				"ammo_type"				"grenade_m84"
-				"clip_max_rounds"			"1"
-				"clip_default"				"1"
+				"ammo_type"				"grenade_m84"//DO NOT change this,"grenade_p2a18_ammo" will be caused infinite ammo!!!
+				"clip_max"				"3"//Max ammo = 3 (ammo - 1)
+				"clip_max_rounds"			"1"//reload when trigger
+				"clip_default"				"3"//Max ammo = 3
 			}
 			"fov"
 			{
@@ -1860,6 +1862,19 @@
 			{
 				"shot_single"				"Weapon_p2a1.Single"
 				"shot_single_local"			"Weapon_p2a1.SingleLocal"
+			}
+			"ironsights"
+			{
+				"in_time"				"0.2"
+				"out_time"				"0.15"
+			}
+			"kitui_offset"
+			{
+				"position"				"13 -5 0"
+			}
+			"attachments"
+			{
+				"attachment_addon"			"pistol"
 			}
 			"team_access"				"security, insurgent"
 		}
@@ -1896,6 +1911,24 @@
 				"BounceSound"				"Weapon_IED.Bounce"
 			}
 		}
+		"grenade_p2a18_ammo"
+		{
+			//for details,please refer "explosives" - "grenade_m84"
+			"import"				"grenade_m84"//import flashbang setting
+			//"DetonateDamage"			"6.0"
+			//"DetonateDamageRadius"			"1500"
+			//"DetonateFlashDuration"			"12.0"
+			//"DetonatePenetrationRadius"		"64" // this applies only to the deafen effect w/ flashes
+			"RocketStartSpeed"		"1300"//new add	
+			"FuseTime"				"1.5"//reduce from 1.8
+			"DetonateUnderwater"	"1"//could be trigger underwater
+			"Elasticity"			"0.2"//reduce from 0.1,I don't know it worked or not
+			"Health"				"50"//entity health
+			"ReactExplosions"		"1"//Explosions can trigger it
+			"ReactBullets"			"1"//Bullets can trigger it
+			"Cookable"				"0"//could not be cooked?
+			"ShakeAmplitude"		"0"//IDK what's this 			
+		}
 	}
 	
 	"weapon_upgrades"
@@ -1906,37 +1939,37 @@
 		"optic_kobra"//眼镜蛇
 		{
 			"team_access"				"security, insurgent"
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 		}
 		
 		"optic_eotech"//全息
 		{
 			"team_access"				"security, insurgent"
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 		}
 		
 		"optic_aimpoint"//红点
 		{
 			"team_access"				"security, insurgent"
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 		}
 		
 		"optic_2xaimpoint"//2x红点
 		{
 			"team_access"				"security, insurgent"
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 		}
 		
 		"optic_elcan"//3.4x
 		{
 			"team_access"				"security, insurgent"
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 		}
 		
 		"optic_po4x24"//4x
 		{
 			"team_access"				"security, insurgent"
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 
 			"allowed_weapons"
 			{
@@ -2175,14 +2208,14 @@
 		//		
 		"barrel_heavybarrel"//重型枪口
 		{
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 		}
 		//
 		//握把
 		//		
 		"underbarrel_foregrip_ins2"//TOZ 握把
 		{
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 		}
 		//
 		//子弹
@@ -2193,54 +2226,54 @@
 		}
 		"ammo_slugs"//独弹头
 		{
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 		}
 		"ammo_ap_mosin"//mosin穿甲弹
 		{
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 		}
 		"magazine_speedloader"//左轮上弹器
 		{
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 		}
 		//
 		//前置下挂
 		//		
 		"siderail_flashlight_band"
 		{
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 		}
 		"siderail_flashlight_pistol"
 		{
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 		}
 		"siderail_flashlight_rail"
 		{
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 		}
 		"siderail_flashlight_shotgun"
 		{
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 		}
 		"siderail_lasersight_band"
 		{
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 		}
 		"siderail_lasersight_pistol"
 		{
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 		}
 		"siderail_lasersight_rail"
 		{
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 		}
 		"siderail_lasersight_shotgun_ins"
 		{
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 		}
 		"siderail_lasersight_shotgun_sec"
 		{
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 		}		
 	}
 
@@ -2248,75 +2281,76 @@
 	{
 		"sec_light_armor"
 		{
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 		}
 		"ins_light_armor"
 		{
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 			"team_access"				"security,insurgent"
 		}
 		"sec_heavy_armor"
 		{
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 		}
 		"ins_heavy_armor"
 		{
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 			"team_access"				"security,insurgent"
 		}
 		"sec_chest_rig"
 		{
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 		}
 		"ins_chest_rig"
 		{
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 			"team_access"				"security,insurgent"
 		}
 		"sec_chest_carrier"
 		{
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 		}
 		"ins_chest_carrier"
 		{
-			"class_restricted"			"1"//只有列出配件才能用
+			"class_restricted"			"1"//Available when listed ONLY
 			"team_access"				"security,insurgent"
 		}
-		"cb_slight_armor"
+		"DDF_armor"//enhanced armor for cowboy...
 		{
-			"print_name"				"硬化氪金战甲"
-			"print_desc"				"内嵌平底锅，四肢莱阳钢管包裹"
+			//"import"				"sec_heavy_armor"//not work for fix vgui error...
+			"print_name"				"深邃黑暗幻想战衣"
+			"print_desc"				"过于逼真，不宜展示"
 			"gear_slot"				"armor"
-			"gear_cost"				"17"//增加费用
-			"gear_weight"				"200"	// 75 (7.5kg) + 250 encumbrance增加重量
-			"class_restricted"			"1"//只有列出才能用
+			"gear_cost"				"17"//increase cost
+			"gear_weight"				"200"	// 75 (7.5kg) + 250 encumbrance(increase?)
+			"class_restricted"			"1"//Available when listed ONLY
 			
-			"DamageHitgroups"//增强装甲减伤
+			"DamageHitgroups"//Adjust protection here,Enhance or weaken
 			{
-				"HITGROUP_HEAD"				"0.20"
-				"HITGROUP_CHEST"			"0.15"
-				"HITGROUP_STOMACH"			"0.15"
-				"HITGROUP_LEFTARM"			"0.10"
-				"HITGROUP_RIGHTARM"			"0.10"
-				"HITGROUP_LEFTLEG"			"0.10"
-				"HITGROUP_RIGHTLEG"			"0.10"
+				"HITGROUP_HEAD"				"0.05"//prev.=0.20
+				"HITGROUP_CHEST"			"0.10"//prev.=0.15
+				"HITGROUP_STOMACH"			"0.10"//prev.=0.15
+				"HITGROUP_LEFTARM"			"0.05"//prev.=0.10
+				"HITGROUP_RIGHTARM"			"0.05"//prev.=0.10
+				"HITGROUP_LEFTLEG"			"0.05"//prev.=0.10
+				"HITGROUP_RIGHTLEG"			"0.05"//prev.=0.10
 			}
 			
-			"player_model_override"		"models/characters/civilian_vip_security.mdl"//使用安全vip
+			"player_model_override"		"models/characters/civilian_vip_insurgent.mdl"//use Insrugent vip model
 			"viewmodel_hands_override"	"models/weapons/v_hands_vip.mdl"
 			
 			"team_access"				"security,insurgent"
 		}
-		"cb_sheavy_armor"
+		"cb_sheavy_armor"//what the hell of this?TANK???
 		{
 			"print_name"				"铁头功铁布衫秘籍"
 			"print_desc"				"经过改造，你终于不做人了"
 			"gear_slot"				"armor"
-			"gear_cost"				"19"//增加费用
-			"gear_weight"				"300"	// 75 (7.5kg) + 250 encumbrance增加重量
-			"class_restricted"			"1"//只有列出才能用
+			"gear_cost"				"19"//increase cost
+			"gear_weight"				"300"	// increased
+			"class_restricted"			"1"//Available when listed ONLY
 			
-			"DamageHitgroups"//增强装甲减伤
+			"DamageHitgroups"////Adjust protection here,Enhance or weaken
 			{
 				"HITGROUP_HEAD"				"0.05"
 				"HITGROUP_CHEST"			"0.03"
@@ -2327,12 +2361,12 @@
 				"HITGROUP_RIGHTLEG"			"0.00"
 			}
 			
-			"player_model_override"		"models/characters/civilian_vip_insurgent.mdl"//使用叛乱vip
+			"player_model_override"		"models/characters/civilian_vip_insurgent.mdl"//use Insrugent vip model
 			"viewmodel_hands_override"	"models/weapons/v_hands_vip.mdl"
 			
 			"team_access"				"security,insurgent"
 		}
-		"sec_nightvision"//daymap 可用夜视仪
+		"sec_nightvision"//we can use nightvision in daymap
 		{
 			"print_name"				"#gear_nvg"
 			"print_desc"				"#gear_nvg_desc"
@@ -2361,7 +2395,7 @@
 				
 			"team_access"				"security"
 		}
-		"ins_nightvision"//daymap 可用夜视仪
+		"ins_nightvision"//we can use nightvision in daymap
 		{
 			"print_name"				"#gear_nvg"
 			"print_desc"				"#gear_nvg_desc"
@@ -2406,5 +2440,13 @@
 			"obj_reset_tick"			"10"	// defending points given every 10% def.=0
 			"cache_destroyed"			"20"// def.=0
 		}
-	}		
+	}	
+
+	"ammo"
+	{
+		"grenade_p2a18_ammo"//flash bang ammo for p2a18
+		{
+			"carry"					"99"//change carry
+		}
+	}	
 }
