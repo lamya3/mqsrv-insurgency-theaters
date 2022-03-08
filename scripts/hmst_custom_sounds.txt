@@ -1,0 +1,221 @@
+// --------------------------
+// M1 GARAND
+// --------------------------
+
+
+"Weapon_Garand.Single"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"	    "1.0"
+	"pitch"			"100,105"
+	"soundlevel"  	"SNDLVL_94dB "
+	"rndwave"
+	{
+	"wave"			"armory_sounds/weapons/garand_tp.wav"	
+	}
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_distance_weapon_start"
+			"import_stack" "INS_limit_start3"
+			
+			"play_distant_version_1"
+			{
+				"entry_name" "Weapon_Garand.SingleDistant"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "INS_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "ThirdWeapons"
+			}
+			"volume_distance_xfade"
+			{
+				"input_map_min" "0.0"
+				"input_map_max" "1.0"
+			}
+			                  "volume_accumulate"
+                        {
+                               "input3" "0.7"
+                        }
+
+		}
+	}
+
+}
+
+"Weapon_Garand.SingleDistant"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100,105"
+	"soundlevel"  	"SNDLVL_110dB"
+	"wave"			"armory_sounds/weapons/garand_dist.wav"
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "INS_limit_start"
+		}
+
+		"update_stack"
+		{
+			"import_stack" "INS_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "DistWeapons"
+			}
+        }
+    } 
+}
+
+"Weapon_Garand.SingleLocal"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"	    "1.0"
+	"pitch"			"100,105"
+    "soundlevel"	"SNDLVL_GUNFIRE"
+	"wave"			"armory_sounds/weapons/garand_fp.wav"	
+}
+
+
+
+// M1 GARAND HANDLING
+
+"Weapon_Garand.Magrelease"
+{
+	"channel"			"CHAN_ITEM"
+	"volume"		    "0.2"
+	"pitch"			    "PITCH_NORM"
+	"soundlevel"  		"SNDLVL_65dB"
+	"wave"			"armory_sounds/weapons/handling/garand_magrelease.wav" 
+}
+
+"Weapon_Garand.MagFetch"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"0.3"
+    "pitch"			"PITCH_NORM"
+	"wave"			"armory_sounds/weapons/handling/garand_fetchmag.wav"  
+}
+
+"Weapon_Garand.Magin"
+{
+	"channel"			"CHAN_ITEM"
+	"volume"		    "0.2"
+	"pitch"			    "PITCH_NORM"
+	"soundlevel"  		"SNDLVL_65dB"
+	"wave"			"armory_sounds/weapons/handling/garand_magin.wav" 
+}
+
+"Weapon_Garand.Magout"
+{
+	"channel"			"CHAN_STATIC"
+	"volume"		    "0.2"
+	"pitch"			    "PITCH_NORM"
+	"soundlevel"  		"SNDLVL_65dB"
+	"wave"			"armory_sounds/weapons/handling/garand_magout.wav" 
+}
+
+"Weapon_Garand.Boltback"
+{
+	"channel"			"CHAN_ITEM"
+	"volume"		    "0.3"
+	"pitch"			    "PITCH_NORM"
+	"soundlevel"  		"SNDLVL_65dB"
+	"wave"			"armory_sounds/weapons/handling/garand_boltback.wav" 
+}
+
+"Weapon_Garand.Boltrelease"
+{
+	"channel"			"CHAN_ITEM"
+	"volume"		    "0.4"
+	"pitch"			    "PITCH_NORM"
+	"soundlevel"  		"SNDLVL_65dB"
+	"wave"			"armory_sounds/weapons/handling/garand_boltrelease.wav" 
+}
+
+"Weapon_Garand.MagHit"
+{
+	"channel"			"CHAN_STATIC"
+	"volume"		    "0.2"
+	"pitch"			    "PITCH_NORM"
+	"soundlevel"  		"SNDLVL_65dB"
+	"wave"			"armory_sounds/weapons/handling/garand_maghit.wav" 
+}
+
+"Weapon_Garand.Rattle"
+{
+	"channel"			"CHAN_ITEM"
+	"volume"		    "0.2"
+	"pitch"			    "PITCH_NORM"
+	"soundlevel"  		"SNDLVL_65dB"
+	"wave"			"armory_sounds/weapons/handling/garand_rattle.wav" 
+}
+
+"Weapon_Garand.Empty"
+{
+	"channel"			"CHAN_ITEM"
+	"volume"		    "0.2"
+	"pitch"			    "PITCH_NORM"
+	"soundlevel"  		"SNDLVL_65dB"
+	"wave"			"armory_sounds/weapons/handling/garand_empty.wav"  
+}
+
+"Weapon_Garand.Ping"
+{
+	"channel"			"CHAN_STATIC"
+	"volume"		    "0.3"
+	"pitch"			    "PITCH_NORM"
+	"soundlevel"  		"SNDLVL_75dB"
+	"rndwave"
+	{
+	"wave"			"armory_sounds/weapons/handling/garand_ping_01.wav" 
+	"wave"			"armory_sounds/weapons/handling/garand_ping_02.wav"  
+	"wave"			"armory_sounds/weapons/handling/garand_ping_03.wav"  
+	"wave"			"armory_sounds/weapons/handling/garand_ping_04.wav"  
+	"wave"			"armory_sounds/weapons/handling/garand_ping_05.wav"  
+    }	
+}
+
+"Weapon_Garand.Melee"
+{
+	"channel"			"CHAN_STATIC"
+	"volume"		    "0.3"
+	"pitch"			    "PITCH_NORM"
+	"soundlevel"  		"SNDLVL_65dB"
+	"rndwave"
+	{
+	"wave"			"armory_sounds/weapons/universal/weapon_melee_01.wav" 
+	"wave"			"armory_sounds/weapons/universal/weapon_melee_02.wav" 
+	"wave"			"armory_sounds/weapons/universal/weapon_melee_03.wav" 
+	"wave"			"armory_sounds/weapons/universal/weapon_melee_04.wav" 
+	"wave"			"armory_sounds/weapons/universal/weapon_melee_05.wav" 
+	"wave"			"armory_sounds/weapons/universal/weapon_melee_06.wav" 	
+    }	
+}
+
+// UNIVERSAL
+
+"Weapon_Bayonet.HitWorld"
+{
+	"channel"			"CHAN_STATIC"
+	"volume"		    "0.4"
+	"pitch"			    "95,105"
+	"soundlevel"  		"SNDLVL_65dB"
+	"rndwave"
+	{
+	"wave"			"armory_sounds/weapons/universal/weapon_melee_hitworld_01.wav" 
+	"wave"			"armory_sounds/weapons/universal/weapon_melee_hitworld_02.wav" 	
+    }	
+}
+
