@@ -21,10 +21,10 @@
 			"sounds"			"scripts/ins_sounds_responses_security.txt"
 			"sounds"			"scripts/ins_sounds_responses_insurgent.txt"
 			"sounds"			"scripts/ins_sounds_hq.txt"
-			
+
 			//customs
 			"sounds"			"scripts/hmst_custom_sounds.txt"		//modify
-			"localize"			"resource/custom_schinese.txt"			//modify
+			"localize"			"resource/ui/custom_schinese.txt"			//modify
 			
 			// coop specific
 			"sounds"			"scripts/ins_sounds_voice_coop.txt"
