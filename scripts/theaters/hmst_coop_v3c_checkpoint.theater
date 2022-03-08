@@ -1,11 +1,10 @@
 "#base" "base_player.theater"
 "#base" "base_common_ammo_test.theater"
-
 "#base" "default_gear_test.theater"
 "#base" "default_weapon.theater"
 "#base" "default_weapon_upgrades.theater"
-
 "#base" "default_base.theater"
+"#base" "hmst_coop_customweapons_base.theater"//custom file
 
 "theater"
 {
@@ -22,7 +21,10 @@
 			"sounds"			"scripts/ins_sounds_responses_security.txt"
 			"sounds"			"scripts/ins_sounds_responses_insurgent.txt"
 			"sounds"			"scripts/ins_sounds_hq.txt"
-			"sounds"			"scripts/hmst_custom_sounds.txt"//modify
+			
+			//customs
+			"sounds"			"scripts/hmst_custom_sounds.txt"		//modify
+			"localize"			"resource/custom_schinese.txt"			//modify
 			
 			// coop specific
 			"sounds"			"scripts/ins_sounds_voice_coop.txt"
