@@ -198,7 +198,7 @@
 			{
 				"clothwrap"
 				{
-					"model"				"models/insgwep/upgrades/a_clothwrap_garand.mdl"
+					"model"				"models/weapons/upgrades/a_clothwrap_garand.mdl"
 					
 					"weapons"
 					{
@@ -211,7 +211,7 @@
 			{
 				"clothwrap"
 				{
-					"model"				"models/insgwep/upgrades/w_clothwrap_garand.mdl"
+					"model"				"models/weapons/upgrades/w_clothwrap_garand.mdl"
 					
 					"weapons"
 					{
@@ -243,25 +243,25 @@
 			
 			"allowed_weapons"
 			{
-				"weapon"				"weapon_enfield"
+				//"weapon"				"weapon_enfield"
 				"weapon"				"weapon_m1garand"
-				"weapon"				"weapon_sten"	
+				//"weapon"				"weapon_sten"	
 			}
 			"viewmodel_attachments"
 			{
-				"enfield_sling"
-				{
-					"model"				"models\weapons\upgrades\a_sling_enfield.mdl"
+				// "enfield_sling"
+				// {
+				// 	"model"				"models\weapons\upgrades\a_sling_enfield.mdl"
 					
-					"weapons"
-					{
-						"weapon"		"weapon_enfield"
-					}
-				}
+				// 	"weapons"
+				// 	{
+				// 		"weapon"		"weapon_enfield"
+				// 	}
+				// }
 				
 				"garand_sling"
 				{
-					"model"				"models\insgwep\upgrades\a_sling_garand.mdl"
+					"model"				"models\weapons\upgrades\a_sling_garand.mdl"
 					
 					"weapons"
 					{
@@ -269,15 +269,15 @@
 					}
 				}
 				
-				"sten_sling"
-				{
-					"model"				"models\insgwep\upgrades\a_sling_stenmk2.mdl"
+				// "sten_sling"
+				// {
+				// 	"model"				"models\insgwep\upgrades\a_sling_stenmk2.mdl"
 					
-					"weapons"
-					{
-						"weapon"		"weapon_sten"
-					}
-				}								
+				// 	"weapons"
+				// 	{
+				// 		"weapon"		"weapon_sten"
+				// 	}
+				// }								
 
 			}
 		}
@@ -324,7 +324,7 @@
 			{
 				"4xscope_garand"
 				{
-					"model"					"models/insgwep/upgrades/a_optic_garand.mdl"
+					"model"					"models/weapons/upgrades/a_optic_garand.mdl"
 					"AnimIronSights"		"scope_zoom"
 					"AnimIdle"				"scope_idle"
 					"Gesture"				"delta_scope"
@@ -342,7 +342,7 @@
 			{			
 				"Scope_Garand"
 				{
-					"model"					"models/insgwep/upgrades/w_scope_garand.mdl"
+					"model"					"models/weapons/upgrades/w_scope_garand.mdl"
 					
 					"weapons"
 					{
@@ -382,7 +382,7 @@
 			{
 				"garand_worn"
 				{
-					"model"					"models/insgwep/v_garvet.mdl"
+					"model"					"models/weapons/v_garvet.mdl"
 				}
 			}
 			
@@ -390,7 +390,7 @@
 			{
 				"garand_worn"
 				{
-					"model"					"models/insgwep/w_garvet.mdl"
+					"model"					"models/weapons/w_garvet.mdl"
 				}
 			}
 			
