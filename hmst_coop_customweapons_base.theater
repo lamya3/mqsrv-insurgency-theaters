@@ -148,4 +148,257 @@
 			"team_access"				"security"
 		}
     }
+	"weapon_upgrades"
+	{
+		"clothwrap_garand"//gun clothwrap
+		{
+			"upgrade_cost"				"0"
+			"upgrade_slot"				"aesthetic"
+			"print_name"				"#clothwrap"
+			"print_desc"				"#clothwrap_desc"
+			"reload_speed"				"1.5"
+
+			"unlock"					"0"
+						
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m1garand"
+			}
+			
+			"viewmodel_attachments"
+			{
+				"clothwrap"
+				{
+					"model"				"models/insgwep/upgrades/a_clothwrap_garand.mdl"
+					
+					"weapons"
+					{
+						"weapon"			"weapon_m1garand"
+					}
+				}
+			}
+			
+			"world_attachments"
+			{
+				"clothwrap"
+				{
+					"model"				"models/insgwep/upgrades/w_clothwrap_garand.mdl"
+					
+					"weapons"
+					{
+						"weapon"			"weapon_m1garand"
+					}
+				}
+			}
+		}
+		"enfield_sling"//belt 
+		{
+			"import"					"base_stock"
+			"upgrade_cost"				"0"
+			"upgrade_slot"				"stock"
+			"print_name"				"#nam_sling"
+			"print_desc"				"#tactical_sling_desc"
+			
+			"class_restricted"			"0"
+			"team_access"				"security"
+			
+			"draw_speed"				"1.5"
+			"holster_speed"				"1.5"
+			"draw_speed_next_weapon"	"1.5"
+			"holster_speed_prev_weapon"	"1.5"
+			
+			//"excluded_upgrades"
+			//{
+			//	"default_bayonet"		"default_bayonet"
+			//}
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_enfield"
+				"weapon"				"weapon_m1garand"
+				"weapon"				"weapon_sten"	
+			}
+			"viewmodel_attachments"
+			{
+				"enfield_sling"
+				{
+					"model"				"models\weapons\upgrades\a_sling_enfield.mdl"
+					
+					"weapons"
+					{
+						"weapon"		"weapon_enfield"
+					}
+				}
+				
+				"garand_sling"
+				{
+					"model"				"models\insgwep\upgrades\a_sling_garand.mdl"
+					
+					"weapons"
+					{
+						"weapon"		"weapon_m1garand"
+					}
+				}
+				
+				"sten_sling"
+				{
+					"model"				"models\insgwep\upgrades\a_sling_stenmk2.mdl"
+					
+					"weapons"
+					{
+						"weapon"		"weapon_sten"
+					}
+				}								
+
+			}
+		}
+		"optic_scope_4x"//scope
+		{
+			"import"					"base_optic_rail"
+			"print_name"				"#weapon_upgrade_enfield_scope_4x"
+			"print_desc"				"#weapon_upgrade_enfield_scope_4x_desc"
+			"class_restricted"			"0"
+			"upgrade_cost"				"0"
+			"team_access"				"security, insurgent"
+			
+			"sway"
+			{
+				"sway_radius_frac"		"1.8"
+				"sway_speed_frac"		"1.9"
+			}
+			
+			"weapon_mods"
+			{
+				"weapon_g43"
+				{
+					"sway"
+					{
+						"sway_amount_focus_frac"		"0.25"
+						"sway_speed_focus_frac"			"0.20"
+						"sway_radius_crouch_frac"		"0.75"
+						"sway_radius_prone_frac"		"0.50"
+					}
+				}
+			}
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_enfield"
+				"weapon"				"weapon_m1garand"				
+			}
+			
+			"excluded_upgrades"
+			{
+				"0"						"magazine_stripper_clips"
+			}
+			
+			"viewmodel_attachments"
+			{
+				"4xscope_enfield"
+				{
+					"model"					"models/insgww2/upgrades/a_optic_enfield.mdl"
+					"AnimIronSights"		"scope_zoom"
+					"AnimIdle"				"scope_idle"
+					"Gesture"				"delta_scope"
+					"Main"					"1"
+					
+					"weapons"
+					{
+						"weapon"			"weapon_enfield"
+					}
+				}
+				
+				"4xscope_garand"
+				{
+					"model"					"models/insgwep/upgrades/a_optic_garand.mdl"
+					"AnimIronSights"		"scope_zoom"
+					"AnimIdle"				"scope_idle"
+					"Gesture"				"delta_scope"
+					"Main"					"1"
+					
+					"weapons"
+					{
+						"weapon"			"weapon_m1garand"
+					}
+				}				
+				
+			}
+			
+			"world_attachments"
+			{			
+				"Scope_enfield"
+				{
+					"model"					"models/insgww2/upgrades/w_optic_enfield.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_enfield"
+					}
+				}
+				
+				"Scope_Garand"
+				{
+					"model"					"models/insgwep/upgrades/w_scope_garand.mdl"
+					
+					"weapons"
+					{
+						"weapon"			"weapon_m1garand"
+					}
+				}				
+				
+			}
+			"optics_fov_override"
+			{
+				"fov_wpn_scope"				"15"
+				"fov_wpn_ironsight"			"37"
+				"fov_wpn_focus"				"43"
+				
+				"weapon_enfield"
+				{
+					"fov_wpn_scope"				"15"
+					"fov_wpn_ironsight"			"58"
+					"fov_wpn_focus"				"62"
+				}
+				
+				"weapon_m1garand"
+				{
+					"fov_wpn_scope"				"15"
+					"fov_wpn_ironsight"			"43"
+					"fov_wpn_focus"				"48"
+				}				
+				
+			}
+		}
+		"worn_m1garand"//skin
+		{
+			"print_name"				"#m1garand_worn"
+			"print_desc"				"#m1garand_worn_desc"
+			"upgrade_cost"				"0"
+			"reload_speed"				"1.5"
+			"upgrade_slot"				"aesthetic"			
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m1garand"
+			}
+
+			"viewmodel_attachments"
+			{
+				"garand_worn"
+				{
+					"model"					"models/insgwep/v_garvet.mdl"
+				}
+			}
+			
+			"world_attachments"
+			{
+				"garand_worn"
+				{
+					"model"					"models/insgwep/w_garvet.mdl"
+				}
+			}
+			
+			"team_access"				"security, insurgent"
+		}			
+	}
 }
