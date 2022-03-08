@@ -11,7 +11,7 @@
 	"soundlevel"  	"SNDLVL_94dB "
 	"rndwave"
 	{
-	"wave"			"armory_sounds/weapons/garand_tp.wav"	
+	"wave"			"weapons/m1garand/garand_tp.wav"	
 	}
 	
 	"soundentry_version" "2"
@@ -57,7 +57,7 @@
 	"volume"		"1.0"
 	"pitch"			"100,105"
 	"soundlevel"  	"SNDLVL_110dB"
-	"wave"			"armory_sounds/weapons/garand_dist.wav"
+	"wave"			"weapons/m1garand/garand_dist.wav"
 	
 	"soundentry_version" "2"
 	"operator_stacks"
@@ -84,7 +84,7 @@
 	"volume"	    "1.0"
 	"pitch"			"100,105"
     "soundlevel"	"SNDLVL_GUNFIRE"
-	"wave"			"armory_sounds/weapons/garand_fp.wav"	
+	"wave"			"weapons/m1garand/garand_fp.wav"	
 }
 
 
@@ -97,7 +97,7 @@
 	"volume"		    "0.2"
 	"pitch"			    "PITCH_NORM"
 	"soundlevel"  		"SNDLVL_65dB"
-	"wave"			"armory_sounds/weapons/handling/garand_magrelease.wav" 
+	"wave"			"weapons/handling/garand_magrelease.wav" 
 }
 
 "Weapon_Garand.MagFetch"
@@ -105,7 +105,7 @@
 	"channel"		"CHAN_ITEM"
 	"volume"		"0.3"
     "pitch"			"PITCH_NORM"
-	"wave"			"armory_sounds/weapons/handling/garand_fetchmag.wav"  
+	"wave"			"weapons/handling/garand_fetchmag.wav"  
 }
 
 "Weapon_Garand.Magin"
@@ -114,7 +114,7 @@
 	"volume"		    "0.2"
 	"pitch"			    "PITCH_NORM"
 	"soundlevel"  		"SNDLVL_65dB"
-	"wave"			"armory_sounds/weapons/handling/garand_magin.wav" 
+	"wave"			"weapons/handling/garand_magin.wav" 
 }
 
 "Weapon_Garand.Magout"
@@ -123,7 +123,7 @@
 	"volume"		    "0.2"
 	"pitch"			    "PITCH_NORM"
 	"soundlevel"  		"SNDLVL_65dB"
-	"wave"			"armory_sounds/weapons/handling/garand_magout.wav" 
+	"wave"			"weapons/handling/garand_magout.wav" 
 }
 
 "Weapon_Garand.Boltback"
@@ -132,7 +132,7 @@
 	"volume"		    "0.3"
 	"pitch"			    "PITCH_NORM"
 	"soundlevel"  		"SNDLVL_65dB"
-	"wave"			"armory_sounds/weapons/handling/garand_boltback.wav" 
+	"wave"			"weapons/handling/garand_boltback.wav" 
 }
 
 "Weapon_Garand.Boltrelease"
@@ -141,7 +141,7 @@
 	"volume"		    "0.4"
 	"pitch"			    "PITCH_NORM"
 	"soundlevel"  		"SNDLVL_65dB"
-	"wave"			"armory_sounds/weapons/handling/garand_boltrelease.wav" 
+	"wave"			"weapons/handling/garand_boltrelease.wav" 
 }
 
 "Weapon_Garand.MagHit"
@@ -150,7 +150,7 @@
 	"volume"		    "0.2"
 	"pitch"			    "PITCH_NORM"
 	"soundlevel"  		"SNDLVL_65dB"
-	"wave"			"armory_sounds/weapons/handling/garand_maghit.wav" 
+	"wave"			"weapons/handling/garand_maghit.wav" 
 }
 
 "Weapon_Garand.Rattle"
@@ -159,7 +159,7 @@
 	"volume"		    "0.2"
 	"pitch"			    "PITCH_NORM"
 	"soundlevel"  		"SNDLVL_65dB"
-	"wave"			"armory_sounds/weapons/handling/garand_rattle.wav" 
+	"wave"			"weapons/handling/garand_rattle.wav" 
 }
 
 "Weapon_Garand.Empty"
@@ -168,7 +168,7 @@
 	"volume"		    "0.2"
 	"pitch"			    "PITCH_NORM"
 	"soundlevel"  		"SNDLVL_65dB"
-	"wave"			"armory_sounds/weapons/handling/garand_empty.wav"  
+	"wave"			"weapons/handling/garand_empty.wav"  
 }
 
 "Weapon_Garand.Ping"
@@ -179,11 +179,11 @@
 	"soundlevel"  		"SNDLVL_75dB"
 	"rndwave"
 	{
-	"wave"			"armory_sounds/weapons/handling/garand_ping_01.wav" 
-	"wave"			"armory_sounds/weapons/handling/garand_ping_02.wav"  
-	"wave"			"armory_sounds/weapons/handling/garand_ping_03.wav"  
-	"wave"			"armory_sounds/weapons/handling/garand_ping_04.wav"  
-	"wave"			"armory_sounds/weapons/handling/garand_ping_05.wav"  
+	"wave"			"weapons/handling/garand_ping_01.wav" 
+	"wave"			"weapons/handling/garand_ping_02.wav"  
+	"wave"			"weapons/handling/garand_ping_03.wav"  
+	"wave"			"weapons/handling/garand_ping_04.wav"  
+	"wave"			"weapons/handling/garand_ping_05.wav"  
     }	
 }
 
@@ -195,12 +195,12 @@
 	"soundlevel"  		"SNDLVL_65dB"
 	"rndwave"
 	{
-	"wave"			"armory_sounds/weapons/universal/weapon_melee_01.wav" 
-	"wave"			"armory_sounds/weapons/universal/weapon_melee_02.wav" 
-	"wave"			"armory_sounds/weapons/universal/weapon_melee_03.wav" 
-	"wave"			"armory_sounds/weapons/universal/weapon_melee_04.wav" 
-	"wave"			"armory_sounds/weapons/universal/weapon_melee_05.wav" 
-	"wave"			"armory_sounds/weapons/universal/weapon_melee_06.wav" 	
+	"wave"			"weapons/universal/weapon_melee_01.wav" 
+	"wave"			"weapons/universal/weapon_melee_02.wav" 
+	"wave"			"weapons/universal/weapon_melee_03.wav" 
+	"wave"			"weapons/universal/weapon_melee_04.wav" 
+	"wave"			"weapons/universal/weapon_melee_05.wav" 
+	"wave"			"weapons/universal/weapon_melee_06.wav" 	
     }	
 }
 
@@ -214,8 +214,8 @@
 	"soundlevel"  		"SNDLVL_65dB"
 	"rndwave"
 	{
-	"wave"			"armory_sounds/weapons/universal/weapon_melee_hitworld_01.wav" 
-	"wave"			"armory_sounds/weapons/universal/weapon_melee_hitworld_02.wav" 	
+	"wave"			"weapons/universal/weapon_melee_hitworld_01.wav" 
+	"wave"			"weapons/universal/weapon_melee_hitworld_02.wav" 	
     }	
 }
 
