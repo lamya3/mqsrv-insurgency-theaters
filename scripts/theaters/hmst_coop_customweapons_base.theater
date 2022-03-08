@@ -397,4 +397,138 @@
 			"team_access"				"security, insurgent"
 		}			
 	}
+	"ammo"
+	{
+		// ========================================
+		// AMMO BASE (USE _custom FOR ANTI DUPLICATE)
+		// ========================================
+		// don't use this
+		"default_custom"	// set for AKM values as baseline
+		{
+			"flags"					"AMMO_USE_MAGAZINES"
+			"carry"					"12"
+			"magsize"				"30"
+			"tracer_type"				"none"
+			
+			"SuppressionIncrement"			"60"
+			"PhysicsImpulse"
+			{
+				"50"					"800"
+				"2000"					"200"
+			}
+			"PenetrationDamage"
+			{
+				"0"					"1"
+				"100"					"0.5"
+				"200"					"0.1"
+			}
+			"Damage"
+			{
+				"10"					"100"
+				"8000"					"60"
+			}
+			"PenetrationPower"
+			{
+				"10"					"200"
+				"8000"					"135"
+			}
+			"DamageHitgroups"
+			{
+				"HITGROUP_HEAD"				"1.00"
+				"HITGROUP_CHEST"			"1.00"
+				"HITGROUP_STOMACH"			"1.00"
+				"HITGROUP_LEFTARM"			"1.00"
+				"HITGROUP_RIGHTARM"			"1.00"
+				"HITGROUP_LEFTLEG"			"1.00"
+				"HITGROUP_RIGHTLEG"			"1.00"
+			}
+		}
+		"762x51_custom"	// 147gr 833 m/s 3,304J
+		{
+			"import"				"default_custom"
+			"SuppressionIncrement"			"90"
+			"brass_model"				"models/weapons/shells/762x51.mdl"
+			"Damage"
+			{
+				"10"					"160"
+				"20000"					"100"
+			}
+			"PenetrationPower"
+			{
+				"10"					"1100"
+				"20000"					"600"
+			}
+		}
+		"762x51_custom_tracer"
+		{
+			"import"				"762x51_custom"
+			"tracer_frequency"			"4"
+			"tracer_type"				"whiz_with_line"
+			"tracer_lowammo"			"5"
+		}
+		"762x51_custom_hp"
+		{
+			"import"				"762x51_custom"
+			
+			"DamageHitgroups"
+			{
+				"HITGROUP_HEAD"				"0.90"
+				"HITGROUP_CHEST"			"0.75"
+				"HITGROUP_STOMACH"			"0.80"
+				"HITGROUP_LEFTARM"			"2.00"
+				"HITGROUP_RIGHTARM"			"2.00"
+				"HITGROUP_LEFTLEG"			"3.00"
+				"HITGROUP_RIGHTLEG"			"3.00"
+			}
+			"PenetrationPower"
+			{
+				"10"					"400"
+				"12000"					"200"
+			}
+		}
+		"762x51_custom_ap"
+		{
+			"import"				"762x51_custom"
+			"DamageHitgroups"
+			{
+				"HITGROUP_HEAD"				"5.00"
+				"HITGROUP_CHEST"			"5.00"
+				"HITGROUP_STOMACH"			"5.00"
+				"HITGROUP_LEFTARM"			"0.80"
+				"HITGROUP_RIGHTARM"			"0.80"
+				"HITGROUP_LEFTLEG"			"0.70"
+				"HITGROUP_RIGHTLEG"			"0.70"
+			}
+			"PenetrationPower"
+			{
+				"10"					"1500"
+				"20000"					"800"
+			}
+		}
+		
+		// ========================================
+		// M1 GARAND
+		// ========================================
+		
+		"762x51_mag_8rnd"
+		{
+			"import"				"762x51_custom"
+			"magsize"				"8"
+		}
+		"762x51_hp_mag_8rnd"
+		{
+			"import"				"762x51_custom_hp"
+			"magsize"				"8"
+		}
+		"762x51_ap_mag_8rnd"
+		{
+			"import"				"762x51_custom_ap"
+			"magsize"				"8"
+		}
+		"762x51_tracer_mag_8rnd"
+		{
+			"import"				"762x51_custom_tracer"
+			"magsize"				"8"
+		}
+	}
 }
