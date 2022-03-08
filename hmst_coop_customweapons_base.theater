@@ -2,7 +2,10 @@
 {
     "weapons"
     {
-        "ballistic_base"//base for customs
+        //============================================
+		//			WEAPONS BASE SETTINGS
+		//============================================
+		"ballistic_base"//base for customs
 		{
 			"IsBase"				"1"
 			"import"				"weapon_base"
@@ -35,6 +38,9 @@
 				"BulletWhizMinVolume"			"0.5"
 			}
 		}
+        //============================================
+		//			CUSTOMS WEAPONS HERE
+		//============================================
         "weapon_m1garand"
 		{
 			"import"					"ballistic_base"
@@ -150,6 +156,29 @@
     }
 	"weapon_upgrades"
 	{
+		//============================================
+		//		WEAPONS_UPGRADES BASE SETTINGS
+		//============================================
+ 		
+		"base_optic_rail"//nothing but "upgrade_slot" & "viewmodel_attachments" & "world_attachments"
+		{
+			"IsBase"				"1"
+			"upgrade_slot"				"optics"
+			
+			"viewmodel_attachments"
+			{
+				//see angrybot35 weaponsbase
+			}
+			
+			"world_attachments"
+			{
+				//see angrybot35 weaponsbase
+			}
+		}
+
+		//============================================
+		//			WEAPONS_UPGRADES HERE
+		//============================================
 		"clothwrap_garand"//gun clothwrap
 		{
 			"upgrade_cost"				"0"
@@ -283,7 +312,6 @@
 			
 			"allowed_weapons"
 			{
-				"weapon"				"weapon_enfield"
 				"weapon"				"weapon_m1garand"				
 			}
 			
@@ -294,20 +322,6 @@
 			
 			"viewmodel_attachments"
 			{
-				"4xscope_enfield"
-				{
-					"model"					"models/insgww2/upgrades/a_optic_enfield.mdl"
-					"AnimIronSights"		"scope_zoom"
-					"AnimIdle"				"scope_idle"
-					"Gesture"				"delta_scope"
-					"Main"					"1"
-					
-					"weapons"
-					{
-						"weapon"			"weapon_enfield"
-					}
-				}
-				
 				"4xscope_garand"
 				{
 					"model"					"models/insgwep/upgrades/a_optic_garand.mdl"
@@ -326,16 +340,6 @@
 			
 			"world_attachments"
 			{			
-				"Scope_enfield"
-				{
-					"model"					"models/insgww2/upgrades/w_optic_enfield.mdl"
-					
-					"weapons"
-					{
-						"weapon"				"weapon_enfield"
-					}
-				}
-				
 				"Scope_Garand"
 				{
 					"model"					"models/insgwep/upgrades/w_scope_garand.mdl"
@@ -352,14 +356,6 @@
 				"fov_wpn_scope"				"15"
 				"fov_wpn_ironsight"			"37"
 				"fov_wpn_focus"				"43"
-				
-				"weapon_enfield"
-				{
-					"fov_wpn_scope"				"15"
-					"fov_wpn_ironsight"			"58"
-					"fov_wpn_focus"				"62"
-				}
-				
 				"weapon_m1garand"
 				{
 					"fov_wpn_scope"				"15"
