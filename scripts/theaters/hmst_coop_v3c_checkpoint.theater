@@ -22,6 +22,7 @@
 			"sounds"			"scripts/ins_sounds_responses_security.txt"
 			"sounds"			"scripts/ins_sounds_responses_insurgent.txt"
 			"sounds"			"scripts/ins_sounds_hq.txt"
+			"sounds"			"scripts/hmst_custom_sounds.txt"//modify
 			
 			// coop specific
 			"sounds"			"scripts/ins_sounds_voice_coop.txt"
@@ -1279,6 +1280,7 @@
 				"weapon"				"weapon_toz"
 				"weapon"				"weapon_mosin"
 				"weapon"				"weapon_model10"
+				"weapon"				"weapon_m1garand"
 				//"weapon"				"weapon_m1911"
 				//"weapon"				"weapon_makarov"
 				//"weapon"				"weapon_f1"
