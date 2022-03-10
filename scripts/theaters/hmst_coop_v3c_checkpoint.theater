@@ -24,7 +24,7 @@
 
 			//customs
 			"sounds"			"scripts/hmst_custom_sounds.txt"		//modify
-			"localize"			"resource/ui/custom_schinese.txt"			//modify
+			"localize"			"resource/ui/custom_schinese.txt"		//modify
 			
 			// coop specific
 			"sounds"			"scripts/ins_sounds_voice_coop.txt"
@@ -43,24 +43,24 @@
 				"#Fireteam_Alpha"	//A队（火力班）
 				{
 					"#Squad_Fireteam_Leader_Specialist"		"template_specialist_security_coop"				//武器专家
-					"#Squad_Fireteam_Recon"		"template_reconmod_security_coop"							//现代侦察兵
-					"#Squad_Fireteam_Rifleman"		"template_rifleman_security_coop"						//步枪手
-					"#Squad_Fireteam_Support"		"template_support_security_coop"						//火力支援兵
-					"#Squad_Fireteam_Sniper"		"template_sniper_security_coop"							//狙击手
-					"#Squad_Fireteam_Rifleman"		"template_rifleman_security_coop"						//新增步枪手
-					"#Squad_Fireteam_Sniper"		"template_sniper_security_coop"							//新增狙击手
-					"牛仔[Cowboy]"							"template_cowboy_security_coop"					//新增牛仔
+					"#Squad_Fireteam_Recon"					"template_reconmod_security_coop"				//现代侦察兵
+					"#Squad_Fireteam_Rifleman"				"template_rifleman_security_coop"				//步枪手
+					"#Squad_Fireteam_Support"				"template_support_security_coop"				//火力支援兵
+					"#Squad_Fireteam_Sniper"				"template_sniper_security_coop"					//狙击手
+					"#Squad_Fireteam_Rifleman"				"template_rifleman_security_coop"				//步枪手
+					"#Squad_Fireteam_Sniper"				"template_sniper_security_coop"					//狙击手
+					"#Squad_Fireteam_Cowboy"				"template_cowboy_security_coop"					//西部牛仔
 				}
 				"#Fireteam_Bravo"	//B队（爆破班）
 				{
-					"#Squad_Fireteam_Leader_Recon"		"template_reconcls_security_coop"					//经典侦察兵
-					"#Squad_Fireteam_Demolitions"		"template_demolitions_security_coop"				//爆破手
-					"#Squad_Fireteam_Breacher"		"template_breacher_security_coop"						//破障手
-					"#Squad_Fireteam_Grenadier"		"template_grenadier_security_coop"						//榴弹手
-					"#Squad_Fireteam_Designated_Marksman"		"template_designated_marksman_security_coop"//精确射手
-					"#Squad_Fireteam_Breacher"		"template_breacher_security_coop"						//新增破障手
-					"#Squad_Fireteam_Support"		"template_support_security_coop"						//新增火力支援兵
-					"牛仔[Cowboy]"							"template_cowboy_security_coop"					//新增牛仔
+					"#Squad_Fireteam_Leader_Recon"			"template_reconcls_security_coop"				//经典侦察兵
+					"#Squad_Fireteam_Demolitions"			"template_demolitions_security_coop"			//爆破手
+					"#Squad_Fireteam_Breacher"				"template_breacher_security_coop"				//破障手
+					"#Squad_Fireteam_Grenadier"				"template_grenadier_security_coop"				//榴弹手
+					"#Squad_Fireteam_Designated_Marksman"	"template_designated_marksman_security_coop"	//精确射手
+					"#Squad_Fireteam_Breacher"				"template_breacher_security_coop"				//破障手
+					"#Squad_Fireteam_Support"				"template_support_security_coop"				//火力支援兵
+					"#Squad_Fireteam_Cowboy"				"template_cowboy_security_coop"					//西部牛仔
 				}
 			}
 		}
