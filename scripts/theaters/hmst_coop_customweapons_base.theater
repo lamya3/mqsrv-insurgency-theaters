@@ -134,7 +134,7 @@
 			
 			"ammo_clip"
 			{
-				"ammo_type"				"762x51_mag_8rnd"
+				"ammo_type"				"762x51_custom"//"762x51_mag_8rnd"
 				"clip_max"				"12"
 				"clip_max_rounds"		"8"
 				"clip_default"			"4"
