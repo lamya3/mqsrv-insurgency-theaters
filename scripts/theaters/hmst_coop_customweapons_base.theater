@@ -47,8 +47,8 @@
 			"weapon_class"				"rifle_controlled_fire"
 			"print_name"				"#weapon_m1garand"
 			"print_desc"				"#weapon_m1garand_desc"
-			"view_model"				"models/insgwep/v_garand.mdl"
-			"world_model"				"models/insgwep/w_garand.mdl"
+			"view_model"				"models/weapons/v_garand.mdl"
+			"world_model"				"models/weapons/w_garand.mdl"
 			"rounds_per_minute"			"500"
 			"weapon_slot"				"primary"
 			"act_table"					"rifle_clip"
@@ -198,7 +198,7 @@
 			{
 				"clothwrap"
 				{
-					"model"				"models/insgwep/upgrades/a_clothwrap_garand.mdl"
+					"model"				"models/weapons/upgrades/a_clothwrap_garand.mdl"
 					
 					"weapons"
 					{
@@ -211,7 +211,7 @@
 			{
 				"clothwrap"
 				{
-					"model"				"models/insgwep/upgrades/w_clothwrap_garand.mdl"
+					"model"				"models/weapons/upgrades/w_clothwrap_garand.mdl"
 					
 					"weapons"
 					{
@@ -261,7 +261,7 @@
 				
 				"garand_sling"
 				{
-					"model"				"models/insgwep/upgrades/a_sling_garand.mdl"
+					"model"				"models/weapons/upgrades/a_sling_garand.mdl"
 					
 					"weapons"
 					{
@@ -324,7 +324,7 @@
 			{
 				"4xscope_garand"
 				{
-					"model"					"models/insgwep/upgrades/a_optic_garand.mdl"
+					"model"					"models/weapons/upgrades/a_optic_garand.mdl"
 					"AnimIronSights"		"scope_zoom"
 					"AnimIdle"				"scope_idle"
 					"Gesture"				"delta_scope"
@@ -342,7 +342,7 @@
 			{			
 				"Scope_Garand"
 				{
-					"model"					"models/insgwep/upgrades/w_scope_garand.mdl"
+					"model"					"models/weapons/upgrades/w_scope_garand.mdl"
 					
 					"weapons"
 					{
@@ -382,7 +382,7 @@
 			{
 				"garand_worn"
 				{
-					"model"					"models/insgwep/v_garvet.mdl"
+					"model"					"models/weapons/v_garvet.mdl"
 				}
 			}
 			
@@ -390,7 +390,7 @@
 			{
 				"garand_worn"
 				{
-					"model"					"models/insgwep/w_garvet.mdl"
+					"model"					"models/weapons/w_garvet.mdl"
 				}
 			}
 			
