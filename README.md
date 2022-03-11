@@ -2,7 +2,7 @@
 
 ## Intro
 
-A repository for game insurgency2,only theaters.
+A repository for game insurgency2,only theaters or base files.
 
 ## Issues task
 
