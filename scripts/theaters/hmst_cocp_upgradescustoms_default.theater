@@ -260,6 +260,7 @@
 			{
 				"weapon"				"weapon_m16a4"
 				"weapon"				"weapon_mk18"
+				"weapon"				"weapon_hk416c"
 				"weapon"				"weapon_m4a1"
 				"weapon"				"weapon_m14"
 				"weapon"				"weapon_ump45"
@@ -279,6 +280,15 @@
 					"weapons"
 					{
 						"weapon"			"weapon_mk18"
+					}
+				}
+				"standard_416c"
+				{
+					"model"					"models/weapons/upgrades/a_standard3_416c.mdl"
+					
+					"weapons"
+					{
+						"weapon"			"weapon_hk416c"
 					}
 				}
 				
@@ -433,6 +443,7 @@
 				"weapon"				"weapon_m16a4"
 				"weapon"				"weapon_m4a1"
 				"weapon"				"weapon_mk18"
+				"weapon"				"weapon_hk416c"
 				"weapon"				"weapon_mini14"
 				"weapon"				"weapon_galil"
 				"weapon"				"weapon_galil_sar"
@@ -679,6 +690,7 @@
 				"weapon"				"weapon_m249"
 				"weapon"				"weapon_m40a1"
 				"weapon"				"weapon_mk18"
+				"weapon"				"weapon_hk416c"
 				"weapon"				"weapon_m590"
 				"weapon"				"weapon_m14"
 				"weapon"				"weapon_mini14"
@@ -793,6 +805,12 @@
 				}
 				
 				"weapon_mk18"
+				{
+					"fov_wpn_ironsight"			"59"
+					"fov_wpn_focus"				"67"
+				}
+
+				"weapon_hk416c"
 				{
 					"fov_wpn_ironsight"			"59"
 					"fov_wpn_focus"				"67"
@@ -932,6 +950,7 @@
 				"weapon"				"weapon_m249"
 				"weapon"				"weapon_m40a1"
 				"weapon"				"weapon_mk18"
+				"weapon"				"weapon_hk416c"
 				"weapon"				"weapon_m590"
 				"weapon"				"weapon_m14"
 				"weapon"				"weapon_mini14"
@@ -1051,6 +1070,12 @@
 					"fov_wpn_ironsight"			"58"
 					"fov_wpn_focus"				"66"
 				}
+
+				"weapon_hk416c"
+				{
+					"fov_wpn_ironsight"			"58"
+					"fov_wpn_focus"				"66"
+				}
 				
 				"weapon_mp5"
 				{
@@ -1161,6 +1186,7 @@
 				"weapon"				"weapon_m249"
 				"weapon"				"weapon_m40a1"
 				"weapon"				"weapon_mk18"
+				"weapon"				"weapon_hk416c"
 				"weapon"				"weapon_m14"
 				"weapon"				"weapon_mini14"
 				"weapon"				"weapon_mp5"
@@ -1196,6 +1222,7 @@
 						"weapon"				"weapon_m16a4"
 						"weapon"				"weapon_m4a1"
 						"weapon"				"weapon_mk18"
+						"weapon"				"weapon_hk416c"
 						"weapon"				"weapon_m1a1"
 					}
 				}
@@ -1213,6 +1240,7 @@
 						"weapon"				"weapon_m16a4"
 						"weapon"				"weapon_m4a1"
 						"weapon"				"weapon_mk18"
+						"weapon"				"weapon_hk416c"
 						"weapon"				"weapon_m1a1"
 					}
 				}
@@ -1249,6 +1277,12 @@
 					"fov_wpn_ironsight"			"70"
 					"fov_wpn_focus"				"72"
 				}
+
+				"weapon_hk416c"
+				{
+					"fov_wpn_ironsight"			"70"
+					"fov_wpn_focus"				"72"
+				}				
 				
 				"weapon_m14"
 				{
@@ -1383,6 +1417,7 @@
 				"weapon"				"weapon_m249"
 				"weapon"				"weapon_m40a1"
 				"weapon"				"weapon_mk18"
+				"weapon"				"weapon_hk416c"
 				"weapon"				"weapon_m590"
 				"weapon"				"weapon_m14"
 				"weapon"				"weapon_mini14"
@@ -1443,6 +1478,7 @@
 						"weapon"				"weapon_m16a4"
 						"weapon"				"weapon_m4a1"
 						"weapon"				"weapon_mk18"
+						"weapon"				"weapon_hk416c"
 						"weapon"				"weapon_m1a1"
 						"weapon"				"weapon_sterling"
 					}
@@ -1459,6 +1495,7 @@
 					"weapons"
 					{
 						"weapon"				"weapon_mk18"
+						"weapon"				"weapon_hk416c"
 						// "weapon"			"weapon_m249"
 					}
 				}
@@ -1506,6 +1543,12 @@
 				"fov_wpn_focus"				"79"
 				
 				"weapon_mk18"
+				{
+					"fov_wpn_ironsight"			"76"
+					"fov_wpn_focus"				"82"
+				}
+
+				"weapon_hk416c"
 				{
 					"fov_wpn_ironsight"			"76"
 					"fov_wpn_focus"				"82"
@@ -1670,6 +1713,7 @@
 				"weapon"				"weapon_m4a1"
 				"weapon"				"weapon_m40a1"
 				"weapon"				"weapon_mk18"
+				"weapon"				"weapon_hk416c"
 				"weapon"				"weapon_m590"
 				"weapon"				"weapon_m14"
 				"weapon"				"weapon_m249"
@@ -1853,6 +1897,12 @@
 					"fov_wpn_ironsight"			"65"
 					"fov_wpn_focus"				"75"
 				}
+
+				"weapon_hk416c"
+				{
+					"fov_wpn_ironsight"			"65"
+					"fov_wpn_focus"				"75"
+				}
 				
 				"weapon_mp5"
 				{
@@ -1920,6 +1970,7 @@
 				"weapon"				"weapon_m249"
 				"weapon"				"weapon_m40a1"
 				"weapon"				"weapon_mk18"
+				"weapon"				"weapon_hk416c"
 				"weapon"				"weapon_mini14"
 				"weapon"				"weapon_mp5"
 				"weapon"				"weapon_ump45"
@@ -2089,6 +2140,12 @@
 				}
 				
 				"weapon_mk18"
+				{
+					"fov_wpn_ironsight"			"64"
+					"fov_wpn_focus"				"68"
+				}
+
+				"weapon_hk416c"
 				{
 					"fov_wpn_ironsight"			"64"
 					"fov_wpn_focus"				"68"
@@ -2650,6 +2707,7 @@
 			"allowed_weapons"
 			{
 				"weapon"				"weapon_mk18"
+				"weapon"				"weapon_hk416c"
 				"weapon"				"weapon_m4a1"
 			}
 			"ammo_type_override"			"556_tracer_stanag_m4"
@@ -2661,6 +2719,7 @@
 			"allowed_weapons"
 			{
 				"weapon"				"weapon_mk18"
+				"weapon"				"weapon_hk416c"
 				"weapon"				"weapon_m4a1"
 			}
 			"ammo_type_override"			"556_hp_stanag_m4"
@@ -2672,6 +2731,7 @@
 			"allowed_weapons"
 			{
 				"weapon"				"weapon_mk18"
+				"weapon"				"weapon_hk416c"
 				"weapon"				"weapon_m4a1"
 			}
 			"ammo_type_override"			"556_ap_stanag_m4"
@@ -3149,6 +3209,7 @@
 			{
 				"weapon"				"weapon_m16a4"
 				"weapon"				"weapon_mk18"
+				"weapon"				"weapon_hk416c"
 				"weapon"				"weapon_m4a1"
 			}
 			"viewmodel_attachments"
@@ -3163,6 +3224,7 @@
 					{
 						"weapon_m16a4"				"0.5"
 						"weapon_mk18"				"0.5"
+						"weapon_hk416c"				"0.5"
 						"weapon_m4a1"				"0.5"
 					}
 				}
@@ -3332,6 +3394,7 @@
 			"allowed_weapons"
 			{
 				"weapon"				"weapon_mk18"
+				"weapon"				"weapon_hk416c"
 			}
 			"viewmodel_attachments"
 			{
@@ -3579,6 +3642,7 @@
 				"weapon"				"weapon_m16a4"
 				"weapon"				"weapon_m4a1"
 				"weapon"				"weapon_mk18"
+				"weapon"				"weapon_hk416c"
 				"weapon"				"weapon_m14"
 				"weapon"				"weapon_ump45"
 				
@@ -3597,6 +3661,15 @@
 					"weapons"
 					{
 						"weapon"				"weapon_mk18"
+					}
+				}
+				"standard_416c" //Totally use .mdl files in mod pack
+				{
+					"model"					"models/weapons/upgrades/a_standard3_416c.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_hk416c"
 					}
 				}
 				
