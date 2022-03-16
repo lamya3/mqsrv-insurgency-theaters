@@ -134,7 +134,7 @@
 			
 			"ammo_clip"
 			{
-				"ammo_type"				"762x51_custom"//"762x51_mag_8rnd"
+				"ammo_type"				"762x51_mag_8rnd2"//"762x51_mag_8rnd"
 				"clip_max"				"12"
 				"clip_max_rounds"		"8"
 				"clip_default"			"4"
@@ -187,7 +187,7 @@
 			{
 				"flipsights"
 				{
-					"model"					"models/weapons/upgrades/w_flipup2416c.mdl"
+					"model"					"models/weapons/upgrades/w_flipup3.mdl"
 					"fallback_for_slot"			"optics"
 				}
 			}
@@ -623,22 +623,22 @@
 		// M1 GARAND
 		// ========================================
 		
-		"762x51_mag_8rnd"
+		"762x51_mag_8rnd2"
 		{
 			"import"				"762x51_custom"
 			"magsize"				"8"
 		}
-		"762x51_hp_mag_8rnd"
+		"762x51_hp_mag_8rnd2"
 		{
 			"import"				"762x51_custom_hp"
 			"magsize"				"8"
 		}
-		"762x51_ap_mag_8rnd"
+		"762x51_ap_mag_8rnd2"
 		{
 			"import"				"762x51_custom_ap"
 			"magsize"				"8"
 		}
-		"762x51_tracer_mag_8rnd"
+		"762x51_tracer_mag_8rnd2"
 		{
 			"import"				"762x51_custom_tracer"
 			"magsize"				"8"
