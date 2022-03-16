@@ -2931,7 +2931,7 @@
 					}
 			}
 		}
-		
+
 		"magazine_extended_usp"
 		{
 		
@@ -2974,6 +2974,214 @@
 						}
 					}
 			}
+		}
+
+		//judge ammo
+		"ammo_00buckshot"
+		{
+			"import"					"00buckshot"
+			"print_name"				"#weapon_upgrade_00buckshot"
+			"print_desc"				"#weapon_upgrade_00buckshot_desc"
+			"team_access"				"security, insurgent"
+			"class_restricted"			"0"
+			"upgrade_slot"				"ammo"
+			"upgrade_cost"				"1"
+			"spread_frac"				"0.50"
+
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m590"
+				"weapon"				"weapon_m500" 
+				"weapon"				"weapon_toz"
+				"weapon"				"weapon_spas12" 
+				"weapon"				"weapon_ksg" 
+				"weapon"				"weapon_nova" 
+				"weapon"				"weapon_m1014" 
+				"weapon"				"weapon_taurusjudge"
+			}					
+		}
+		
+		"ammo_rifledslug"
+		{
+			"import"					"rifledslug"
+			"print_name"				"#weapon_upgrade_rifledslug"
+			"print_desc"				"#weapon_upgrade_rifledslug_desc"
+			"team_access"				"security, insurgent"
+			"class_restricted"			"0"
+			"upgrade_slot"				"ammo"
+			"upgrade_cost"				"2"
+			"spread_frac"				"0.01"
+
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m590"
+				"weapon"				"weapon_m500" 
+				"weapon"				"weapon_toz"
+				"weapon"				"weapon_spas12" 
+				"weapon"				"weapon_ksg" 
+				"weapon"				"weapon_nova" 
+				"weapon"				"weapon_m1014" 
+				"weapon"				"weapon_taurusjudge"
+			}					
+		}
+
+		//m1garand ammo
+		"ammo_tracer_m1garand"
+		{
+			"import"				"base_ammo_tracer"
+			"upgrade_cost"				"0"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m1garand"
+			}
+			"ammo_type_override"			"762x51_tracer_mag_8rnd2"
+		}
+		
+		"ammo_hp_m1garand"
+		{
+			"import"				"base_ammo_hp"
+			"upgrade_cost"				"1"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m1garand"
+			}
+			"ammo_type_override"			"762x51_hp_mag_8rnd2"
+		}
+
+		"ammo_ap_m1garand"
+		{
+			"import"				"base_ammo_ap"
+			"upgrade_cost"				"2"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m1garand"
+			}
+			"ammo_type_override"			"762x51_ap_mag_8rnd2"
+		}
+
+		//ppsh ammo
+		"ammo_hp_ppsh"
+		{
+			"import"				"base_ammo_hp"
+			"upgrade_cost"				"1"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_ppsh41"
+			}
+			"ammo_type_override"			"7.62×25nam_hp"
+		}
+		
+		"ammo_ap_ppsh"
+		{
+			"import"				"base_ammo_ap"
+			"upgrade_cost"				"2"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_ppsh41"
+			}
+			"ammo_type_override"			"7.62×25nam_ap"
+		}
+
+		//usp ammo
+		"ammo_hp_m45"
+		{
+			"import"				"base_ammo_hp"
+			"upgrade_cost"				"1"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m45seriespistol"
+				"weapon"				"weapon_sigp220"
+				"weapon"				"weapon_hkusp"
+			}
+			"ammo_type_override"			"45acp_hp_pistol"
+		}
+
+		"ammo_ap_m45"
+		{
+			"import"				"base_ammo_ap"
+			"upgrade_cost"				"2"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m45seriespistol"
+				"weapon"				"weapon_sigp220"
+				"weapon"				"weapon_hkusp"
+			}
+			"ammo_type_override"			"45acp_ap_pistol"
+		}
+
+		//glock ammo
+		"ammo_hp_m9"
+		{
+			"import"				"base_ammo_hp"
+			"upgrade_cost"				"1"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_beretta93r"
+				"weapon"				"weapon_m9"
+				"weapon"				"weapon_sigp226"
+				"weapon"				"weapon_9mmsidearm"
+				"weapon"				"weapon_mp443"
+				"weapon"				"weapon_glock17"
+				"weapon"				"weapon_glock18"				
+			}
+			"ammo_type_override"			"9x19mm_hp"
+		}
+
+		"ammo_ap_m9"
+		{
+			"import"				"base_ammo_ap"
+			"upgrade_cost"				"2"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_beretta93r"
+				"weapon"				"weapon_m9"
+				"weapon"				"weapon_sigp226"
+				"weapon"				"weapon_9mmsidearm"
+				"weapon"				"weapon_mp443"
+				"weapon"				"weapon_glock17"
+				"weapon"				"weapon_glock18"				
+			}
+			"ammo_type_override"			"9x19mm_ap"
+		}
+
+		//mac10 ammo
+		"ammo_tracer_mp40"
+		{
+			"import"				"base_ammo_tracer"
+			"upgrade_cost"				"0"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_mp40"
+				"weapon"				"weapon_sterling"
+				"weapon"				"weapon_mac10"
+			}
+			"ammo_type_override"			"9x19mm_tracer_smg"
+		}
+
+		"ammo_hp_mp40"
+		{
+			"import"				"base_ammo_hp"
+			"upgrade_cost"				"1"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_mp40"
+				"weapon"				"weapon_sterling"
+				"weapon"				"weapon_mac10"
+			}
+			"ammo_type_override"			"9x19mm_hp_smg"
+		}
+
+		"ammo_ap_mp40"
+		{
+			"import"				"base_ammo_ap"
+			"upgrade_cost"				"2"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_mp40"
+				"weapon"				"weapon_sterling"
+				"weapon"				"weapon_mac10"
+			}
+			"ammo_type_override"			"9x19mm_ap_smg"
 		}
 
 	}
@@ -3023,6 +3231,8 @@
 				"HITGROUP_RIGHTLEG"			"1.00"
 			}
 		}
+
+		//m1garand base
 		"762x51_custom"	// 147gr 833 m/s 3,304J
 		{
 			"import"				"default_custom"
@@ -3085,7 +3295,253 @@
 				"20000"					"800"
 			}
 		}
-		
+
+		//ppsh41 base
+		"7.62×25nam"	
+		{
+			"import"				"default"
+			"SuppressionIncrement"			"10"
+			"brass_model"				"models/weapons/shells/9x19.mdl"
+			
+			"Damage"
+			{
+				"1"						"52"
+				"5000"					"47"
+				"8000"					"30"
+			}
+			"PenetrationPower"
+			{
+				"10"					"200"
+				"8000"					"135"
+			}
+			
+		}
+
+		//judge base
+		"00buck" 
+		{
+			"import"				"default"
+			"bulletcount"				"10"
+			"damageType"				"DMG_BUCKSHOT"
+			"brass_model"				"models/weapons/shells/12guage.mdl"
+			"brass_sound"				"BOUNCE_SHOTSHELL"
+			"SuppressionIncrement"			"80"
+			
+			"Damage"
+			{
+				"800"					"40" // 324 total possible
+				"2000"					"40" // 162 (rounded up)
+				"7000"					"40" // 54 (rounded down)
+			}
+			"PenetrationPower"
+			{
+				"1000"					"100"
+				"8000"					"50"
+			}
+			"DamageHitgroups"
+			{
+				"HITGROUP_HEAD"				"0.70"
+				"HITGROUP_CHEST"			"0.75"
+				"HITGROUP_STOMACH"			"0.80"
+				"HITGROUP_LEFTARM"			"0.85"
+				"HITGROUP_RIGHTARM"			"0.85"
+				"HITGROUP_LEFTLEG"			"0.80"
+				"HITGROUP_RIGHTLEG"			"0.80"
+			}
+		}
+
+		"rifledslug"
+		{
+			"brass_model"				"models/weapons/shells/12guage.mdl"
+			"SuppressionIncrement"			"80"
+			
+			"Damage"
+			{
+				"800"					"700"
+				"4500"					"350"
+				"9000"					"200"
+			}
+			"PenetrationPower"
+			{
+				"100"					"750"
+				"8000"					"100"
+			}
+			"DamageHitgroups"
+			{
+				"HITGROUP_HEAD"				"2.00"
+				"HITGROUP_CHEST"			"2.00"
+				"HITGROUP_STOMACH"			"1.75"
+				"HITGROUP_LEFTARM"			"1.00"
+				"HITGROUP_RIGHTARM"			"1.00"
+				"HITGROUP_LEFTLEG"			"1.00"
+				"HITGROUP_RIGHTLEG"			"1.00"
+			}
+		}
+
+		//usp base
+		"45acp"	// FMJ (US Army Ball) 230gr 250m/s  477J
+		{
+			"import"				"default"
+			"SuppressionIncrement"			"30"
+			"brass_model"				"models/weapons/shells/45apc.mdl"
+			"magsize"					"25"
+			"Damage"
+			{
+				"10"					"76"
+				"8000"					"32"
+			}
+			"PenetrationPower"
+			{
+				"10"					"200"
+				"8000"					"135"
+			}
+			"DamageHitgroups"
+			{
+				"HITGROUP_HEAD"				"1.00"
+				"HITGROUP_CHEST"			"0.60"
+				"HITGROUP_STOMACH"			"0.60"
+				"HITGROUP_LEFTARM"			"1.50"
+				"HITGROUP_RIGHTARM"			"1.50"
+				"HITGROUP_LEFTLEG"			"1.50"
+				"HITGROUP_RIGHTLEG"			"1.50"
+			}
+		}
+		"45acp_pistol"	// FMJ (US Army Ball) 230gr 250m/s  477J
+		{
+			"import"				"45acp"
+			"magsize"				"7"
+			"Damage"
+			{
+				"1"						"76"
+				"100"					"76"
+				"5000"					"32"
+			}
+		}	
+		"45acp_hp"
+		{
+			"import"				"45acp"
+			"DamageHitgroups"
+			{
+				"HITGROUP_HEAD"				"0.90"
+				"HITGROUP_CHEST"			"0.75"
+				"HITGROUP_STOMACH"			"0.80"
+				"HITGROUP_LEFTARM"			"2.50"
+				"HITGROUP_RIGHTARM"			"2.50"
+				"HITGROUP_LEFTLEG"			"4.00"
+				"HITGROUP_RIGHTLEG"			"4.00"
+			}
+			
+			"PenetrationPower"
+			{
+				"10"					"100"
+				"8000"					"75"
+			}
+		}
+
+		"45acp_ap"
+		{
+			"import"				"45acp"
+			"DamageHitgroups"
+			{
+				"HITGROUP_HEAD"				"2.50"
+				"HITGROUP_CHEST"			"2.25"
+				"HITGROUP_STOMACH"			"2.25"
+				"HITGROUP_LEFTARM"			"1.25"
+				"HITGROUP_RIGHTARM"			"1.25"
+				"HITGROUP_LEFTLEG"			"1.25"
+				"HITGROUP_RIGHTLEG"			"1.25"
+			}
+			"PenetrationPower"
+			{
+				"10"					"500"
+				"8000"					"300"
+			}
+		}
+	
+		"45acp_tracer"
+		{
+			"import"				"45acp"
+			"tracer_frequency"			"4"
+			"tracer_type"				"whiz_with_line"
+			"tracer_lowammo"			"5"
+		}
+
+		//glock17,mac10 base
+		"9x19"	// FMJ 115gr 381m/s  570J
+		{
+			"import"				"default"
+			"SuppressionIncrement"			"20"
+			"brass_model"				"models/weapons/shells/9x19.mdl"
+			"Damage"
+			{
+				"1"						"60"
+				"100"					"60"
+				"5000"					"32"
+			}
+			"PenetrationPower"
+			{
+				"10"					"200"
+				"8000"					"135"
+			}
+			"DamageHitgroups"
+			{
+				"HITGROUP_HEAD"				"1.00"
+				"HITGROUP_CHEST"			"0.60"
+				"HITGROUP_STOMACH"			"0.60"
+				"HITGROUP_LEFTARM"			"1.30"
+				"HITGROUP_RIGHTARM"			"1.30"
+				"HITGROUP_LEFTLEG"			"1.30"
+				"HITGROUP_RIGHTLEG"			"1.30"
+			}
+		}
+		"9x19_hp"
+		{
+			"import"				"9x19"
+			"DamageHitgroups"
+			{
+				"HITGROUP_HEAD"				"0.90"
+				"HITGROUP_CHEST"			"0.75"
+				"HITGROUP_STOMACH"			"0.80"
+				"HITGROUP_LEFTARM"			"2.00"
+				"HITGROUP_RIGHTARM"			"2.00"
+				"HITGROUP_LEFTLEG"			"3.00"
+				"HITGROUP_RIGHTLEG"			"3.00"
+			}
+			"PenetrationPower"
+			{
+				"10"					"150"
+				"8000"					"75"
+			}
+		}
+					
+		"9x19_ap"
+		{
+			"import"				"9x19"
+			"DamageHitgroups"
+			{
+				"HITGROUP_HEAD"				"3.00"
+				"HITGROUP_CHEST"			"3.00"
+				"HITGROUP_STOMACH"			"3.00"
+				"HITGROUP_LEFTARM"			"1.10"
+				"HITGROUP_RIGHTARM"			"1.10"
+				"HITGROUP_LEFTLEG"			"1.10"
+				"HITGROUP_RIGHTLEG"			"1.10"
+			}
+			"PenetrationPower"
+			{
+				"10"					"500"
+				"8000"					"200"
+			}
+		}
+		"9x19_tracer"
+		{
+			"import"				"9x19"
+			"tracer_frequency"			"4"
+			"tracer_type"				"whiz_with_line"
+			"tracer_lowammo"			"5"
+		}
+
+
 		// ========================================
 		// M1 GARAND
 		// ========================================
@@ -3110,5 +3566,158 @@
 			"import"				"762x51_custom_tracer"
 			"magsize"				"8"
 		}
+
+		// ========================================
+		// PPSH41
+		// ========================================
+
+				
+		"7.62×25nam_hp"
+		{
+			"import"				"7.62×25nam"
+			"DamageHitgroups"
+			{
+				"HITGROUP_HEAD"				"0.90"
+				"HITGROUP_CHEST"			"0.75"
+				"HITGROUP_STOMACH"			"0.80"
+				"HITGROUP_LEFTARM"			"2.50"
+				"HITGROUP_RIGHTARM"			"2.50"
+				"HITGROUP_LEFTLEG"			"4.00"
+				"HITGROUP_RIGHTLEG"			"4.00"
+			}
+			
+			"PenetrationPower"
+			{
+				"10"					"300"
+				"8000"					"150"
+			}
+		}
+
+		"7.62×25nam_ap"
+		{
+			"import"				"7.62×25nam"
+			"DamageHitgroups"
+			{
+				"HITGROUP_HEAD"				"2.50"
+				"HITGROUP_CHEST"			"2.25"
+				"HITGROUP_STOMACH"			"2.25"
+				"HITGROUP_LEFTARM"			"1.25"
+				"HITGROUP_RIGHTARM"			"1.25"
+				"HITGROUP_LEFTLEG"			"1.25"
+				"HITGROUP_RIGHTLEG"			"1.25"
+			}
+			"PenetrationPower"
+			{
+				"10"					"500"
+				"8000"					"300"
+			}
+		}
+
+		// ========================================
+		// H&K USP
+		// ========================================
+		
+		"45acp_hp_pistol"
+		{
+			"import"				"45acp_hp"
+			"magsize"				"7"
+			"Damage"
+			{
+				"1"						"76"
+				"100"					"76"
+				"5000"					"32"
+			}
+		}
+		"45acp_ap_pistol"
+		{
+			"import"				"45acp_ap"
+			"magsize"				"7"
+			"Damage"
+			{
+				"1"						"76"
+				"100"					"76"
+				"5000"					"32"
+			}
+		}
+
+		// ========================================
+		// MAC 10
+		// ========================================	
+
+		"9x19mm_smg"
+		{
+			"import"				"9x19"
+			"carry"					"12"
+			"magsize"				"30"
+
+			"Damage"
+			{
+				"10"					"60"
+				"16000"					"32"
+			}
+		}
+		
+		"9x19mm_hp_smg"
+		{
+			"import"				"9x19_hp"
+			"carry"					"12"
+			"magsize"				"30"
+		}
+		
+		"9x19mm_ap_smg"
+		{
+			"import"				"9x19_ap"
+			"carry"					"12"
+			"magsize"				"30"
+		}
+		
+		"9x19mm_tracer_smg"
+		{
+			"import"				"9x19_tracer"
+			"carry"					"12"
+			"magsize"				"30"
+		}
+
+		// ========================================
+		// Glock 17
+		// ========================================
+
+		"9x19mm"
+		{
+			"import"				"9x19"
+			"carry"					"10"
+			"magsize"				"15"
+		}
+		"9x19mm_hp"
+		{
+			"import"				"9x19_hp"
+			"carry"					"10"
+			"magsize"				"15"
+		}
+		"9x19mm_ap"
+		{
+			"import"				"9x19_ap"
+			"carry"					"10"
+			"magsize"				"15"
+		}
+
+		// ========================================
+		// Judge
+		// ========================================
+
+		"00buckshot"
+		{
+			"import"				"00buck"
+			"carry"					"72"
+			"flags_clear"				"AMMO_USE_MAGAZINES"
+		}
+		
+		"rifledslugs"
+		{
+			"import"				"rifledslug"
+			"carry"					"72"
+			"flags_clear"				"AMMO_USE_MAGAZINES"
+		}
+
 	}
 }
