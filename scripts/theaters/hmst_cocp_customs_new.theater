@@ -2715,7 +2715,7 @@
 			{
 				"hkusp_barrel"
 				{
-					"model"						"models/insgwep/usp/a_uspbarrel.mdl"
+					"model"						"models/weapons/usp/a_uspbarrel.mdl"
 
 					"weapons"
 					{
@@ -2754,7 +2754,7 @@
 				
 				"rmr"
 				{
-					"model"					"models/insgwep/upgrades/a_optic_pistoldot.mdl"
+					"model"					"models/weapons/upgrades/a_optic_pistoldot.mdl"
 					"AnimIronSights"		"4x_zoom"
 					"AnimIdle"				"4x_idle"
 					"Gesture"				"delta_dot"
@@ -2766,7 +2766,7 @@
 			{
 				"Scope"
 				{
-					"model"					"models/insgwep/upgrades/w_pistoldot.mdl"
+					"model"					"models/weapons/upgrades/w_pistoldot.mdl"
 				}
 			}
 			
@@ -2817,7 +2817,7 @@
 			{
 				"compensator"
 				{
-					"model"					"models/insgwep/usp/a_match.mdl"
+					"model"					"models/weapons/usp/a_match.mdl"
 					"Main"					"1"
 					"weapons"
 					{
@@ -2830,7 +2830,7 @@
 			{
 				"compensator"
 				{
-					"model"						"models/insgwep/upgrades/w_match.mdl"
+					"model"						"models/weapons/upgrades/w_match.mdl"
 					"weapons"
 					{
 						"weapon"	"weapon_hkusp"
@@ -2908,7 +2908,7 @@
 				"magazine_33_glock18"
 				{
 					"ActSuffix"			"_MAG1"
-					"model"				"models/insgwep/glock/a_magazine_glock_extended.mdl"
+					"model"				"models/weapons/glock/a_magazine_glock_extended.mdl"
 
 					"weapons"
 					{
@@ -2921,7 +2921,7 @@
 			{
 				"magazine_ext_glock"
 					{
-						"model"				"models/insgwep/glock/w_glockextmag.mdl"
+						"model"				"models/weapons/glock/w_glockextmag.mdl"
 						
 						"weapons"
 						{
@@ -2954,7 +2954,7 @@
 				"magazine_extusp"
 				{
 					"ActSuffix"			"_MAG1"
-					"model"				"models/insgwep/usp/a_magazine_usp_15.mdl"
+					"model"				"models/weapons/usp/a_magazine_usp_15.mdl"
 
 					"weapons"
 					{
@@ -2966,7 +2966,7 @@
 			{
 				"magazine_extusp"
 					{
-						"model"				"models/insgwep/usp/w_extuspmag.mdl"
+						"model"				"models/weapons/usp/w_extuspmag.mdl"
 						
 						"weapons"
 						{
