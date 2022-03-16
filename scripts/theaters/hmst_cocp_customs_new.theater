@@ -264,7 +264,515 @@
 			}
 			"team_access"				"security, insurgent"
 		}
-		
+
+		"weapon_ppsh41"
+		{
+			"import"					"ballistic_base"
+			"weapon_class"				"smg"
+			"print_name"				"#weapon_ppsh41"
+			"print_desc"				"#weapon_ppsh41_desc"
+			"view_model"				"models/weapons/v_ppsh.mdl"
+			"world_model"				"models/weapons/w_ppsh.mdl"
+			"rounds_per_minute"			"1000"
+			"weapon_slot"				"secondary"
+			"weapon_max_subslot"			"1"	// Up to the 2nd subslot only
+			"weapon_max_subslot"		"0"	// first slot only
+			"act_table"					"rifle_ak2"
+			"closed_bolt"				"0"
+			"weapon_abilities"			"ironsight"
+			"weapon_weight"				"0"	
+			"weapon_cost"				"2"
+			"barrel_length"				"0"
+			"class_restricted"			"0"
+			
+			"viewmodel_attachments"
+			{
+				"magazine"
+				{
+					"model"					"models/weapons/upgrades/v_ppshmag.mdl"
+					"fallback_for_slot"			"magazine"
+				}
+				
+			}
+			
+			"world_attachments"
+			{
+				"magazine"
+				{
+					"model"						"models/weapons/upgrades/w_ppshmag.mdl"
+					"fallback_for_slot"			"magazine"
+				}
+			}
+			
+			
+			"fov"
+			{
+				"fov_plr_ironsight"			"-25"
+				"fov_plr_focus"				"-12"
+				"fov_wpn_default"			"62"
+				"fov_wpn_ironsight"			"80"
+				"fov_wpn_focus"				"85"
+			}
+			"sounds"
+			{
+				"shot_single"				"Weapon_tokarev.Single"
+				"shot_single_local"			"Weapon_tokarev.SingleLocal"
+				"shot_silent"				"Weapon_M45.SingleSilenced"
+				"shot_silent_local"			"Weapon_M45.SingleSilencedLocal"
+				"empty"					"Weapon_MP5K.Empty"
+				"clipin"				"Weapon_MP5K.Magin"
+				"clipout"				"Weapon_MP5K.Magout"
+				"boltback"				"Weapon_MP5K.Boltback"
+				"boltrelease"				"Weapon_MP5K.Boltrelease"
+				"rofdown"				"Weapon_MP5K.ROF"
+				"rofup"					"Weapon_MP5K.ROF"
+				
+				"thirdperson_prefix"		"Weapon_MP5K"
+			}
+			"particles"
+			{
+				"particle_muzzleflash_1st"		"muzzleflash_mp5_1p"
+				"particle_muzzleflash_3rd"		"muzzleflash_mp5_3rd"
+				"particle_tracer"			"weapon_tracers"
+			}
+			"recoil"
+			{
+				"recoil_lateral_range"			"-1.40 2.15"
+				"recoil_vertical_range"			"1.95 2.99"
+				"recoil_aim_punch"			"0.3 0.5"
+				"recoil_rest_rate"			"5"
+				"recoil_rest_delay"			"0.14"
+				"recoil_roll_range"			"-1.25 -1.25"
+				"recoil_roll_rest_rate"			"150"
+				"recoil_freeaim_frac"			"0.25"
+				
+				"recoil_additional_rest_per_shot"	"2.5"	// Amount of rest per additional shot (added to rest rate) (default = 2.5)
+				"recoil_shot_reset_time"		"0.5"	// Time delay for resetting the shots fired counter for the above (default = 0.3)
+				"recoil_shot_max_shots"			"5"	// Max number of shots to account for for the additional rest (default = 5)
+				"recoil_punch_additive_factor"		"0.82"	// How much of the view punch from the previous shot(s) get added to any additional shot fired.
+			}
+			"ballistics"
+			{
+				"spread"				"0.60 0.60 0.60"
+				"FireModes"				"semi, full"
+				"bulletcount"				"1"
+				"maxrange"				"8000"
+			}
+			"ammo_clip"
+			{
+				"ammo_type"				"7.62×25nam"	
+				"clip_max"				"12"
+				"clip_max_rounds"			"35"
+				"clip_default"				"4"
+			}
+			"attachments"
+			{
+				"attachment_addon"			"primary"
+			}
+			"kitui_offset"
+			{
+				"position"				"25 0 0"
+			}
+			"team_access"				"security, insurgent"
+		}
+
+		"weapon_hkusp"
+		{
+			"import"					"pistol_base"
+			"weapon_class"				"pistol"
+			"print_name"				"#weapon_hkusp"
+			"print_desc"				"#weapon_hkusp_desc"
+			"view_model"				"models/weapons/usp/v_usp.mdl"
+			"world_model"				"models/weapons/usp/w_usp.mdl"
+			"rounds_per_minute"			"600"
+			"weapon_slot"				"secondary"
+			"act_table"					"pistol"
+			"weapon_abilities"			"ironsight"
+			"weapon_weight"				"0"
+			"weapon_cost"				"0"
+			"class_restricted"			"0"
+			"barrel_length"				"0"
+			
+			
+			
+			"viewmodel_attachments"
+			{
+				"standard_magazine"
+				{
+					"model"						"models/weapons/usp/a_magazine_usp_standard.mdl"
+					"fallback_for_slot"			"magazine"
+				}
+				
+				"standard_barrel"
+				{
+					"model"						"models/weapons/usp/a_uspbarrel.mdl"
+					"fallback_for_slot"			"barrel"
+				}
+			}
+			"world_attachments"
+			{
+				"standard_magazine"
+				{
+					"model"						"models/weapons/usp/w_uspmag.mdl"
+					"fallback_for_slot"			"magazine"
+				}
+			}
+			"fov"
+			{
+				"fov_plr_ironsight"			"-10"
+				"fov_plr_focus"				"-10"
+				"fov_wpn_default"			"74"
+				"fov_wpn_ironsight"			"74"
+				"fov_wpn_focus"				"79"
+			}
+			"viewmodel_offsets"
+			{
+				// x back, y left, z down
+				"VMOffsetStand"				"0.15 0.25 0.75"
+			}
+			"sounds"
+			{
+				"shot_single"				"Weapon_M9.Single"
+				"shot_single_local"			"Weapon_M9.SingleLocal"
+				"shot_silent"				"Weapon_M9.SingleSilenced"
+				"shot_silent_local"			"Weapon_M9.SingleSilencedLocal"
+				"empty"					"Weapon_M9.Empty"
+				"magin"					"Weapon_M9.Clipin"
+				"magout"				"Weapon_M9.Clipout"
+				"slide_back"				"Weapon_M9.slideback"
+				"slide_forward"				"Weapon_M9.slideforward"
+				"safety"				"Weapon_M9.safety"
+			}
+			"particles"
+			{
+				"particle_muzzleflash_1st"		"muzzleflash_m9_1p"
+				"particle_muzzleflash_3rd"		"muzzleflash_m9_3rd"
+			}
+			"recoil"
+			{
+				"recoil_lateral_range"			"-1.15 1.45"
+				"recoil_vertical_range"			"2.55 3.6"
+				"recoil_aim_punch"			"0.65 0.75"
+				"recoil_rest_rate"			"4"
+				"recoil_rest_delay"			"0.18"
+				"recoil_roll_range"			"-1.35 -1.35"
+				"recoil_roll_rest_rate"			"180"
+				"recoil_shot_reset_time"		"0.75"	// Time delay for resetting the shots fired counter for the above (default = 0.3)
+				"recoil_punch_additive_factor"		"0.85"	// How much of the view punch from the previous shot(s) get added to any additional shot fired (default 1.0)
+
+			}
+			"ballistics"
+			{
+				"spread"				"0.5 0.5 0.5"
+				"FireModes"				"semi"
+				"bulletcount"				"1"
+				"maxrange"				"6000"
+			}
+			"ammo_clip"
+			{
+				"ammo_type"				"45acp_pistol"
+				"clip_max"					"12"
+				"clip_max_rounds"			"12"
+				"magsize_override"			"12"				
+				"clip_default"				"4"
+			}
+			"attachments"
+			{
+				"attachment_addon"			"pistol"
+			}
+			"kitui_offset"
+			{
+				"position"				"12 -3 0"
+			}
+			"team_access"				"security"
+		}
+
+		"weapon_mac10"
+		{
+			"import"				"ballistic_base"
+			"weapon_class"				"smg"
+			"print_name"				"#weapon_mac10"
+			"print_desc"				"#weapon_mac10_desc"
+			"view_model"				"models/weapons/v_mac1.mdl"
+			"world_model"				"models/weapons/w_mac1.mdl"
+			"rounds_per_minute"			"1250"
+			"closed_bolt"				"0"
+			"weapon_slot"				"secondary"
+			"weapon_max_subslot"			"1"	// Up to the 2nd subslot only
+			"act_table"					"smg_magheld"
+			"weapon_abilities"			"ironsight"
+			"weapon_weight"				"0"	// (4.0kg[weapon] + (0.4kg[ammo] * (1+8)[mags]) )*10[kg->hg for int]  +8[encumbrance]
+			"weapon_cost"				"2"
+			"barrel_length"				"0"
+			"class_restricted"			"0"
+
+			"fov"
+			{
+				"fov_plr_ironsight"			"-25"
+				"fov_plr_focus"				"-12"
+				"fov_wpn_default"			"62"
+				"fov_wpn_ironsight"			"65"
+				"fov_wpn_focus"				"70"
+			}
+			"sounds"
+			{
+				"shot_single"				"Weapon_mp40.Single"
+				"shot_single_local"			"Weapon_mp40.SingleLocal"
+				"shot_silent"				"Weapon_mp40.SingleSilenced"
+				"shot_silent_local"			"Weapon_mp40.SingleSilencedLocal"
+				"empty"					"Weapon_mp40.Empty"
+				"clipin"				"Weapon_mp40.Magin"
+				"clipout"				"Weapon_mp40.Magout"
+				"boltback"				"Weapon_mp40.Boltback"
+				"boltrelease"				"Weapon_mp40.Boltrelease"
+				"rofdown"				"Weapon_mp40.ROF"
+				"rofup"					"Weapon_mp40.ROF"
+			}
+			"particles"
+			{
+				"particle_muzzleflash_1st"		"muzzleflash_mp40_1p"
+				"particle_muzzleflash_3rd"		"muzzleflash_mp40_3rd"
+				"particle_tracer"			"weapon_tracers"
+			}
+			"recoil"
+			{
+				"recoil_lateral_range"			"-1.1 1.1"
+				"recoil_vertical_range"			"1.675 2.275"
+				"recoil_aim_punch"			"0.8 1.2"
+				"recoil_rest_rate"			"6"
+				"recoil_rest_delay"			"0.14"
+				"recoil_roll_range"			"-1.45 -1.45"
+				"recoil_roll_rest_rate"			"150"
+				"recoil_freeaim_frac"			"0.4"
+				
+				"recoil_additional_rest_per_shot"	"2.5"	// Amount of rest per additional shot (added to rest rate) (default = 2.5)
+				"recoil_shot_reset_time"		"0.5"	// Time delay for resetting the shots fired counter for the above (default = 0.3)
+				"recoil_shot_max_shots"			"5"	// Max number of shots to account for for the additional rest (default = 5)
+				"recoil_punch_additive_factor"		"0.82"	// How much of the view punch from the previous shot(s) get added to any additional shot fired.
+			}
+			"ballistics"
+			{
+				"spread"				"0.50 0.50 0.50"
+				"FireModes"				"full"
+				"bulletcount"				"1"
+				"maxrange"				"8000"
+			}
+			"ammo_clip"
+			{
+				"ammo_type"					"9x19mm_smg"
+				"magsize_override"			"32"
+				"clip_max"					"12"
+				"clip_max_rounds"			"32"
+				"clip_default"				"4"
+			}
+			"attachments"
+			{
+				"attachment_addon"			"primary"
+			}
+			"kitui_offset"
+			{
+				"position"				"22 -4 2"
+			}
+			"team_access"				"security, insurgent"
+		}
+
+		"weapon_glock17"
+		{
+			"import"					"pistol_base"
+			"weapon_class"				"pistol"
+			"print_name"				"#weapon_glock17"
+			"print_desc"				"#weapon_glock17_desc"
+			"view_model"				"models/weapons/glock/v_glock17.mdl"
+			"world_model"				"models/weapons/glock/w_glock17.mdl"
+			"rounds_per_minute"			"600"
+			"weapon_slot"				"secondary"
+			"act_table"					"pistol"
+			"weapon_abilities"			"ironsight"
+			"weapon_weight"				"0"
+			"weapon_cost"				"0"
+			"class_restricted"			"0"
+			"barrel_length"				"0"
+			
+			
+			
+			"viewmodel_attachments"
+			{
+				"standard_magazine"
+				{
+					"model"						"models/weapons/glock/a_magazine_glock_standard.mdl"
+					"fallback_for_slot"			"magazine"
+				}
+			}
+			"world_attachments"
+			{
+				"standard_magazine"
+				{
+					"model"						"models/weapons/glock/w_glockmag.mdl"
+					"fallback_for_slot"			"magazine"
+				}
+			}
+			"fov"
+			{
+				"fov_plr_ironsight"			"-10"
+				"fov_plr_focus"				"-10"
+				"fov_wpn_default"			"74"
+				"fov_wpn_ironsight"			"74"
+				"fov_wpn_focus"				"79"
+			}
+			"viewmodel_offsets"
+			{
+				// x back, y left, z down
+				"VMOffsetStand"				"0.15 0.25 0.75"
+			}
+			"sounds"
+			{
+				"shot_single"				"Weapon_Glock19.Single"
+				"shot_single_local"			"Weapon_Glock19.SingleLocal"
+				"shot_silent"				"Weapon_MK20.SingleSilenced"
+				"shot_silent_local"			"Weapon_MK20.SingleSilencedLocal"
+				"empty"					"Weapon_M9.Empty"
+				"magin"					"Weapon_M9.Clipin"
+				"magout"				"Weapon_M9.Clipout"
+				"slide_back"				"Weapon_M9.slideback"
+				"slide_forward"				"Weapon_M9.slideforward"
+				"safety"				"Weapon_M9.safety"
+			}
+			"particles"
+			{
+				"particle_muzzleflash_1st"		"muzzleflash_m9_1p"
+				"particle_muzzleflash_3rd"		"muzzleflash_m9_3rd"
+			}
+			"recoil"
+			{
+				"recoil_lateral_range"			"-1.15 1.45"
+				"recoil_vertical_range"			"2.55 3.6"
+				"recoil_aim_punch"			"0.65 0.75"
+				"recoil_rest_rate"			"4"
+				"recoil_rest_delay"			"0.18"
+				"recoil_roll_range"			"-1.35 -1.35"
+				"recoil_roll_rest_rate"			"180"
+				"recoil_shot_reset_time"		"0.75"	// Time delay for resetting the shots fired counter for the above (default = 0.3)
+				"recoil_punch_additive_factor"		"0.85"	// How much of the view punch from the previous shot(s) get added to any additional shot fired (default 1.0)
+
+			}
+			"ballistics"
+			{
+				"spread"				"0.5 0.5 0.5"
+				"FireModes"				"semi"
+				"bulletcount"				"1"
+				"maxrange"				"6000"
+			}
+			"ammo_clip"
+			{
+				"ammo_type"				"9x19mm"
+				"clip_max"				"12"
+				"magsize_override"			"17"				
+				"clip_max_rounds"			"17"
+				"clip_default"				"4"
+			}
+			"attachments"
+			{
+				"attachment_addon"			"pistol"
+			}
+			"kitui_offset"
+			{
+				"position"				"12 -3 0"
+			}
+			"team_access"				"security"
+		}
+
+		"weapon_taurusjudge"
+		{
+			"import"					"pistol_base"
+			"weapon_class"				"pistol"
+			"print_name"				"#weapon_taurusjudge"
+			"print_desc"				"#weapon_taurusjudge_desc"
+			"view_model"				"models/weapons/v_judge.mdl"
+			"world_model"				"models/weapons/w_judge.mdl"
+			"rounds_per_minute"			"600"
+			"weapon_slot"				"secondary"
+			"act_table"					"pistol"
+			"weapon_abilities"			"ironsight"
+			"weapon_weight"				"0"
+			"weapon_cost"				"0"
+			"class_restricted"			"0"
+			"barrel_length"				"0"
+			"closed_bolt"				"0"
+			"trigger_delay"				"0.02"		
+			
+
+			"fov"
+			{
+				"fov_plr_ironsight"			"-10"
+				"fov_plr_focus"				"-10"
+				"fov_wpn_default"			"70"
+				"fov_wpn_ironsight"			"74"
+				"fov_wpn_focus"				"79"
+			}
+			"viewmodel_offsets"
+			{
+				// x back, y left, z down
+				"VMOffsetStand"				"0.15 0.25 0.75"
+			}
+			"sounds"
+			{
+				"shot_single"				"Weapon_m500.Single"
+				"shot_single_local"			"Weapon_m500.SingleLocal"
+				"empty"						"Weapon_revolver.Empty"
+				"magin"						"Weapon_revolver.RoundInsertSpeedLoader"
+				"magout"					"Weapon_revolver.DumpRounds"
+				"open_chamber"				"Weapon_revolver.OpenChamber"
+				"close_chamber"				"Weapon_revolver.CloseChamber"
+				"hammer"					"Weapon_revolver.CockHammer"
+			}
+			"particles"
+			{
+				"particle_muzzleflash_1st"		"muzzleflash_m590_1p"
+				"particle_muzzleflash_3rd"		"muzzleflash_m590_3rd"
+			}
+			"recoil"
+			{
+				"recoil_lateral_range"			"-0.8 1.0"
+				"recoil_vertical_range"			"1.2 2.8"
+				"recoil_aim_punch"			"2.8 3.2"
+				"recoil_rest_rate"			"4"
+				"recoil_rest_delay"			"0.18"
+				"recoil_roll_range"			"-0.6 -0.6"
+				"recoil_roll_rest_rate"			"180"
+				"recoil_shot_reset_time"		"1.45"	// Time delay for resetting the shots fired counter for the above (default = 0.3)
+				"recoil_punch_additive_factor"		"0.8"	// How much of the view punch from the previous shot(s) get added to any additional shot fired (default 1.0)
+			}
+			"ballistics"
+			{
+				"spread"				"6.0 6.0 0.0"
+				"FireModes"				"semi"
+				"bulletcount"			"1"
+				"maxrange"				"6000"
+				"singleReload"			"1"
+			}
+			"ammo_clip"
+			{
+				"ammo_type"				"4buckshot"
+				"clip_max"				"12"
+				"clip_max_rounds"		"6"
+				"clip_default"			"4"
+				"lose_rounds_reload"	"1"
+			}
+			"attachments"
+			{
+				"attachment_addon"			"pistol"
+			}
+			"kitui_offset"
+			{
+				"position"				"12 -3 0"
+			}
+			"ironsights"
+			{
+				"in_time"				"0.15"
+				"out_time"				"0.08"
+			}				
+			"team_access"				"security, insurgent"
+		}
 
     }
 	"weapon_upgrades"
@@ -333,6 +841,7 @@
 				}
 			}
 		}
+
 		"enfield_sling"//belt 
 		{
 			"import"					"base_stock"
@@ -394,6 +903,7 @@
 
 			}
 		}
+
 		"optic_scope_4x"//scope
 		{
 			"import"					"base_optic_rail"
@@ -478,6 +988,7 @@
 				
 			}
 		}
+
 		"worn_m1garand"//skin
 		{
 			"print_name"				"#m1garand_worn"
@@ -508,7 +1019,1963 @@
 			}
 			
 			"team_access"				"security, insurgent"
-		}			
+		}
+
+		"weapon_mod_rof_250"
+		{
+        	"upgrade_slot"				"magazine"
+			"print_name"				"#weapon_mod_increased_rof"
+			"print_desc"				"#weapon_mod_increased_rof_250"
+			"class_restricted"			"0"
+			"upgrade_cost"				"1"
+			"team_access"				"security, insurgent"
+			
+			"weapon_mods"
+			{		
+			
+				"weapon_mac10"
+				{
+					"rounds_per_minute"			"1500"
+				}
+				
+				"weapon_glock18"
+				{
+					"rounds_per_minute"			"1450"
+				}					
+				
+				"weapon_uzi"
+				{
+					"rounds_per_minute"			"850"
+				}				
+				
+				"weapon_scarl"
+				{
+					"rounds_per_minute"			"850"
+				}	
+
+				"weapon_deltasrifle"
+				{
+					"rounds_per_minute"			"850"
+				}
+			
+																		
+			}
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_mac10"
+				"weapon"				"weapon_uzi"
+				"weapon"				"weapon_scarl"
+				"weapon"				"weapon_glock18"
+				"weapon"				"weapon_deltasrifle"
+			}
+		}
+
+		"perk_tactical_sling"
+		{
+			"print_name"				"#tactical_sling"
+			"print_desc"				"#tactical_sling_desc"
+			"upgrade_cost"				"1"
+			"upgrade_slot"				"stock"
+			"draw_speed"				"1.5"
+			"holster_speed"				"1.5"
+			"draw_speed_next_weapon"	"1.5"
+			"holster_speed_prev_weapon"	"1.5"
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_mg42"
+				"weapon"				"weapon_spas12"				
+				"weapon"                "weapon_m590"
+				"weapon"				"weapon_m500"
+				"weapon"                "weapon_toz"
+				"weapon"				"weapon_ksg"				
+				"weapon"				"weapon_mp5"
+				"weapon"				"weapon_p90"				
+				"weapon"				"weapon_spectre"
+				"weapon"				"weapon_mp5a4"
+				"weapon"				"weapon_mp7"
+				"weapon"				"weapon_krissvector"
+				"weapon"				"weapon_ump45"
+				"weapon"				"weapon_aks74u"
+				"weapon"                "weapon_sterling"
+				"weapon"                "weapon_beretta93r"
+				"weapon"                "weapon_ots33"
+				"weapon"				"weapon_mp40"
+				"weapon"				"weapon_mac10"
+				"weapon"				"weapon_uzi"
+				"weapon"    			"weapon_acr"
+				"weapon"				"weapon_ak12u"
+				"weapon"				"weapon_sig553"
+				"weapon"				"weapon_scar"
+				"weapon"                "weapon_famas"
+				"weapon"				"weapon_g36c"
+				"weapon"				"weapon_m16a4"
+				"weapon"				"weapon_hk417"
+				"weapon"				"weapon_mk18"
+				"weapon"				"weapon_scarl"
+				"weapon"				"weapon_colt9mm"
+				"weapon"				"weapon_type95"				
+				"weapon"				"weapon_cm901"
+				"weapon"				"weapon_m4a1"
+				"weapon"				"weapon_m4a1sopmod"
+				"weapon"				"weapon_galil_sar"
+				"weapon"				"weapon_akm"
+				"weapon"				"weapon_ak74"
+				"weapon"				"weapon_fal"
+				"weapon"				"weapon_stg44"
+				"weapon"				"weapon_l1a1"
+				"weapon"				"weapon_mini14"
+				"weapon"				"weapon_m1asocom16"
+				"weapon"				"weapon_m14"
+				"weapon"				"weapon_sr25"
+				"weapon"				"weapon_m1a1"
+				"weapon"				"weapon_dragunovsvu"
+				"weapon"				"weapon_m16a1"
+				"weapon"				"weapon_sks"
+				"weapon"				"weapon_svd"
+				"weapon"               	"weapon_m249"
+				"weapon"               	"weapon_mk46"
+				"weapon"				"weapon_m60"
+				"weapon"               	"weapon_m60"
+				"weapon"               	"weapon_pecheneg"
+				"weapon"               	"weapon_m240"				
+				"weapon"               	"weapon_rpk"
+				"weapon"               	"weapon_m40a1"
+				"weapon"               	"weapon_remingtonmsr"				
+				"weapon"               	"weapon_gol"
+				"weapon"               	"weapon_mosin"
+				"weapon"               	"weapon_kar98"
+				"weapon"				"weapon_g33"
+				"weapon"				"weapon_steyraug"
+				"weapon"				"weapon_car15"
+				"weapon"				"weapon_honeybadger"	
+				"weapon"                "weapon_nova"	
+				"weapon"				"weapon_thompson"		
+				"weapon"				"weapon_mk18_m0"	
+				"weapon"				"weapon_m1014"	
+				"weapon"				"weapon_asval"	
+				"weapon"				"weapon_saiga12auto"	
+				"weapon"				"weapon_f2000"	
+				"weapon"				"weapon_M107"
+				"weapon"				"weapon_l85a2"					
+			}
+			
+			"team_access"				"security, insurgent"
+		}
+
+		"perk_quick_reload"
+		{
+			"print_name"				"#quick_reload"
+			"print_desc"				"#quick_reload_desc"
+			"upgrade_cost"				"1"
+			"upgrade_slot"				"aesthetic"
+			"reload_speed"				"1.5"
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_mg42"
+				"weapon"				"weapon_m1918bar"
+				"weapon"				"weapon_ppsh41"
+				"weapon"				"weapon_m9"
+				"weapon"				"weapon_sigp226"
+				"weapon"				"weapon_makarov"
+				"weapon"				"weapon_mp443"
+				"weapon"				"weapon_combatcommander"
+				"weapon"				"weapon_sigp220"
+				"weapon"				"weapon_glock33"
+				"weapon"				"weapon_fiveseven"
+				"weapon"				"weapon_deagle"
+				"weapon"				"weapon_glock17"
+				"weapon"				"weapon_glock18"
+				"weapon"				"weapon_cobra"
+				"weapon"				"weapon_deagle"			
+				"weapon"				"weapon_spas12"				
+				"weapon"                "weapon_m590"
+				"weapon"				"weapon_m500"
+				"weapon"                "weapon_toz"
+				"weapon"				"weapon_ksg"
+				"weapon"				"weapon_mp5"
+				"weapon"				"weapon_p90"	
+				"weapon"				"weapon_spectre"
+				"weapon"				"weapon_mp5a4"
+				"weapon"				"weapon_mp7"
+				"weapon"				"weapon_ump45"
+				"weapon"				"weapon_aks74u"
+				"weapon"                "weapon_sterling"
+				"weapon"                "weapon_beretta93r"
+				"weapon"				"weapon_ots33"
+				"weapon"				"weapon_mp40"
+				"weapon"				"weapon_mac10"
+				"weapon"				"weapon_uzi"
+				"weapon"    			"weapon_acr"
+				"weapon"				"weapon_ak12u"
+				"weapon"				"weapon_sig553"
+				"weapon"                "weapon_famas"
+				"weapon"				"weapon_g36c"
+				"weapon"				"weapon_m16a4"
+				"weapon"				"weapon_hk417"
+				"weapon"				"weapon_mk18"
+				"weapon"				"weapon_scarl"
+				"weapon"				"weapon_f2000"
+				"weapon"				"weapon_colt9mm"
+				"weapon"				"weapon_type95"
+				"weapon"				"weapon_cm901"
+				"weapon"				"weapon_honeybadger"				
+				"weapon"				"weapon_m4a1"
+				"weapon"				"weapon_m4a1sopmod"
+				"weapon"				"weapon_galil_sar"
+				"weapon"				"weapon_akm"
+				"weapon"				"weapon_ak74"
+				"weapon"				"weapon_fal"
+				"weapon"				"weapon_stg44"
+				"weapon"				"weapon_l1a1"
+				"weapon"				"weapon_mini14"
+				"weapon"				"weapon_m1asocom16"
+				"weapon"				"weapon_m14"
+				"weapon"				"weapon_sr25"
+				"weapon"				"weapon_m1a1"
+				"weapon"				"weapon_dragunovsvu"
+				"weapon"				"weapon_m16a1"
+				"weapon"				"weapon_sks"
+				"weapon"				"weapon_svd"
+				"weapon"               	"weapon_m249"
+				"weapon"               	"weapon_mk46"
+				"weapon"               	"weapon_m60"
+				"weapon"               	"weapon_pecheneg"
+				"weapon"               	"weapon_m240"
+				"weapon"               	"weapon_rpk"
+				"weapon"               	"weapon_m40a1"
+				"weapon"               	"weapon_remingtonmsr"
+				"weapon"               	"weapon_mosin"
+				"weapon"               	"weapon_kar98"
+				"weapon"				"weapon_g33"
+				"weapon"				"weapon_steyraug"
+				"weapon"				"weapon_gol"
+				"weapon"				"weapon_car15"
+				"weapon"                "weapon_nova"
+				"weapon"				"weapon_thompson"	
+				"weapon"				"weapon_m1garand"
+				"weapon"				"weapon_mk18_m0"
+				"weapon"				"weapon_m1014"
+				"weapon"				"weapon_asval"	
+				"weapon"				"weapon_saiga12auto"		
+				"weapon"				"weapon_c96carbine"	
+				"weapon"				"weapon_hkusp"	
+				"weapon"				"weapon_enfield"
+				"weapon"				"weapon_M107"
+				"weapon"				"weapon_l85a2"
+				"weapon"				"weapon_sten"
+				"weapon"				"weapon_krissvector"
+				"weapon"				"weapon_m45seriespistol"
+				"weapon"				"weapon_m1911seriespistol"
+				"weapon"				"weapon_scar"
+				"weapon"				"weapon_taurusjudge"
+				
+			}
+
+			"viewmodel_attachments"
+			{
+				"mp5a4body"
+				{
+					"model"				"models/weapons/v___mp5a4.mdl"
+					
+					"weapons"
+					{
+						"weapon"			"weapon_mp5a4"
+					}
+				}		
+				"barrettdefault"
+				{
+					"model"					"models/weapons/v_barrett.mdl"
+					
+					"weapons"
+					{
+						"weapon"	"weapon_M107"
+					}
+				}					
+			}
+			
+			"world_attachments"
+			{
+				"mp5a4body"
+				{
+					"model"				"models/weapons/w_m5a4.mdl"
+					
+					"weapons"
+					{
+						"weapon"			"weapon_mp5a4"
+					}
+				}	
+				"barrettdefault"
+				{
+					"model"					"models/weapons/w_barrett.mdl"
+					
+					"weapons"
+					{
+						"weapon"	"weapon_M107"
+					}
+				}					
+			}				
+			
+			"team_access"				"security, insurgent"
+		}
+
+		"perk_speed_holster"
+		{
+			"print_name"				"#speed_holster"
+			"print_desc"				"#speed_holster_desc"
+			"upgrade_cost"				"1"
+			"upgrade_slot"				"stock"
+			"draw_speed"				"1.5"
+			"holster_speed"				"1.5"
+			
+			"allowed_weapons"
+			{	
+				"weapon"				"weapon_makarov"
+				"weapon"				"weapon_mp443"
+				"weapon"				"weapon_m1911seriespistol"
+				"weapon"				"weapon_combatcommander"
+				"weapon"				"weapon_m45seriespistol"
+				"weapon"				"weapon_sigp220"
+				"weapon"				"weapon_m9"
+				"weapon"				"weapon_sigp226"
+				"weapon"				"weapon_9mmsidearm"
+				"weapon"				"weapon_glock33"
+				"weapon"				"weapon_fiveseven"
+				"weapon"				"weapon_deagle"
+				"weapon"				"weapon_glock17"
+				"weapon"				"weapon_glock18"
+				"weapon"				"weapon_cobra"
+				"weapon"				"weapon_deagle"
+				"weapon"				"weapon_m45seriespistol"
+				"weapon"				"weapon_hkusp"
+				"weapon"				"weapon_taurusjudge"
+			}
+			
+			"team_access"				"security, insurgent"
+		}
+
+		"weapon_mod_speed_reload"
+		{
+        	"upgrade_slot"				"aesthetic"
+			"print_name"				"#weapon_mod_speed_reload"
+			"print_desc"				"#weapon_mod_speed_reload_desc"
+			"class_restricted"			"0"
+			"upgrade_cost"				"2"
+			"team_access"				"security, insurgent"
+			
+			"reload_speed"				"2.0"		
+
+			"viewmodel_attachments"
+			{
+				"mp5a4body"
+				{
+					"model"				"models/weapons/v___mp5a4.mdl"
+					
+					"weapons"
+					{
+						"weapon"			"weapon_mp5a4"
+					}
+				}	
+				"barrettdefault"
+				{
+					"model"					"models/weapons/v_barrett.mdl"
+					
+					"weapons"
+					{
+						"weapon"	"weapon_M107"
+					}
+				}					
+			}
+			
+			"world_attachments"
+			{
+				"mp5a4body"
+				{
+					"model"				"models/weapons/w_m5a4.mdl"
+					
+					"weapons"
+					{
+						"weapon"			"weapon_mp5a4"
+					}
+				}	
+				"barrettdefault"
+				{
+					"model"					"models/weapons/w_barrett.mdl"
+					
+					"weapons"
+					{
+						"weapon"			"weapon_M107"
+					}
+				}					
+			}	
+			
+			"weapon_mods"
+			{
+				"weapon_mp443"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"9x19mm"
+						"clip_max"				"12"
+						"clip_max_rounds"			"18"
+						"magsize_override"			"18"				
+						"clip_default"				"4"
+						"lose_rounds_reload"		"1"
+					}
+				}				
+				"weapon_beretta93r"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"					"9x19mm"
+						"magsize_override"			"20"
+						"clip_max"					"12"
+						"clip_max_rounds"			"20"
+						"clip_default"				"4"
+						"lose_rounds_reload"		"1"
+					}
+				}				
+				"weapon_type95"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"556_stanag_m4"
+						"clip_max"				"12"
+						"clip_max_rounds"			"30"
+						"clip_default"				"4"
+						"lose_rounds_reload"	"1"
+					}
+				}				
+				"weapon_m9"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"9x19mm"
+						"clip_max"				"12"
+						"clip_max_rounds"		"15"
+						"clip_default"			"4"
+						"lose_rounds_reload"	"1"
+					}
+				}
+				"weapon_glock21"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"45glock"
+						"clip_max"				"12"
+						"clip_max_rounds"		"13"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}	
+				"weapon_vp70m"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"9x19mm_18rnd"
+						"clip_max"				"12"
+						"clip_max_rounds"		"18"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}	
+				"weapon_sigp226"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"9x19mm"
+						"clip_max"				"12"
+						"clip_max_rounds"		"15"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}	
+				"weapon_makarov"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"9x18mm"
+						"clip_max"				"12"
+						"clip_max_rounds"		"8"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}	
+				"weapon_waltherppk"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"380_pistol"
+						"clip_max"				"12"
+						"clip_max_rounds"			"7"
+						"clip_default"				"4"	
+						"lose_rounds_reload"	"1"					
+					}
+				}	
+				"weapon_combatcommander"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"45acp_pistol"
+						"clip_max"				"12"
+						"clip_max_rounds"		"8"
+						"clip_default"			"4"
+						"magsize_override"		"8"							
+						"lose_rounds_reload"	"1"				
+					}
+				}	
+				"weapon_sigp220"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"45acp_pistol"
+						"clip_max"				"12"
+						"clip_max_rounds"		"7"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}	
+				"weapon_glock33"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"357_mag"
+						"clip_max"				"12"
+						"clip_max_rounds"		"13"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}	
+				"weapon_fiveseven"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"5_7x28mm"
+						"clip_max"				"12"
+						"clip_max_rounds"		"20"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}		
+				"weapon_deagle"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"50ae"
+						"clip_max"				"14"
+						"clip_max_rounds"		"7"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}	
+				"weapon_scorpionevo3"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"9x19mm_smg"
+						"clip_max"				"12"
+						"clip_max_rounds"		"30"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}	
+				"weapon_p90"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"5_7x28mm_p90"
+						"clip_max"				"12"
+						"clip_max_rounds"		"50"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}	
+				"weapon_spectre"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"9x19mm_smg"
+						"clip_max"				"12"
+						"clip_max_rounds"		"30"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}	
+				"weapon_mp5a4"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"9x19mm_smg"
+						"clip_max"				"12"
+						"clip_max_rounds"		"30"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}	
+				"weapon_mp7"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"9x19mm_smg"
+						"clip_max"				"12"
+						"clip_max_rounds"		"30"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}	
+				"weapon_ump45"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"45acp"
+						"clip_max"				"12"
+						"clip_max_rounds"		"25"
+						"clip_default"			"4"	
+						"lose_rounds_reload"	"1"					
+					}
+				}	
+				"weapon_aks74u"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"545x39"
+						"clip_max"				"12"
+						"clip_max_rounds"		"30"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}	
+				"weapon_groza1"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"762x38_box"
+						"clip_max"				"12"
+						"clip_max_rounds"		"30"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}	
+				"weapon_sterling"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"					"9x19mm_smg"
+						"magsize_override"			"34"
+						"clip_max"					"12"
+						"clip_max_rounds"			"34"
+						"clip_default"				"4"					
+						"lose_rounds_reload"		"1"
+					}
+				}	
+				"weapon_ots33"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"					"9x18mm"
+						"magsize_override"			"27"
+						"clip_max"					"12"
+						"clip_max_rounds"			"27"
+						"clip_default"				"4"					
+						"lose_rounds_reload"		"1"
+					}
+				}			
+				"weapon_mp40"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"					"9x19mm_smg"
+						"magsize_override"			"32"
+						"clip_max"					"12"
+						"clip_max_rounds"			"32"
+						"clip_default"				"4"					
+						"lose_rounds_reload"		"1"
+					}
+				}	
+				"weapon_mac10"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"					"9x19mm_smg"
+						"magsize_override"			"32"
+						"clip_max"					"12"
+						"clip_max_rounds"			"32"
+						"clip_default"				"4"					
+						"lose_rounds_reload"		"1"
+					}
+				}	
+				"weapon_uzi"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"					"9x19mm_smg"
+						"clip_max"					"12"
+						"clip_max_rounds"			"32"
+						"clip_default"				"4"					
+						"lose_rounds_reload"		"1"
+					}
+				}	
+				"weapon_acr"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"556_stanag"
+						"clip_max"				"12"
+						"clip_max_rounds"		"30"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}	
+				"weapon_ak12u"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"545x39"
+						"clip_max"				"12"
+						"clip_max_rounds"		"30"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}	
+				"weapon_sig553"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"					"556_stanag"
+						"clip_max"					"12"
+						"clip_max_rounds"			"30"
+						"clip_default"				"4"					
+						"lose_rounds_reload"		"1"
+					}
+				}
+				"weapon_famas"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"					"556_f1"
+						"clip_max"					"12"
+						"clip_max_rounds"			"25"
+						"clip_default"				"4"					
+						"lose_rounds_reload"		"1"
+					}
+				}	
+				"weapon_g36c"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"					"556_stanag_m4"
+						"clip_max"					"12"
+						"clip_max_rounds"			"30"
+						"clip_default"				"4"					
+						"lose_rounds_reload"		"1"
+					}
+				}	
+				"weapon_m16a4"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"					"556_stanag"
+						"clip_max"					"12"
+						"clip_max_rounds"			"30"
+						"clip_default"				"4"					
+						"lose_rounds_reload"		"1"
+					}
+				}	
+				"weapon_deltasrifle"
+				{
+					"ammo_clip"
+					{
+						"lose_rounds_reload"	"1"
+						"ammo_type"				"762x51_mag30"
+						"clip_max"				"12"
+						"clip_max_rounds"		"30"
+						"clip_default"			"4"						
+					}
+				}
+				"weapon_hk417"
+				{
+					"ammo_clip"
+					{
+						"lose_rounds_reload"	"1"
+						"ammo_type"				"762x51_mag"
+						"clip_max"				"12"
+						"clip_max_rounds"		"20"
+						"clip_default"			"4"
+						"magsize_override"		"20"						
+					}
+				}				
+				"weapon_mk18"
+				{
+					"ammo_clip"
+					{
+						"lose_rounds_reload"	"1"
+						"ammo_type"				"556_stanag_m4"
+						"clip_max"				"12"
+						"clip_max_rounds"		"30"
+						"clip_default"			"4"						
+					}
+				}	
+				"weapon_c8cqb"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"556_stanag_m4"
+						"clip_max"				"12"
+						"clip_max_rounds"		"30"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}																																								
+				"weapon_scarl"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"556_stanag_m4"
+						"clip_max"				"12"
+						"clip_max_rounds"		"30"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}			
+				"weapon_f2000"
+				{
+
+					"ammo_clip"
+					{
+						"ammo_type"				"556_stanag_m4"
+						"clip_max"				"12"
+						"clip_max_rounds"		"30"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}			
+				"weapon_colt9mm"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"9x19mm_smg"
+						"clip_max"				"12"
+						"clip_max_rounds"		"30"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}		
+				"weapon_cm901"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"556_stanag_m4"
+						"clip_max"				"12"
+						"clip_max_rounds"		"30"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}	
+				"weapon_honeybadger"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"556_stanag_m4"
+						"clip_max"				"12"
+						"clip_max_rounds"		"30"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}	
+				"weapon_m4a1"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"556_stanag_m4"
+						"clip_max"				"12"
+						"clip_max_rounds"		"30"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}
+				"weapon_m4a1sopmod"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"556_stanag_m4"
+						"clip_max"				"12"
+						"clip_max_rounds"		"30"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}		
+				"weapon_galil"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"556_35box"
+						"clip_max"				"12"
+						"clip_max_rounds"		"30"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}		
+				"weapon_akm"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"762x38_box"
+						"clip_max"				"12"
+						"clip_max_rounds"		"30"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}	
+				"weapon_ak74"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"545x39"
+						"clip_max"				"12"
+						"clip_max_rounds"		"30"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}	
+				"weapon_fal"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"762x51_box_20rnd"
+						"clip_max"				"12"
+						"clip_max_rounds"		"20"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}	
+				"weapon_l1a1"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"762x51_box_20rnd"
+						"clip_max"				"12"
+						"clip_max_rounds"		"20"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}	
+				"weapon_mini14"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"556_box"
+						"clip_max"				"12"
+						"clip_max_rounds"		"20"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}
+				"weapon_m1asocom16"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"					"762x51_mag30"
+						"clip_max"					"12"
+						"clip_max_rounds"			"30"
+						"clip_default"				"4"					
+						"lose_rounds_reload"		"1"
+					}
+				}	
+				"weapon_m14"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"762x51_mag"
+						"clip_max"				"12"
+						"clip_max_rounds"		"20"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}	
+				"weapon_sr25"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"762x51_mag"
+						"clip_max"				"12"
+						"clip_max_rounds"		"20"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}		
+				"weapon_m1a1"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"30_carbine"
+						"clip_max"				"12"
+						"clip_max_rounds"		"15"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}																								
+				"weapon_saiga762"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"					"762x38_box"
+						"clip_max"					"12"
+						"clip_max_rounds"			"30"
+						"clip_default"				"4"					
+						"lose_rounds_reload"		"1"
+					}
+				}	
+				"weapon_dragunovsvu"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"762x54svu"
+						"clip_max"				"12"
+						"clip_max_rounds"		"20"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}	
+				"weapon_m16a1"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"556_stanag_m16a1"
+						"clip_max"				"12"
+						"clip_max_rounds"		"20"				
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}		
+				"weapon_sks"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"762x38mm_clip"
+						"clip_max"				"12"
+						"clip_max_rounds"		"20"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}	
+				"weapon_svd"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"762x38mm_clip_svd"
+						"clip_max"				"12"
+						"clip_max_rounds"			"10"
+						"clip_default"				"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}	
+				"weapon_galil_sar"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"556_35box"
+						"clip_max"				"12"
+						"clip_max_rounds"		"30"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}		
+				"weapon_g33"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"762x51_box_20rnd"
+						"clip_max"				"12"
+						"clip_max_rounds"		"20"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}		
+				"weapon_steyraug"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"556_stanag_m4"
+						"clip_max"				"12"
+						"clip_max_rounds"		"30"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}		
+				"weapon_car15"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"556_stanag_m16a1"
+						"clip_max"				"12"
+						"clip_max_rounds"		"20"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}		
+				"weapon_mk18_m0"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"556_stanag_mk18mod0"
+						"clip_max"				"12"
+						"clip_max_rounds"		"30"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}	
+				"weapon_asval"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"9x39mm"
+						"clip_max"				"12"
+						"clip_max_rounds"		"20"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}	
+				"weapon_insgsaiga12"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"					"saiga_4buckshot"
+						"clip_max"					"12"
+						"clip_max_rounds"			"8"
+						"clip_default"				"4"					
+						"lose_rounds_reload"		"1"
+					}
+				}	
+				"weapon_saiga12auto"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"					"saiga_4buckshot"
+						"clip_max"					"12"
+						"clip_max_rounds"			"8"
+						"clip_default"				"4"					
+						"lose_rounds_reload"		"1"
+					}
+				}					
+				"weapon_hkusp"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"					"45acp_pistol"
+						"clip_max"					"12"
+						"clip_max_rounds"			"12"
+						"magsize_override"			"12"				
+						"clip_default"				"4"					
+						"lose_rounds_reload"		"1"
+					}
+				}	
+				"weapon_M107"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"					"50_bmg_mag"
+						"clip_max"					"9"
+						"clip_max_rounds"			"11"
+						"clip_default"				"0"					
+						"lose_rounds_reload"		"1"
+					}
+				}		
+				"weapon_l85a2"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"556_stanag"
+						"clip_max"				"12"
+						"clip_max_rounds"			"30"
+						"clip_default"				"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}	
+				"weapon_krissvector"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"45acp"
+						"clip_max"				"12"
+						"clip_max_rounds"		"25"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}
+				"weapon_m45seriespistol"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"45acp_pistol"
+						"clip_max"				"12"
+						"clip_max_rounds"		"7"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}	
+				"weapon_sa1911"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"45glock"
+						"clip_max"				"12"
+						"clip_max_rounds"		"13"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}	
+				"weapon_m1911seriespistol"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"45acp_pistol"
+						"clip_max"				"10"
+						"clip_max_rounds"		"7"
+						"clip_default"			"2"					
+						"lose_rounds_reload"	"1"
+					}
+				}	
+				"weapon_scar"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"762x51_mag"
+						"clip_max"				"12"
+						"clip_max_rounds"		"20"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}	
+				"weapon_nam_m16a1"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"762x51_mag"
+						"clip_max"				"12"
+						"clip_max_rounds"		"20"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}	
+				"weapon_m1918bar"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"30_BAR"
+						"clip_max"				"12"
+						"clip_max_rounds"		"20"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}		
+				"weapon_ppsh41"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"7.62×25nam"	
+						"clip_max"				"12"
+						"clip_max_rounds"		"35"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}
+				"weapon_mg42"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"792x57_belt"
+						"clip_max"				"6"
+						"clip_max_rounds"		"250"
+						"clip_default"			"2"					
+						"lose_rounds_reload"	"1"
+					}
+				}		
+				"weapon_sten"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"9x19mm_smg"
+						"clip_max"				"12"
+						"clip_max_rounds"		"32"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}	
+				"weapon_c96carbine"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"					"9x19mm_smg"
+						"magsize_override"			"20"
+						"clip_max"					"12"
+						"clip_max_rounds"			"20"
+						"clip_default"				"4"					
+						"lose_rounds_reload"		"1"
+					}
+				}
+				"weapon_suomi"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"					"9x19mm_suomi"
+						"clip_max"					"12"
+						"clip_max_rounds"			"36"
+						"clip_default"				"4"					
+						"lose_rounds_reload"		"1"
+					}
+				}	
+				"weapon_thompson"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"45acp_thompson"
+						"clip_max"				"12"
+						"clip_max_rounds"		"20"
+						"clip_default"			"4"						
+						"lose_rounds_reload"	"1"
+					}
+				}																																																													
+				"weapon_stg44"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"762x51_box_20rnd"
+						"clip_max"				"12"
+						"clip_max_rounds"		"20"
+						"clip_default"			"4"			
+						"lose_rounds_reload"	"1"
+					}
+				}	
+				"weapon_m249"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"556_m27"
+						"clip_max"				"12"
+						"clip_max_rounds"		"200"
+						"clip_default"			"3"					
+						"lose_rounds_reload"	"1"
+					}
+				}
+				"weapon_mk46"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"556_m27"
+						"clip_max"				"12"
+						"clip_max_rounds"		"200"
+						"clip_default"			"3"					
+						"lose_rounds_reload"	"1"
+					}
+				}	
+				"weapon_m60"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"762x51_200"
+						"clip_max"				"12"
+						"clip_max_rounds"		"200"
+						"clip_default"			"3"					
+						"lose_rounds_reload"	"1"
+					}
+				}	
+				"weapon_pecheneg"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"556_m27"
+						"clip_max"				"12"
+						"clip_max_rounds"		"200"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}	
+				"weapon_m240"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"762x51_200"
+						"clip_max"				"12"
+						"clip_max_rounds"		"200"
+						"clip_default"			"3"					
+						"lose_rounds_reload"	"1"
+					}
+				}		
+				"weapon_rpk"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"762x38_drum"
+						"clip_max"				"12"
+						"clip_max_rounds"		"75"
+						"clip_default"			"3"					
+						"lose_rounds_reload"	"1"
+					}
+				}		
+				"weapon_mg36"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"556_cmag"
+						"clip_max"				"12"
+						"clip_max_rounds"		"100"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}	
+				"weapon_remingtonr5"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"556_stanag_m4"
+						"clip_max"				"12"
+						"clip_max_rounds"		"30"
+						"clip_default"			"4"			
+						"lose_rounds_reload"	"1"
+					}
+				}		
+				"weapon_remingtonr5_black"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"556_stanag_m4"
+						"clip_max"				"12"
+						"clip_max_rounds"		"30"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
+				}	
+				"weapon_lynx"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"556_stanag_m4"
+						"clip_max"				"12"
+						"clip_max_rounds"		"30"
+						"clip_default"			"4"				
+						"lose_rounds_reload"	"1"
+					}
+				}	
+				"weapon_wa2000"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"762x51_box_6rnd"
+						"clip_max"				"12"
+						"clip_max_rounds"		"6"
+						"clip_default"			"4"			
+						"lose_rounds_reload"	"1"
+					}
+				}	
+				"weapon_steyrauga3"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"556_stanag_m4"
+						"clip_max"				"12"
+						"clip_max_rounds"			"30"
+						"clip_default"				"4"		
+						"lose_rounds_reload"	"1"
+					}
+				}
+				"weapon_glock17"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"9x19mm"
+						"clip_max"				"12"
+						"magsize_override"			"17"				
+						"clip_max_rounds"			"17"
+						"clip_default"				"4"	
+						"lose_rounds_reload"	"1"
+					}
+				}	
+				"weapon_glock18"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"9x19mm"
+						"clip_max"				"12"
+						"magsize_override"			"17"
+						"clip_max_rounds"			"17"
+						"clip_default"				"4"
+						"lose_rounds_reload"	"1"
+					}
+				}	
+				"weapon_qbz95"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"556_stanag_m4"
+						"clip_max"				"12"
+						"clip_max_rounds"			"30"
+						"clip_default"				"4"
+						"lose_rounds_reload"	"1"
+					}
+				}					
+			}
+			
+	
+			"allowed_weapons"
+			{
+				"weapon"                "weapon_sigp220"
+				"weapon"				"weapon_mg42"				
+				"weapon"				"weapon_mp5"
+				"weapon"				"weapon_p90"				
+				"weapon"				"weapon_spectre"
+				"weapon"				"weapon_mp5a4"
+				"weapon"				"weapon_mp7"
+				"weapon"				"weapon_krissvector"
+				"weapon"				"weapon_ump45"
+				"weapon"				"weapon_aks74u"
+				"weapon"                "weapon_sterling"
+				"weapon"                "weapon_beretta93r"
+				"weapon"                "weapon_ots33"
+				"weapon"				"weapon_mp40"
+				"weapon"				"weapon_mac10"
+				"weapon"				"weapon_uzi"
+				"weapon"    			"weapon_acr"
+				"weapon"				"weapon_ak12u"
+				"weapon"				"weapon_sig553"
+				"weapon"				"weapon_scar"
+				"weapon"                "weapon_famas"
+				"weapon"				"weapon_g36c"
+				"weapon"				"weapon_m16a4"
+				"weapon"				"weapon_hk417"
+				"weapon"				"weapon_mk18"
+				"weapon"				"weapon_scarl"
+				"weapon"				"weapon_colt9mm"
+				"weapon"				"weapon_type95"				
+				"weapon"				"weapon_cm901"
+				"weapon"				"weapon_m4a1"
+				"weapon"				"weapon_m4a1sopmod"
+				"weapon"				"weapon_galil_sar"
+				"weapon"				"weapon_akm"
+				"weapon"				"weapon_ak74"
+				"weapon"				"weapon_fal"
+				"weapon"				"weapon_stg44"
+				"weapon"				"weapon_l1a1"
+				"weapon"				"weapon_mini14"
+				"weapon"				"weapon_m1asocom16"
+				"weapon"				"weapon_m14"
+				"weapon"				"weapon_sr25"
+				"weapon"				"weapon_m1a1"
+				"weapon"				"weapon_dragunovsvu"
+				"weapon"				"weapon_m16a1"
+				"weapon"				"weapon_sks"
+				"weapon"				"weapon_svd"
+				"weapon"               	"weapon_m249"
+				"weapon"               	"weapon_mk46"
+				"weapon"				"weapon_m60"
+				"weapon"               	"weapon_pecheneg"
+				"weapon"               	"weapon_m240"				
+				"weapon"               	"weapon_rpk"		
+				"weapon"				"weapon_g33"
+				"weapon"				"weapon_steyraug"
+				"weapon"				"weapon_car15"
+				"weapon"				"weapon_honeybadger"	
+				"weapon"				"weapon_thompson"		
+				"weapon"				"weapon_mk18_m0"	
+				"weapon"				"weapon_asval"	
+				"weapon"				"weapon_saiga12auto"	
+				"weapon"				"weapon_f2000"	
+				"weapon"				"weapon_M107"
+				"weapon"				"weapon_l85a2"	
+				"weapon"				"weapon_sigp226"
+				"weapon"				"weapon_remingtonr5"	
+				"weapon"				"weapon_remingtonr5_black"	
+				"weapon"				"weapon_lynx"	
+				"weapon"				"weapon_wa2000"		
+				"weapon"				"weapon_steyrauga3"
+				"weapon"				"weapon_combatcommander"
+				"weapon"				"weapon_m9"
+				"weapon"				"weapon_fiveseven"
+				"weapon"				"weapon_glock17"
+				"weapon"				"weapon_glock18"
+				"weapon"				"weapon_glock33"
+				"weapon"				"weapon_hkusp"
+				"weapon"				"weapon_deagle"
+				"weapon"				"weapon_m1911seriespistol"
+				"weapon"				"weapon_m45seriespistol"
+				"weapon"				"weapon_makarov"
+				"weapon"				"weapon_mp443"
+				"weapon"				"weapon_qbz95"
+				"weapon"				"weapon_taurusjudge"
+			}
+		
+		}	
+
+		"magazine_extended_ppsh41"
+		{
+			"upgrade_slot"				"magazine"
+			"upgrade_cost"				"2"
+			"team_access"				"security, insurgent"
+			
+			"print_name"				"#magazine_extended_ppsh41"
+			"print_desc"				"#magazine_extended_ppsh41_desc"
+
+			"magsize_override"			"71"
+
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_ppsh41"
+			}
+
+			"viewmodel_attachments"
+			{
+				"magazine_ppsh41_drum"
+				{
+				    "ActSuffix"			"_MAG1"
+					"model"				"models/weapons/upgrades/v_ppshdrum.mdl"
+
+					"weapons"
+					{
+						"weapon"		"weapon_ppsh41"
+					}
+				}
+			}
+			
+			"world_attachments"
+			{
+				"magazine_drum"
+				{
+					"model"				"models/weapons/upgrades/w_ppshdrum.mdl"
+					
+					"weapons"
+					{
+						"weapon"		"weapon_ppsh41"
+					}
+				}
+			}	
+		}
+
+		"ppsh41_sling"
+		{
+			"upgrade_cost"				"1"
+			"upgrade_slot"				"stock"
+			"print_name"				"#nam_sling"
+			"print_desc"				"#nam_sling_desc"
+			
+			"class_restricted"			"0" 
+			"team_access"				"security, insurgent"
+			
+			"draw_speed"				"1.5"
+			"holster_speed"				"1.5"
+			"draw_speed_next_weapon"	"1.5"
+			"holster_speed_prev_weapon"	"1.5"
+			
+			"viewmodel_attachments"
+			{
+				"Sling"
+				{
+					"model"					"models/weapons/upgrades/v_ppshsling.mdl" 
+	
+				}
+			}
+	
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_ppsh41" 
+			}
+		}
+
+		"tactical_spring"
+		{
+			"import"				"base_heavybarrel"
+			"class_restricted"				"0"
+			"upgrade_cost"					"0"
+			"print_name"					"#tactical_spring"
+			"print_desc"					"#tactical_spring_desc"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_makarov"
+				"weapon"				"weapon_mp443"
+				"weapon"				"weapon_m1911seriespistol"
+				"weapon"				"weapon_combatcommander"
+				"weapon"				"weapon_m45seriespistol"
+				"weapon"				"weapon_sigp220"
+				"weapon"				"weapon_m9"
+				"weapon"				"weapon_sigp226"
+				"weapon"				"weapon_9mmsidearm"
+				"weapon"				"weapon_glock33"
+				"weapon"				"weapon_fiveseven"
+				"weapon"				"weapon_hkusp"
+				"weapon"				"weapon_deagle"
+				"weapon"				"weapon_glock17"
+				"weapon"				"weapon_glock18"
+				"weapon"				"weapon_deagle"
+				"weapon"				"weapon_m45seriespistol"
+				"weapon"                "weapon_beretta93r"
+				"weapon"				"weapon_ots33"								
+			}
+
+			"viewmodel_attachments"
+			{
+				"hkusp_barrel"
+				{
+					"model"						"models/insgwep/usp/a_uspbarrel.mdl"
+
+					"weapons"
+					{
+						"weapon"		"weapon_hkusp"
+					}
+				}					
+			}
+			
+			"recoil"
+			{
+				"recoil_vertical_frac"		"0.9"
+			}
+			
+		}
+
+		"optic_pistoldot"
+		{
+			"import"					"base_optic_rail"
+
+			"upgrade_cost"				"1"
+			"print_name"				"#weapon_upgrade_pistoldot"
+			"print_desc"				"#weapon_upgrade_pistoldot_desc"
+			"team_access"				"security"
+			
+			"allowed_weapons"
+			{
+				// security weapons
+				"weapon"				"weapon_glock17"
+				"weapon"				"weapon_glock18"
+				"weapon"				"weapon_hkusp"
+				"weapon"				"weapon_m45seriespistol"
+			}
+			
+			"viewmodel_attachments"
+			{
+				
+				"rmr"
+				{
+					"model"					"models/insgwep/upgrades/a_optic_pistoldot.mdl"
+					"AnimIronSights"		"4x_zoom"
+					"AnimIdle"				"4x_idle"
+					"Gesture"				"delta_dot"
+					"Main"					"1"
+				}	
+			}
+			
+			"world_attachments"
+			{
+				"Scope"
+				{
+					"model"					"models/insgwep/upgrades/w_pistoldot.mdl"
+				}
+			}
+			
+			"optics"
+			{
+				"optic_holographic"			"1"
+				"optic_material"			"models/weapons/optics/aimpoint_reticule_holo"
+				"optic_paralax_distance"		"5"
+				"optic_reticle_size"			".125"
+
+			}			
+		}
+
+		"barrel_compensator"
+		{
+			"upgrade_slot"				"barrel"
+			"lock_slot"					"underbarrel"
+			"weapon_abilities"			"foregrip"
+			"weight"					"2"
+			"upgrade_cost"				"1"
+			"print_name"				"#weapon_upgrade_compensator"
+			"print_desc"				"#weapon_upgrade_heavybarrel_desc"
+			"team_access"				"security, insurgent"
+			
+			"freeaim"
+			{
+				"freeaim_distance_frac"			"0.80"
+			}
+			
+			"recoil"
+			{
+				"recoil_lateral_frac"			"0.70"
+				"recoil_vertical_frac"			"0.85"
+			}
+			
+			"sway"
+			{
+				"sway_radius_frac"			"0.8"
+				"sway_speed"				"1.20"
+			}
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_hkusp"
+			}
+			
+			"viewmodel_attachments"
+			{
+				"compensator"
+				{
+					"model"					"models/insgwep/usp/a_match.mdl"
+					"Main"					"1"
+					"weapons"
+					{
+						"weapon"				"weapon_hkusp"
+					}
+				}
+
+			}
+			"world_attachments"
+			{
+				"compensator"
+				{
+					"model"						"models/insgwep/upgrades/w_match.mdl"
+					"weapons"
+					{
+						"weapon"	"weapon_hkusp"
+					}
+				}
+			}
+		}
+
+		"magazine_speedloader"
+		{
+			"upgrade_slot"				"magazine"
+			"upgrade_cost"				"1"
+			"team_access"				"security, insurgent"
+
+			"print_name"				"#weapon_upgrade_speedloader"
+			"print_desc"				"#weapon_upgrade_speedloader_desc"
+
+			// some magic to disable single reload
+			"weapon_abilities"			"speedreload"
+
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_cobra"
+				"weapon"				"weapon_taurusjudge"
+			}
+
+			"viewmodel_attachments"
+			{
+				
+				"speedloader_Cobra"
+				{
+					"ActSuffix"			"_SPEED"
+					"model"				"models/weapons/upgrades/a_speedloader_cob.mdl"
+
+					"weapons"
+					{
+						"weapon"		"weapon_cobra"
+					}
+				}	
+				
+				"speedloader_judge"
+				{
+					"ActSuffix"			"_SPEED"
+					"model"				"models/weapons/upgrades/a_speedloader_jud.mdl"
+
+					"weapons"
+					{
+						"weapon"	    "weapon_taurusjudge"
+					}
+				}					
+											
+			}
+		}
+
+		"magazine_extended_glock"
+		{
+		
+			"upgrade_slot" 				"magazine"
+			"upgrade_cost"				"1"
+			"team_access"				"security, insurgent"
+			
+			"print_name"				"#weapon_upgrade_magazine_extended"
+			"print_desc"				"#weapon_upgrade_magazine_extended_desc"
+			
+			"magsize_override"		    "33"
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_glock18"
+				"weapon"				"weapon_glock17"
+			}			
+			
+			"viewmodel_attachments"
+			{
+				"magazine_33_glock18"
+				{
+					"ActSuffix"			"_MAG1"
+					"model"				"models/insgwep/glock/a_magazine_glock_extended.mdl"
+
+					"weapons"
+					{
+						"weapon"				"weapon_glock18"
+						"weapon"				"weapon_glock17"
+					}
+				}
+			}
+			"world_attachments"
+			{
+				"magazine_ext_glock"
+					{
+						"model"				"models/insgwep/glock/w_glockextmag.mdl"
+						
+						"weapons"
+						{
+							"weapon"		"weapon_glock17"
+							"weapon"		"weapon_glock18"
+						}
+					}
+			}
+		}
+		
+		"magazine_extended_usp"
+		{
+		
+			"upgrade_slot" 				"magazine"
+			"upgrade_cost"				"1"
+			"team_access"				"security, insurgent"
+			
+			"print_name"				"#weapon_upgrade_magazine_extended"
+			"print_desc"				"#weapon_upgrade_magazine_extended_desc"
+			
+			"magsize_override"		    "20"
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_hkusp"
+			}			
+			
+			"viewmodel_attachments"
+			{
+				"magazine_extusp"
+				{
+					"ActSuffix"			"_MAG1"
+					"model"				"models/insgwep/usp/a_magazine_usp_15.mdl"
+
+					"weapons"
+					{
+						"weapon"		"weapon_hkusp"
+					}
+				}
+			}
+			"world_attachments"
+			{
+				"magazine_extusp"
+					{
+						"model"				"models/insgwep/usp/w_extuspmag.mdl"
+						
+						"weapons"
+						{
+							"weapon"		"weapon_hkusp"
+						}
+					}
+			}
+		}
+
 	}
 	"ammo"
 	{
