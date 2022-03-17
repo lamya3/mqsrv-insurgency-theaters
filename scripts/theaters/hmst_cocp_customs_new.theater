@@ -165,7 +165,7 @@
 			"print_desc"				"#weapon_hk416c_desc"
 			"view_model"				"models/weapons/v_416c.mdl"
 			"world_model"				"models/weapons/w_416c.mdl"
-			"rounds_per_minute"			"740"
+			"rounds_per_minute"			"850"
 			"weapon_slot"				"primary"
 			"act_table"					"shortrifle"
 			"weapon_abilities"			"ironsight"
@@ -209,8 +209,8 @@
 			}
 			"sounds"
 			{
-				"shot_single"				"Weapon_mk18.Single"
-				"shot_single_local"			"Weapon_mk18.SingleLocal"
+				"shot_single"				"Weapon_416c.Single"//"Weapon_mk18.Single"
+				"shot_single_local"			"Weapon_416c.SingleLocal"//"Weapon_mk18.SingleLocal"
 				"shot_silent"				"Weapon_mk18.SingleSilenced"
 				"shot_silent_local"			"Weapon_mk18.SingleSilencedLocal"
 				"empty"					"Weapon_mk18.Empty"
@@ -2988,6 +2988,884 @@
 							"weapon"		"weapon_hkusp"
 						}
 					}
+			}
+		}
+		
+		"siderail_flashlight_pistol"
+		{
+			"import"					"base_flashlight_pistol"
+			"upgrade_cost"				"1"
+			"team_access"				"security, insurgent"
+
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_glock33"
+				"weapon"				"weapon_glock17"
+				"weapon"				"weapon_glock18"
+				"weapon"				"weapon_hkusp"
+				"weapon"				"weapon_fiveseven"
+				"weapon"				"weapon_m45seriespistol"
+				"weapon"				"weapon_sigp220"
+				"weapon"				"weapon_m9"
+				"weapon"				"weapon_sigp226"
+				"weapon"				"weapon_9mmsidearm"
+				"weapon"				"weapon_m1911seriespistol"
+				"weapon"				"weapon_combatcommander"
+				"weapon"				"weapon_makarov"
+				"weapon"				"weapon_mp443"
+				"weapon"				"weapon_deagle"
+			}
+			"viewmodel_attachments"
+			{
+				"flashlight_m9"
+				{
+					"model"					"models/weapons/upgrades/a_flashlight_m9.mdl"
+					"Main"					"1"
+
+					"weapons"
+					{
+						"weapon"			"weapon_m9"
+						"weapon"			"weapon_9mmsidearm"
+						"weapon"			"weapon_fiveseven"
+					}
+					
+					"excluded_weapons"
+					{
+						"weapon"	"weapon_glock18"
+						"weapon"	"weapon_glock17"
+						"weapon"	"weapon_hkusp"
+					}					
+					
+				}		
+				
+				//"flashlight_sigp226"
+				//{
+				//	"model"					"models/weapons/upgrades/a_flashlight_26.mdl"
+				//	"Main"					"1"
+
+				//	"weapons"
+				//	{
+				//		"weapon"			"weapon_sigp226"
+				//	}
+					
+				//	"excluded_weapons"
+				//	{
+				//		"weapon"	"weapon_glock18"
+				//		"weapon"	"weapon_glock17"
+				//		"weapon"	"weapon_hkusp"
+				//		"weapon"	"weapon_9mmsidearm"
+				//		"weapon"	"weapon_fiveseven"						
+				//	}					
+					
+				//}							
+				
+				"flashlight_glock"
+				{
+					"model"					"models/weapons/upgrades/a_flashlight_glock.mdl"	
+					"Main"					"1"					
+					"weapons"
+					{
+						"weapon"				"weapon_hkusp"
+					}
+				}
+				"flashlight_glock_small"
+				{
+					"model"					"models/weapons/upgrades/a_flashlight_glock_small.mdl"	
+					"Main"					"1"					
+					"weapons"
+					{
+						//"weapon" 				"weapon_glock18"
+						"weapon"				"weapon_glock17"
+					}
+				}						
+				
+				//"flashlight_glock33"
+				//{
+				//	"model"					"models/weapons/upgrades/a_flashlight_33.mdl"
+				//	"Main"					"1"
+
+				//	"weapons"
+				//	{
+				//		"weapon"			"weapon_glock33"
+				//	}
+				//}																		
+
+				"flashlight_mak"
+				{
+					"model"					"models/weapons/upgrades/a_flashlight_mak.mdl"
+					"Main"					"1"
+
+					"excluded_weapons"
+					{
+						"weapon"			"weapon_m9"
+						//"weapon"			"weapon_9mmsidearm"
+						//"weapon"			"weapon_fiveseven"
+						//"weapon"			"weapon_glock33"
+						//"weapon"			"weapon_glock18"
+						"weapon"			"weapon_glock17"
+						"weapon"			"weapon_hkusp"
+						//"weapon"			"weapon_sigp226"
+					}
+				}
+			}
+		}
+
+		"siderail_lasersight_pistol"
+		{
+			"import"					"base_lasersight_pistol"
+			"upgrade_cost"				"2"
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m9"
+				"weapon"				"weapon_sigp226"
+				"weapon"				"weapon_9mmsidearm"
+				"weapon"				"weapon_glock18"
+				"weapon"				"weapon_glock17"
+				"weapon"				"weapon_hkusp"				
+				"weapon"				"weapon_glock33"
+				"weapon"				"weapon_fiveseven"
+				"weapon"				"weapon_makarov"
+				"weapon"				"weapon_mp443"
+				"weapon"				"weapon_m1911seriespistol"
+				"weapon"				"weapon_combatcommander"
+				"weapon"				"weapon_m45seriespistol"
+				"weapon"				"weapon_sigp220"
+				"weapon"				"weapon_deagle"
+			}
+			"viewmodel_attachments"
+			{
+				"laser_m9"
+				{
+					"model"					"models/weapons/upgrades/a_laser_m9.mdl"
+					"Main"					"1"
+
+					"weapons"
+					{
+						"weapon"			"weapon_m9"
+						"weapon"			"weapon_sigp226"
+						"weapon"		    "weapon_9mmsidearm"
+						"weapon"			"weapon_fiveseven"
+					}
+					
+					"excluded_weapons"
+					{
+						"weapon"			"weapon_glock18"
+						"weapon"			"weapon_glock17"
+						"weapon"			"weapon_hkusp"
+					}	
+									
+				}			
+				
+				//"laser_glock33"
+				//{
+				//	"model"					"models/weapons/upgrades/a_laser_33.mdl"
+				//	"Main"					"1"
+
+				//	"weapons"
+				//	{
+				//		"weapon"			"weapon_glock33"
+				//	}
+				//}	
+				
+				"laser_usp"
+				{
+					"model"					"models/weapons/upgrades/a_laser_glock.mdl"
+					"Main"					"1"	
+					"weapons"
+					{
+						"weapon"			"weapon_hkusp"
+					}
+				}
+				
+				"laser_glock"
+				{
+					"model"					"models/weapons/upgrades/a_laser_glock_small.mdl"
+					"Main"					"1"	
+					"weapons"
+					{
+						"weapon"			"weapon_glock18"
+						"weapon"			"weapon_glock17"
+					}
+				}									
+
+				"laser_mak"
+				{
+					"model"					"models/weapons/upgrades/a_laser_mak.mdl"
+					"Main"					"1"
+
+					"excluded_weapons"
+					{
+						"weapon"			"weapon_m9"
+						"weapon"			"weapon_sigp226"
+						"weapon"		    "weapon_9mmsidearm"
+						"weapon"			"weapon_fiveseven"
+						"weapon"			"weapon_glock33"
+						"weapon"			"weapon_glock18"
+						"weapon"			"weapon_glock17"
+						"weapon"			"weapon_hkusp"						
+					}
+				}
+			}
+		}
+		
+		"barrel_heavybarrel"
+		{
+			"import"					"base_heavybarrel"
+			"weight"					"0"
+			"team_access"				"security, insurgent"
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_spas12"
+				"weapon"				"weapon_ppsh41"				
+				"weapon"                "weapon_m590"
+				"weapon"				"weapon_m500"
+				"weapon"                "weapon_toz"
+				"weapon"				"weapon_ksg"
+				"weapon"				"weapon_mp5"
+				"weapon"				"weapon_p90"	
+				"weapon"				"weapon_spectre"
+				"weapon"				"weapon_mp5a4"
+				"weapon"				"weapon_mp7"
+				"weapon"				"weapon_krissvector"
+				"weapon"				"weapon_ump45"
+				"weapon"				"weapon_aks74u"
+				"weapon"                "weapon_sterling"
+				"weapon"                "weapon_beretta93r"
+				"weapon"				"weapon_ots33"
+				"weapon"				"weapon_mp40"
+				"weapon"				"weapon_mac10"
+				"weapon"				"weapon_uzi"
+				"weapon"    			"weapon_acr"
+				"weapon"				"weapon_ak12u"
+				"weapon"				"weapon_sig553"
+				"weapon"                "weapon_famas"
+				"weapon"				"weapon_g36c"
+				"weapon"				"weapon_m16a4"
+				"weapon"				"weapon_hk417"
+				"weapon"				"weapon_mk18"
+				"weapon"				"weapon_steyrauga3"
+				"weapon"				"weapon_lynx" 
+				"weapon"				"weapon_hk416c"
+				"weapon"				"weapon_scarl"
+				"weapon"				"weapon_scar"
+				"weapon"				"weapon_f2000"
+				"weapon"				"weapon_colt9mm"
+				"weapon"				"weapon_type95"
+				"weapon"				"weapon_cm901"
+				"weapon"				"weapon_honeybadger"
+				"weapon"				"weapon_m4a1"
+				"weapon"				"weapon_m4a1sopmod"
+				"weapon"				"weapon_remingtonr5"
+				"weapon"				"weapon_remingtonr5_black"
+				"weapon"				"weapon_qbz95"
+				"weapon"				"weapon_galil_sar"
+				"weapon"				"weapon_akm"
+				"weapon"				"weapon_ak74"
+				"weapon"				"weapon_fal"
+				"weapon"				"weapon_l1a1"
+				"weapon"				"weapon_mini14"
+				"weapon"				"weapon_m1asocom16"
+				"weapon"				"weapon_m14"
+				"weapon"				"weapon_sr25"
+				"weapon"				"weapon_m1a1"
+				"weapon"				"weapon_dragunovsvu"
+				"weapon"				"weapon_m16a1"
+				"weapon"				"weapon_sks"
+				"weapon"				"weapon_wa2000"
+				"weapon"				"weapon_svd"
+				"weapon"               	"weapon_m249"
+				"weapon"               	"weapon_mk46"
+				"weapon"               	"weapon_m60"
+				"weapon"               	"weapon_pecheneg"
+				"weapon"               	"weapon_m240"
+				"weapon"               	"weapon_rpk"
+				"weapon"               	"weapon_m40a1"
+				"weapon"               	"weapon_remingtonmsr"
+				"weapon"               	"weapon_gol"
+				"weapon"               	"weapon_mosin"
+				"weapon"				"weapon_g33"
+				"weapon"				"weapon_car15"
+				"weapon"                "weapon_nova"
+				"weapon"				"weapon_mk18_m0"		
+				"weapon"				"weapon_m1014"
+				"weapon"				"weapon_asval"
+				"weapon"				"weapon_steyraug"
+				"weapon"				"weapon_m107"
+				"weapon"				"weapon_l85a2"
+			}
+			
+			//"viewmodel_attachments"
+			//{
+			//	"l85_longbarrel"
+			//	{
+			//		"model" "models/insgwep/l85/a_l85longbarrel.mdl"
+					
+			//		"weapons"
+			//		{
+			//			"weapon"	"weapon_l85a2"
+			//		}
+			//	}
+					
+			//}
+			
+			//"world_attachments"
+			//{
+			//	"l85_longbarrel"
+			//	{
+			//		"model"						"models/insgwep/l85/w_l85longbarrel.mdl"
+					
+			//		"weapons"
+			//		{
+			//			"weapon"	"weapon_l85a2"
+			//		}
+			//	}			
+				
+			//}	
+			
+		}
+
+		"barrel_silencer_sec1"
+		{
+			"import"					"base_silencer"
+			"upgrade_cost"				"2"
+			"class_restricted"			"0"
+			"length"					"12"
+			"team_access"				"security, insurgent"
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_galil_sar"
+				"weapon"				"weapon_m16a4"
+				"weapon"				"weapon_scar"
+				"weapon"				"weapon_hk417"
+				"weapon"				"weapon_m4a1"
+				"weapon"				"weapon_m14"
+				"weapon"				"weapon_sr25"
+				"weapon"				"weapon_mini14"
+				"weapon"				"weapon_m1asocom16"
+				"weapon"				"weapon_mp5"
+				"weapon"				"weapon_p90"
+				"weapon"				"weapon_spectre"
+				"weapon"				"weapon_mp5a4"
+				"weapon"				"weapon_mp7"
+				"weapon"				"weapon_krissvector"
+				"weapon"				"weapon_ump45"
+				"weapon"				"weapon_m40a1"
+				"weapon"               	"weapon_remingtonmsr"
+				"weapon"				"weapon_gol"
+				"weapon"				"weapon_l1a1"
+				"weapon"				"weapon_famas"
+				"weapon"				"weapon_g33"
+
+				// insurgent weapons this can show up on
+				// for coop
+				"weapon"				"weapon_m1a1"
+				"weapon"				"weapon_dragunovsvu"
+				"weapon"				"weapon_m16a1"
+				"weapon"				"weapon_car15"
+				"weapon"				"weapon_sks"
+				"weapon"				"weapon_svd"
+				"weapon"				"weapon_mp40"
+				"weapon"				"weapon_mac10"
+				"weapon"				"weapon_fal"
+				"weapon"				"weapon_stg44"
+				"weapon"				"weapon_mosin"
+				"weapon"				"weapon_kar98"
+				"weapon"				"weapon_akm"
+				"weapon"				"weapon_ak74"
+				"weapon"				"weapon_aks74u"
+			}
+			"viewmodel_attachments"
+			{
+				"Suppressor"
+				{
+					"model"					"models/weapons/upgrades/a_suppressor_sec.mdl"
+					
+					"scales"
+					{
+						"weapon_m14"				"0.75"
+						"weapon_sr25"				"0.75"
+						"weapon_mini14"				"0.75"
+						"weapon_m1asocom16"			"0.75"
+						"weapon_mp5"				"0.75"
+						"weapon_p90"				"0.75"
+						"weapon_spectre"			"0.75"
+						"weapon_mp5a4"				"0.75"
+						"weapon_mp7"				"0.75"
+						"weapon_krissvector"		"0.75"
+						"weapon_ump45"				"0.75"
+						"weapon_m40a1"				"1.0"
+						"weapon_remingtonmsr"		"1.0"
+						"weapon_gol"				"1.0"
+						"weapon_sks"				"0.85"
+						"weapon_svd"				"0.85"
+						"weapon_mp40"				"0.72"
+						"weapon_mac10"				"0.72"
+						"weapon_fal"				"0.8"
+						"weapon_stg44"				"0.8"
+						"weapon_g33"				"0.8"
+						"weapon_l1a1"				"0.8"
+						"weapon_mosin"				"0.7"
+						"weapon_kar98"				"0.7"
+						"weapon_galil_sar"			"0.8"
+						"weapon_ak74"				"0.8"
+						"weapon_akm"				"0.9"
+						"weapon_m1a1"				"0.75"
+						"weapon_dragunovsvu"		"0.75"
+						"weapon_m16a1"				"0.75"
+						"weapon_car15"				"0.75"
+						"weapon_aks74u"				"0.7"
+						"weapon_famas"				"0.75"
+					}
+				}
+			}
+			"world_attachments"
+			{
+				"Silencer"
+				{
+					"model"					"models/weapons/upgrades/w_sil_sec1.mdl"
+				}
+			}
+		}
+		
+		"barrel_silencer_sec2"
+		{
+			"import"					"base_silencer"
+			"upgrade_cost"				"2"
+			"class_restricted"			"0"
+			"length"					"12"
+			"team_access"				"security, insurgent"
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_mk18"
+				"weapon"				"weapon_scarl"
+				"weapon"				"weapon_f2000"
+				"weapon"				"weapon_colt9mm"
+				"weapon"				"weapon_type95"
+				"weapon"				"weapon_cm901"
+				"weapon"				"weapon_honeybadger"
+				"weapon"				"weapon_g36c"
+				"weapon"				"weapon_acr"
+				"weapon"				"weapon_steyraug"
+				"weapon"				"weapon_l85a2"
+			}
+			"viewmodel_attachments"
+			{
+				"Suppressor"
+				{
+					"model"					"models/weapons/upgrades/a_suppressor_sec2.mdl"
+					"scales"
+					{
+						"weapon_acr"               "1.5"
+					}
+				}
+				//"l85_barrel"
+				//{
+				//	"model" 					"models/insgwep/l85/a_l85barrel.mdl"
+				//	"weapons"
+				//	{
+				//		"weapon" 					  "weapon_l85a2"
+				//	}
+				//}				
+			}
+			"world_attachments"
+			{
+				"Silencer"
+				{
+					"model"					"models/weapons/upgrades/w_sil_sec2.mdl"
+				}
+				//"l85_barrel"
+				//{
+				//	"model" 					"models/insgwep/l85/w_l85barrel.mdl"
+				//	"weapons"
+				//	{
+				//								"weapon" "weapon_l85a2"
+				//	}
+				//}					
+			}
+		}
+			
+		"barrel_silencer_ins1"
+		{
+			"import"					"base_silencer"
+			"upgrade_cost"				"2"
+			"class_restricted"			"0"
+			"length"					"12"
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m1a1"
+				"weapon"				"weapon_dragunovsvu"
+				"weapon"				"weapon_m16a1"
+				"weapon"				"weapon_car15"
+				"weapon"				"weapon_sks"
+				"weapon"				"weapon_svd"
+				"weapon"				"weapon_mp40"
+				"weapon"				"weapon_mac10"
+				"weapon"				"weapon_fal"
+				"weapon"				"weapon_stg44"
+				"weapon"				"weapon_g33"
+				"weapon"				"weapon_mosin"
+				"weapon"				"weapon_kar98"
+				"weapon"				"weapon_akm"
+				"weapon"				"weapon_ak74"
+				"weapon"				"weapon_aks74u"
+				"weapon"				"weapon_galil_sar"
+				"weapon"				"weapon_sig553"
+				"weapon"				"weapon_ak12u"
+				"weapon"				"weapon_uzi"		
+			}
+			
+			"viewmodel_attachments"
+			{
+				"Suppressor_Default"
+				{
+					"model"					"models/weapons/upgrades/a_suppressor_ins.mdl"
+					
+					"scales"
+					{
+						"weapon_m1a1"				".5"
+						"weapon_dragunovsvu"		".5"
+						"weapon_m16a1"				".5"
+						"weapon_car15"				".5"
+						"weapon_sks"				"0.85"
+						"weapon_svd"				"0.85"
+						"weapon_mp40"				"0.72"
+						"weapon_mac10"				"0.72"
+						"weapon_fal"				"0.8"
+						"weapon_stg44"				"0.8"
+						"weapon_g33"				"0.8"
+						"weapon_mosin"				"0.7"
+						"weapon_kar98"				"0.7"
+					}
+					
+					"weapons"
+					{	
+						"weapon"				"weapon_m1a1"
+						"weapon"				"weapon_dragunovsvu"
+						"weapon"				"weapon_m16a1"
+						"weapon"				"weapon_car15"
+						"weapon"				"weapon_sks"
+						"weapon"				"weapon_svd"
+						"weapon"				"weapon_mp40"
+						"weapon"				"weapon_mac10"
+						"weapon"				"weapon_fal"
+						"weapon"				"weapon_stg44"
+						"weapon"				"weapon_g33"
+						"weapon"				"weapon_mosin"
+						"weapon"				"weapon_kar98"
+						"weapon"				"weapon_galil_sar"
+						"weapon"				"weapon_uzi"
+					}
+				}
+				
+				//"Suppressor_SIG553"
+				//{
+				//	"model"					"models/weapons/upgrades/a_suppressor_sig.mdl"
+					
+				//	"weapons"
+				//	{
+				//		"weapon"				"weapon_sig553"
+				//	}
+				//}
+				
+				"Suppressor_AKM"
+				{
+					"model"					"models/weapons/upgrades/a_suppressor_ak.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_akm"
+						"weapon"				"weapon_ak74"
+					}
+				}
+				
+				"Suppressor_AKS"
+				{
+					"model"					"models/weapons/upgrades/a_suppressor_aks.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_aks74u"
+						"weapon"				"weapon_ak12u"
+					}
+				}
+			}
+			"world_attachments"
+			{
+				"Silencer"
+				{
+					"model"					"models/weapons/upgrades/w_sil_ins1.mdl"
+				}
+			}
+		}
+
+		"barrel_silencer_pistol"
+		{
+			"import"					"base_silencer"
+			"upgrade_cost"				"1"
+			"class_restricted"			"0"
+			"length"					"8"
+			"team_access"				"security, insurgent"
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m9"
+				"weapon"				"weapon_sigp226"
+				"weapon"				"weapon_9mmsidearm"
+				"weapon"				"weapon_glock33"
+				"weapon"				"weapon_glock17"
+				"weapon"				"weapon_glock18"
+				"weapon"				"weapon_hkusp"
+				"weapon"				"weapon_fiveseven"
+				"weapon"				"weapon_m45seriespistol"
+				"weapon"				"weapon_sigp220"
+				"weapon"				"weapon_makarov"
+				"weapon"				"weapon_mp443"
+				"weapon"				"weapon_m1911seriespistol"
+				"weapon"				"weapon_combatcommander"
+				"weapon"				"weapon_deagle"
+			}
+			
+			"viewmodel_attachments"
+			{
+				"Suppressor"
+				{
+					"model"					"models/weapons/upgrades/a_suppressor_pistol.mdl"
+				}
+				
+				"Suppressor_usp"
+				{
+					"model"					"models/weapons/upgrades/a_suppressor_pistol_glock.mdl"
+					
+					"weapons"
+					{
+						"weapon"		"weapon_hkusp"
+					}
+					
+					"scales"
+					{
+						"weapon_hkusp"				"1.25"
+					}
+				}
+				"barrel"
+				{
+					"model"					"models/weapons/upgrades/a_uspbarrel.mdl"
+					
+					"weapons"
+					{
+						"weapon"		"weapon_hkusp"
+					}
+				}				
+				
+			}
+			
+			"world_attachments"
+			{
+				"Silencer"
+				{
+					"model"					"models/weapons/upgrades/w_sil_pistol.mdl"
+				}
+			}
+		}
+		
+		"siderail_lasersight_band"
+		{
+			"import"					"base_lasersight"
+			"upgrade_cost"				"2"
+			
+			"allowed_weapons"
+			{
+				// security
+				"weapon"				"weapon_galil_sar"
+				"weapon"				"weapon_mini14"
+				"weapon"				"weapon_asval"
+				"weapon"				"weapon_m1asocom16"
+				"weapon"				"weapon_mp5"
+				"weapon"				"weapon_p90"
+				"weapon"				"weapon_spectre"
+				"weapon"				"weapon_mp5a4"
+				"weapon"				"weapon_mp7"
+				"weapon"				"weapon_krissvector"
+				"weapon"				"weapon_m249"
+				"weapon"				"weapon_mk46"
+				"weapon"				"weapon_m60"
+				"weapon"				"weapon_pecheneg"
+				"weapon"				"weapon_m240"
+				"weapon"				"weapon_l1a1"
+				"weapon"				"weapon_famas"
+				"weapon"				"weapon_sig553"
+				"weapon"				"weapon_uzi"
+
+				// insurgent
+				"weapon"				"weapon_akm"
+				"weapon"				"weapon_ak74"
+				"weapon"				"weapon_aks74u"
+				"weapon"				"weapon_m1a1"
+				"weapon"				"weapon_dragunovsvu"
+				"weapon"				"weapon_m16a1"
+				"weapon"				"weapon_car15"
+				"weapon"				"weapon_sks"
+				"weapon"				"weapon_wa2000"
+				"weapon"				"weapon_svd"
+				"weapon"				"weapon_mp40"
+				"weapon"				"weapon_mac10"
+				"weapon"				"weapon_fal"
+				"weapon"				"weapon_g33"
+				"weapon"				"weapon_rpk"
+				"weapon"				"weapon_sterling"
+				"weapon"				"weapon_beretta93r"
+				"weapon"				"weapon_ots33"
+				
+			}
+			"viewmodel_attachments"
+			{
+				"laser_band"
+				{
+					"model"					"models/weapons/upgrades/a_laser_band.mdl"
+					"Main"					"1"
+
+					"excluded_weapons"
+					{
+						"weapon"			"weapon_sterling"
+						//"weapon"			"weapon_beretta93r"
+						//"weapon"			"weapon_ots33"
+					}
+				}
+				"laser_sterling"
+				{
+					"model"					"models/weapons/upgrades/a_laser_sterling.mdl"
+					"Main"					"1"
+
+					"weapons"
+					{
+						"weapon"			"weapon_sterling"
+					}
+				}
+				
+				//"laser_beretta93r"
+				//{
+				//	"model"					"models/weapons/upgrades/a_laser_braffica.mdl"
+				//	"Main"					"1"
+
+				//	"weapons"
+				//	{
+				//		"weapon"			"weapon_beretta93r"
+				//	}
+				//}				
+				
+				//"laser_OTS33"
+				//{
+				//	"model"					"models/weapons/upgrades/a_laser_ots33per.mdl"
+				//	"Main"					"1"
+
+				//	"weapons"
+				//	{
+				//		"weapon"			"weapon_ots33"
+				//	}
+				//}							
+			}
+		}
+		
+		"siderail_flashlight_band"
+		{
+			"import"					"base_flashlight"
+			"upgrade_cost"				"1"
+			"team_access"				"security, insurgent"
+			
+			"allowed_weapons"
+			{
+				// security
+				"weapon"				"weapon_mini14"
+				"weapon"				"weapon_m1asocom16"
+				"weapon"				"weapon_mp5"
+				"weapon"				"weapon_p90"	
+				"weapon"				"weapon_spectre"
+				"weapon"				"weapon_mp5a4"
+				"weapon"				"weapon_mp7"
+				"weapon"				"weapon_krissvector"
+				"weapon"				"weapon_m249"
+				"weapon"               	"weapon_mk46"
+				"weapon"               	"weapon_m60"
+				"weapon"               	"weapon_pecheneg"
+				"weapon"               	"weapon_m240"
+				"weapon"				"weapon_famas"
+				"weapon"				"weapon_sig553"
+				"weapon"				"weapon_uzi"
+				"weapon"				"weapon_g33"
+				"weapon"				"weapon_car15"
+				"weapon"				"weapon_asval"
+				
+				// insurgent
+				"weapon"				"weapon_akm"
+				"weapon"				"weapon_ak74"
+				"weapon"				"weapon_aks74u"
+				"weapon"				"weapon_m1a1"
+				"weapon"				"weapon_dragunovsvu"
+				"weapon"				"weapon_m16a1"
+				"weapon"				"weapon_sks"
+				"weapon"				"weapon_wa2000"
+				"weapon"				"weapon_svd"
+				"weapon"				"weapon_mp40"
+				"weapon"				"weapon_mac10"
+				"weapon"				"weapon_fal"
+				"weapon"				"weapon_galil_sar"
+				"weapon"				"weapon_l1a1"
+				"weapon"				"weapon_rpk"
+				"weapon"				"weapon_sterling"
+				"weapon"                "weapon_beretta93r"
+				"weapon"				"weapon_ots33"
+				
+			}
+			"viewmodel_attachments"
+			{
+				"Flashlight_band"
+				{
+					"model"					"models/weapons/upgrades/a_flashlight_band.mdl"
+					"Main"					"1"
+
+					"excluded_weapons"
+					{
+						"weapon"			"weapon_sterling"
+						//"weapon"            "weapon_beretta93r"
+						//"weapon"			"weapon_ots33"
+					}
+				}
+				"flashlight_sterling"
+				{
+					"model"					"models/weapons/upgrades/a_flashlight_sterling.mdl"
+					"Main"					"1"
+
+					"weapons"
+					{
+						"weapon"			"weapon_sterling"
+					}
+				}
+				
+				//"flashlight_beretta93r"
+				//{
+				//	"model"					"models/weapons/upgrades/a_flashlight_braffica.mdl"
+				//	"Main"					"1"
+
+				//	"weapons"
+				//	{
+				//		"weapon"            "weapon_beretta93r"
+				//	}
+				//}				
+				
+				//"flashlight_ots33"
+				//{
+				//	"model"					"models/weapons/upgrades/a_flashlight_ots33per.mdl"
+				//	"Main"					"1"
+
+				//	"weapons"
+				//	{
+				//		"weapon"			"weapon_ots33"
+				//	}
+				//}			
 			}
 		}
 
