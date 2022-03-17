@@ -435,8 +435,8 @@
 			}
 			"sounds"
 			{
-				"shot_single"				"Weapon_M9.Single"
-				"shot_single_local"			"Weapon_M9.SingleLocal"
+				"shot_single"				"Weapon_Hkusp.Single"//"Weapon_M9.Single"
+				"shot_single_local"			"Weapon_Hkusp.SingleLocal"//"Weapon_M9.SingleLocal"
 				"shot_silent"				"Weapon_M9.SingleSilenced"
 				"shot_silent_local"			"Weapon_M9.SingleSilencedLocal"
 				"empty"					"Weapon_M9.Empty"
