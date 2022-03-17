@@ -25,6 +25,7 @@
 			//customs
 			"sounds"			"scripts/hmst_custom_sounds.txt"		//modify
 			"localize"			"resource/ui/custom_schinese.txt"		//modify
+			"localize"			"resource/ui/angrybots_english_modern.txt"
 			
 			// coop specific
 			"sounds"			"scripts/ins_sounds_voice_coop.txt"
