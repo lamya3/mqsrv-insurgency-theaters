@@ -463,6 +463,124 @@
 	} 
 }
 
+//hk416c
+
+"Weapon_416c.Single"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"	    "1.0"
+	"pitch"			"100,105"
+	"soundlevel"  	"SNDLVL_100dB "
+	"rndwave"
+	{
+	"wave"	        ")weapons/m416/m416_tp.wav"	
+	}
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_distance_weapon_start"
+			"import_stack" "INS_limit_start3"
+			
+			"play_distant_version_1"
+			{
+				"entry_name" "Weapon_makarov.SingleDistant"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "INS_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "ThirdWeapons"
+			}
+			"volume_distance_xfade"
+			{
+				"input_map_min" "0.0"
+				"input_map_max" "1.0"
+			}
+			                        "volume_accumulate"
+                        {
+                               "input3" "0.7"
+                        }
+
+		}
+	}
+
+}
+
+"Weapon_416c.SingleLocal"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"	    "1.0"
+	"pitch"			"100,105"
+    "soundlevel"	"SNDLVL_GUNFIRE"
+    "wave"	        "weapons/m416/m416_fp.wav"	
+}
+
+
+//hkusp
+"Weapon_Hkusp.Single"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"	    "1.0"
+    "pitch"			"100,105"
+	"soundlevel"  	"SNDLVL_94dB"
+	"rndwave"
+	{
+		"wave"		    ")weapons/hkusp/uspcs_tp.wav"	
+	}
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_distance_weapon_start"
+			"import_stack" "INS_limit_start3"
+			
+			"play_distant_version_1"
+			{
+				"entry_name" "Weapon_M9.SingleDistant"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "INS_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "ThirdWeapons"
+			}
+			"volume_distance_xfade"
+			{
+				"input_map_min" "0.0"
+				"input_map_max" "1.0"
+			}
+			"volume_accumulate"
+			{
+			   "input3" "0.7"
+			}
+		}
+	}
+}
+
+"Weapon_Hkusp.SingleLocal"
+{
+	"channel"	    "CHAN_WEAPON"
+	"volume"	    "1.0"
+    "pitch"			"100,105"
+    "soundlevel"	"SNDLVL_GUNFIRE"
+	"wave"	"weapons/hkusp/uspcs_fp.wav"
+}
+
+
+
 // UNIVERSAL
 
 "Weapon_Bayonet.HitWorld"
