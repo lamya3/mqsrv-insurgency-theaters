@@ -470,7 +470,7 @@
 	"channel"		"CHAN_STATIC"
 	"volume"	    "1.0"
 	"pitch"			"100,105"
-	"soundlevel"  	"SNDLVL_100dB "
+	"soundlevel"  	"SNDLVL_150dB "
 	"rndwave"
 	{
 	"wave"	        ")weapons/m416/m416_tp.wav"	
@@ -529,7 +529,7 @@
 	"channel"		"CHAN_STATIC"
 	"volume"	    "1.0"
     "pitch"			"100,105"
-	"soundlevel"  	"SNDLVL_94dB"
+	"soundlevel"  	"SNDLVL_156dB"
 	"rndwave"
 	{
 		"wave"		    ")weapons/hkusp/uspcs_tp.wav"	
