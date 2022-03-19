@@ -4085,7 +4085,7 @@
 		// AMMO BASE (USE _custom FOR ANTI DUPLICATE)
 		// ========================================
 		// don't use this
-		"default_custom"	// set for AKM values as baseline
+		"default"	// set for AKM values as baseline
 		{
 			"flags"					"AMMO_USE_MAGAZINES"
 			"carry"					"12"
@@ -4129,7 +4129,7 @@
 		//m1garand base
 		"762x51_custom"	// 147gr 833 m/s 3,304J
 		{
-			"import"				"default_custom"
+			"import"				"default"
 			"SuppressionIncrement"			"90"
 			"brass_model"				"models/weapons/shells/762x51.mdl"
 			"Damage"
