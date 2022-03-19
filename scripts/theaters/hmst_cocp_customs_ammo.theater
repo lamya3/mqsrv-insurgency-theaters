@@ -469,7 +469,7 @@
 			"tracer_lowammo"			"5"
 		}
 		
-		"556x45_car"	// 20                                                      " vs 14" barrel: 866m/s vs 922m/s
+		"556x45_car"	// 20" vs 14" barrel: 866m/s vs 922m/s
 		{
 			"import"				"556x45"
 			"Damage"
@@ -731,6 +731,120 @@
 				"8000"					"10"
 			}
 		}
+
+		//CUSTOM BULLETS HERE
+		
+		"4buck" // 4 Buck 0.24in 344lb
+		{
+			"import"				"default"
+			"bulletcount"				"25"
+			"damageType"				"DMG_BUCKSHOT"
+			"brass_model"				"models/weapons/shells/12guage.mdl"
+			"brass_sound"				"BOUNCE_SHOTSHELL"
+			"SuppressionIncrement"			"80"
+			
+			"Damage"
+			{
+				"800"					"35" // 324 total possible
+				"2000"					"35" // 162 (rounded up)
+				"7000"					"20" // 54 (rounded down)
+			}
+			"PenetrationPower"
+			{
+				"1000"					"85"
+				"8000"					"30"
+			}
+			"DamageHitgroups"
+			{
+				"HITGROUP_HEAD"				"0.60"
+				"HITGROUP_CHEST"			"0.65"
+				"HITGROUP_STOMACH"			"0.70"
+				"HITGROUP_LEFTARM"			"0.80"
+				"HITGROUP_RIGHTARM"			"0.80"
+				"HITGROUP_LEFTLEG"			"0.75"
+				"HITGROUP_RIGHTLEG"			"0.75"
+			}
+		}
+					
+		"7.62×25nam"//PPSH 41 	
+		{
+			"import"				"default"
+			"SuppressionIncrement"			"10"
+			"brass_model"				"models/weapons/shells/9x19.mdl"
+			
+			"Damage"
+			{
+				"1"						"52"
+				"5000"					"47"
+				"8000"					"30"
+			}
+			"PenetrationPower"
+			{
+				"10"					"200"
+				"8000"					"135"
+			}
+			
+		}
+		
+		"00buck_cus"//meaning same as 00buck,JUDGE
+		{
+			"import"				"default"
+			"bulletcount"				"10"
+			"damageType"				"DMG_BUCKSHOT"
+			"brass_model"				"models/weapons/shells/12guage.mdl"
+			"brass_sound"				"BOUNCE_SHOTSHELL"
+			"SuppressionIncrement"			"80"
+			
+			"Damage"
+			{
+				"800"					"40" // 324 total possible
+				"2000"					"40" // 162 (rounded up)
+				"7000"					"40" // 54 (rounded down)
+			}
+			"PenetrationPower"
+			{
+				"1000"					"100"
+				"8000"					"50"
+			}
+			"DamageHitgroups"
+			{
+				"HITGROUP_HEAD"				"0.70"
+				"HITGROUP_CHEST"			"0.75"
+				"HITGROUP_STOMACH"			"0.80"
+				"HITGROUP_LEFTARM"			"0.85"
+				"HITGROUP_RIGHTARM"			"0.85"
+				"HITGROUP_LEFTLEG"			"0.80"
+				"HITGROUP_RIGHTLEG"			"0.80"
+			}
+		}
+
+		"rifledslug"//meaning same as slug,JUDGE
+		{
+			"brass_model"				"models/weapons/shells/12guage.mdl"
+			"SuppressionIncrement"			"80"
+			
+			"Damage"
+			{
+				"800"					"700"
+				"4500"					"350"
+				"9000"					"200"
+			}
+			"PenetrationPower"
+			{
+				"100"					"750"
+				"8000"					"100"
+			}
+			"DamageHitgroups"
+			{
+				"HITGROUP_HEAD"				"2.00"
+				"HITGROUP_CHEST"			"2.00"
+				"HITGROUP_STOMACH"			"1.75"
+				"HITGROUP_LEFTARM"			"1.00"
+				"HITGROUP_RIGHTARM"			"1.00"
+				"HITGROUP_LEFTLEG"			"1.00"
+				"HITGROUP_RIGHTLEG"			"1.00"
+			}
+		}
 		
 		// ========================================
 		// makarov
@@ -759,7 +873,7 @@
 		// ========================================
 		
 		// ========================================
-		// m9
+		// m9, glock17
 		// ========================================
 		"9x19mm"
 		{
@@ -885,7 +999,7 @@
 			"magsize"				"35"
 		}
 		// ========================================
-		// mp5k, mp40
+		// mp5k, mp40, mac10
 		// ========================================
 		"9x19mm_smg"
 		{
@@ -1173,5 +1287,118 @@
 			"flags_clear"				"AMMO_USE_MAGAZINES"
 		}
 		
+		// ========================================
+		// CUSTOMS BULLETS TYPES START HERE
+		// ========================================
+		//
+		// ========================================
+		// M1 GARAND
+		// ========================================
+		"762x51_mag_8rnd"
+		{
+			"import"				"762x51"
+			"magsize"				"8"
+		}
+		"762x51_hp_mag_8rnd"
+		{
+			"import"				"762x51_hp"
+			"magsize"				"8"
+		}
+		"762x51_ap_mag_8rnd"
+		{
+			"import"				"762x51_ap"
+			"magsize"				"8"
+		}
+		"762x51_tracer_mag_8rnd"
+		{
+			"import"				"762x51_tracer"
+			"magsize"				"8"
+		}
+
+		// ========================================
+		// PPSH41
+		// ========================================
+		
+		"7.62×25nam_hp"
+		{
+			"import"				"7.62×25nam"
+			"DamageHitgroups"
+			{
+				"HITGROUP_HEAD"				"0.90"
+				"HITGROUP_CHEST"			"0.75"
+				"HITGROUP_STOMACH"			"0.80"
+				"HITGROUP_LEFTARM"			"2.50"
+				"HITGROUP_RIGHTARM"			"2.50"
+				"HITGROUP_LEFTLEG"			"4.00"
+				"HITGROUP_RIGHTLEG"			"4.00"
+			}
+			
+			"PenetrationPower"
+			{
+				"10"					"300"
+				"8000"					"150"
+			}
+		}
+		"7.62×25nam_ap"
+		{
+			"import"				"7.62×25nam"
+			"DamageHitgroups"
+			{
+				"HITGROUP_HEAD"				"2.50"
+				"HITGROUP_CHEST"			"2.25"
+				"HITGROUP_STOMACH"			"2.25"
+				"HITGROUP_LEFTARM"			"1.25"
+				"HITGROUP_RIGHTARM"			"1.25"
+				"HITGROUP_LEFTLEG"			"1.25"
+				"HITGROUP_RIGHTLEG"			"1.25"
+			}
+			"PenetrationPower"
+			{
+				"10"					"500"
+				"8000"					"300"
+			}
+		}
+
+		// ========================================
+		// H&K USP
+		// ========================================
+		// see "45acp_hp_pistol" in bullets 
+		// see "45acp_ap_pistol" in bullets 
+		
+		// ========================================
+		// MAC 10
+		// ========================================	
+		// see bullets type mp40, mp5k
+		
+		// ========================================
+		// Glock 17
+		// ========================================
+		// see bullets type m9
+		
+		// ========================================
+		// Judge
+		// ========================================
+
+		"4buckshot" // DEFAULT BULLET FOR JUDGE
+		{
+			"import"				"4buck"
+			"carry"					"72"
+			"flags_clear"				"AMMO_USE_MAGAZINES"
+		}
+		
+		"00buckshot"
+		{
+			"import"				"00buck"
+			"carry"					"72"
+			"flags_clear"				"AMMO_USE_MAGAZINES"
+		}
+		
+		"rifledslugs"
+		{
+			"import"				"rifledslug"
+			"carry"					"72"
+			"flags_clear"				"AMMO_USE_MAGAZINES"
+		}
+	
 	}
 }
