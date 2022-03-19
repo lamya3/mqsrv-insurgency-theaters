@@ -2834,7 +2834,7 @@
 			{
 				"compensator"
 				{
-					"model"						"models/weapons/upgrades/w_match.mdl"
+					"model"						"models/weapons/usp/w_match.mdl"
 					"weapons"
 					{
 						"weapon"	"weapon_hkusp"
