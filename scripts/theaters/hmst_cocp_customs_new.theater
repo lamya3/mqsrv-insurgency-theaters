@@ -1,5 +1,6 @@
 "#base" "hmst_cocp_upgradescustoms_default.theater"
 "#base" "hmst_cocp_ammocustoms_base.theater"
+"#base" "hmst_cocp_weaponcustoms_default.theater"
 
 "theater"
 {
