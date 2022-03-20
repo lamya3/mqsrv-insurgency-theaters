@@ -1,9 +1,5 @@
 "#base" "default_base.theater"					//source from nwi theater
-"#base" "hmst_cocp_customs_player.theater"		//instead "base_player.theater"
-"#base" "hmst_cocp_customs_ammo.theater"		//instead "base_common_ammo_test.theater"
-"#base" "hmst_cocp_customs_gear.theater"		//instead "default_gear_test.theater"
-"#base" "hmst_cocp_customs_weapons.theater"		//instead "default_weapon.theater"
-"#base" "hmst_cocp_customs_upgrade.theater"		//instead "default_weapon_upgrades.theater"
+"#base" "hmst_cocp_customs_weapons.theater"		//instead "default_weapon.theater",main theater
 
 "theater"
 {

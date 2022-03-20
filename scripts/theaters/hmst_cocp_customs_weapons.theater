@@ -1,5 +1,9 @@
 "#base" "base_weapon.theater"
 "#base" "base_explosives.theater"
+"#base" "hmst_cocp_customs_upgrade.theater"		//instead "default_weapon_upgrades.theater"
+"#base" "hmst_cocp_customs_player.theater"		//instead "base_player.theater"
+"#base" "hmst_cocp_customs_ammo.theater"		//instead "base_common_ammo_test.theater"
+"#base" "hmst_cocp_customs_gear.theater"		//instead "default_gear_test.theater"
 
 "theater"
 {
@@ -4881,6 +4885,34 @@
 				"DetonateWaterSound"		"IED.ExplodeWater"
 				"BounceSound"				"Weapon_IED.Bounce"
 			}
+		}
+	}
+
+	//Why ammo here? because there are some glitch that
+	//will make weapon_taurusjudge's clip always keep 0 when ammo type = 4buckshot,00buckshot...etc.
+	//whatever you do what.
+
+	"ammo"
+	{
+		"4buckshot" // DEFAULT 04BUCK BULLET FOR JUDGE,JUST PATCH THIS PREVENT 0 CLIP
+		{
+			"import"				"4buck"
+			"carry"					"72"
+			"flags_clear"				"AMMO_USE_MAGAZINES"
+		}
+		
+		"00buckshot"// DEFAULT 00BUCK BULLET FOR JUDGE,JUST PATCH THIS PREVENT 0 CLIP
+		{
+			"import"				"00buck"
+			"carry"					"72"
+			"flags_clear"				"AMMO_USE_MAGAZINES"
+		}
+		
+		"rifledslugs"// DEFAULT SLUG BULLET FOR JUDGE,JUST PATCH THIS PREVENT 0 CLIP
+		{
+			"import"				"rifledslug"
+			"carry"					"72"
+			"flags_clear"				"AMMO_USE_MAGAZINES"
 		}
 	}
 }
