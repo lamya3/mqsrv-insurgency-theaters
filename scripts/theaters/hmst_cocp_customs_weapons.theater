@@ -1258,8 +1258,8 @@
 		{
 			"import"					"ballistic_base"
 			"weapon_class"				"rifle_automatic_fire"
-			"print_name"				"#weapon_galil_sar"
-			"print_desc"				"#weapon_galil_sar_desc"
+			"print_name"				"#weapon_xm8"
+			"print_desc"				"#weapon_xm8_desc"
 			"view_model"				"models/weapons/v_hkxm8_sar.mdl"
 			"world_model"				"models/weapons/w_hkxm8_sar.mdl"
 			"rounds_per_minute"			"650"
