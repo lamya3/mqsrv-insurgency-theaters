@@ -327,6 +327,7 @@
 				"weapon"				"weapon_m4a1"
 				"weapon"				"weapon_m4a1sopmod"
 				"weapon"				"weapon_galil_sar"
+				"weapon"				"weapon_xm8"
 				"weapon"				"weapon_akm"
 				"weapon"				"weapon_ak74"
 				"weapon"				"weapon_fal"
@@ -352,6 +353,7 @@
 				"weapon"               	"weapon_rpk"
 				"weapon"               	"weapon_ak12"
 				"weapon"               	"weapon_m40a1"
+				"weapon"               	"weapon_m200"
 				"weapon"               	"weapon_remingtonmsr"				
 				"weapon"               	"weapon_gol"
 				"weapon"               	"weapon_mosin"
@@ -435,6 +437,7 @@
 				"weapon"				"weapon_m4a1"
 				"weapon"				"weapon_m4a1sopmod"
 				"weapon"				"weapon_galil_sar"
+				"weapon"				"weapon_xm8"
 				"weapon"				"weapon_akm"
 				"weapon"				"weapon_ak74"
 				"weapon"				"weapon_fal"
@@ -459,6 +462,7 @@
 				"weapon"               	"weapon_rpk"
 				"weapon"               	"weapon_ak12"
 				"weapon"               	"weapon_m40a1"
+				"weapon"               	"weapon_m200"
 				"weapon"               	"weapon_remingtonmsr"
 				"weapon"               	"weapon_mosin"
 				"weapon"               	"weapon_kar98"
@@ -1305,6 +1309,17 @@
 						"clip_default"			"4"					
 						"lose_rounds_reload"	"1"
 					}
+				}
+				"weapon_xm8"
+				{
+					"ammo_clip"
+					{
+						"ammo_type"				"556_35box"
+						"clip_max"				"12"
+						"clip_max_rounds"		"30"
+						"clip_default"			"4"					
+						"lose_rounds_reload"	"1"
+					}
 				}		
 				"weapon_g33"
 				{
@@ -1798,6 +1813,7 @@
 				"weapon"				"weapon_m4a1"
 				"weapon"				"weapon_m4a1sopmod"
 				"weapon"				"weapon_galil_sar"
+				"weapon"				"weapon_xm8"
 				"weapon"				"weapon_akm"
 				"weapon"				"weapon_ak74"
 				"weapon"				"weapon_fal"
@@ -2370,6 +2386,7 @@
 			{
 				"weapon"				"weapon_galil"
 				"weapon"				"weapon_galil_sar"
+				"weapon"				"weapon_xm8"
 			}
 
 			"viewmodel_attachments"
@@ -2386,12 +2403,28 @@
 						"weapon"		"weapon_galil_sar"
 					}
 				}
+
+				"magazine_xm8"
+				{
+					"ActSuffix"			"_MAG1"
+					"model"				"models/weapons/upgrades/a_magazine_hkxm8_75.mdl"
+					"Main"				"1"
+
+					"weapons"
+					{
+						"weapon"		"weapon_xm8"
+					}
+				}
 			}
 			"world_attachments"
 			{
 				"magazine_galil"
 				{
 					"model"				"models/weapons/upgrades/w_magazine_galil_75.mdl"					
+				}
+				"magazine_xm8"
+				{
+					"model"				"models/weapons/upgrades/w_magazine_hkxm8_75.mdl"					
 				}				
 			}
 		}
@@ -2523,6 +2556,7 @@
 				"weapon"				"weapon_fal"
 				"weapon"				"weapon_galil"
 				"weapon"				"weapon_galil_sar"
+				"weapon"				"weapon_xm8"
 				"weapon"				"weapon_l1a1"
 				"weapon"				"weapon_rpk"
 				"weapon"               	"weapon_ak12"
@@ -2564,6 +2598,7 @@
 			{
 				"weapon"				"weapon_m590"
 				"weapon"				"weapon_m40a1"
+				"weapon"				"weapon_m200"
 				"weapon"				"weapon_toz"
 				"weapon"				"weapon_mosin"
 			}
@@ -2578,6 +2613,7 @@
 					{
 						"weapon"			"weapon_m590"
 						"weapon"			"weapon_m40a1"
+						"weapon"			"weapon_m200"
 					}
 				}
 
@@ -2677,7 +2713,8 @@
 				"weapon"				"weapon_mini14"
 				"weapon"				"weapon_type97"
 				"weapon"				"weapon_galil"
-				"weapon"				"weapon_galil_sar"												
+				"weapon"				"weapon_galil_sar"
+				"weapon"				"weapon_xm8"												
 				"weapon"				"weapon_ppsh41"				
 				"weapon"                "weapon_m590"				
 				"weapon"                "weapon_toz"
@@ -2698,6 +2735,7 @@
 				"weapon"               	"weapon_rpk"
 				"weapon"               	"weapon_ak12"
 				"weapon"               	"weapon_m40a1"
+				"weapon"				"weapon_m200"
 				"weapon"               	"weapon_mosin"
 			}
 		}
@@ -2827,6 +2865,17 @@
 						"weapon"				"weapon_galil_sar"
 					}
 				}
+
+				// XM8 Modkit
+				"ModKitXm8"
+				{
+					"model"					"models/weapons/upgrades/a_mount_hkxm8.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_xm8"
+					}
+				}
 			}
 			
 			"world_attachments"
@@ -2914,6 +2963,17 @@
 						"weapon"				"weapon_galil_sar"
 					}
 				}
+
+				// XM8 Modkit
+				"ModKitXm8"
+				{
+					"model"					"models/weapons/upgrades/w_mount_hkxm8.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_xm8"
+					}
+				}
 				
 				// M1A1 Modkit
 				"ModKitM1A1"
@@ -2945,6 +3005,7 @@
 				"weapon"               	"weapon_mg4"
 				"weapon"               	"weapon_mk46"
 				"weapon"				"weapon_m40a1"
+				"weapon"				"weapon_m200"
 				"weapon"				"weapon_mk18"
 				"weapon"				"weapon_hk416c"
 				"weapon"				"weapon_m590"
@@ -2952,6 +3013,7 @@
 				"weapon"				"weapon_mini14"
 				"weapon"				"weapon_type97"
 				"weapon"				"weapon_galil_sar"
+				"weapon"				"weapon_xm8"
 				"weapon"				"weapon_mp5"
 				"weapon"				"weapon_ump45"
 				"weapon"				"weapon_l1a1"
@@ -3075,6 +3137,12 @@
 					"fov_wpn_ironsight"			"39"
 					"fov_wpn_focus"				"47"
 				}
+
+				"weapon_m200"
+				{
+					"fov_wpn_ironsight"			"39"
+					"fov_wpn_focus"				"47"
+				}
 				
 				"weapon_mk18"
 				{
@@ -3160,6 +3228,12 @@
 					"fov_wpn_focus"				"67"
 				}
 
+				"weapon_xm8"
+				{
+					"fov_wpn_ironsight"			"60"
+					"fov_wpn_focus"				"67"
+				}
+
 				"weapon_aks74u"
 				{
 					"fov_wpn_ironsight"			"62"
@@ -3228,6 +3302,7 @@
 			{
 				// security weapons
 				"weapon"				"weapon_galil_sar"
+				"weapon"				"weapon_xm8"
 				"weapon"				"weapon_l1a1"
 				"weapon"				"weapon_m16a4"
 				"weapon"				"weapon_m4a1"
@@ -3235,6 +3310,7 @@
 				"weapon"               	"weapon_mg4"
 				"weapon"               	"weapon_mk46"
 				"weapon"				"weapon_m40a1"
+				"weapon"				"weapon_m200"
 				"weapon"				"weapon_mk18"
 				"weapon"				"weapon_hk416c"
 				"weapon"				"weapon_m590"
@@ -3402,6 +3478,12 @@
 					"fov_wpn_ironsight"			"42"
 					"fov_wpn_focus"				"50"
 				}
+
+				"weapon_m200"
+				{
+					"fov_wpn_ironsight"			"42"
+					"fov_wpn_focus"				"50"
+				}
 				
 				"weapon_m249"
 				{
@@ -3480,6 +3562,12 @@
 					"fov_wpn_ironsight"			"58"
 					"fov_wpn_focus"				"62"
 				}
+
+				"weapon_xm8"
+				{
+					"fov_wpn_ironsight"			"58"
+					"fov_wpn_focus"				"62"
+				}
 			}
 		}
 		
@@ -3495,12 +3583,14 @@
 			{
 				// security weapons
 				"weapon"				"weapon_galil_sar"
+				"weapon"				"weapon_xm8"
 				"weapon"				"weapon_m16a4"
 				"weapon"				"weapon_m4a1"
 				"weapon"				"weapon_m249"
 				"weapon"               	"weapon_mg4"
 				"weapon"               	"weapon_mk46"
 				"weapon"				"weapon_m40a1"
+				"weapon"				"weapon_m200"
 				"weapon"				"weapon_mk18"
 				"weapon"				"weapon_hk416c"
 				"weapon"				"weapon_m14"
@@ -3643,6 +3733,12 @@
 					"fov_wpn_ironsight"			"39"
 					"fov_wpn_focus"				"44"
 				}
+
+				"weapon_m200"
+				{
+					"fov_wpn_ironsight"			"39"
+					"fov_wpn_focus"				"44"
+				}
 				
 				"weapon_mp5"
 				{
@@ -3739,6 +3835,12 @@
 					"fov_wpn_ironsight"			"52"
 					"fov_wpn_focus"				"58"
 				}
+
+				"weapon_xm8"
+				{
+					"fov_wpn_ironsight"			"52"
+					"fov_wpn_focus"				"58"
+				}
 			}
 		}
 		
@@ -3754,12 +3856,14 @@
 			{
 				// security weapons
 				"weapon"				"weapon_galil_sar"
+				"weapon"				"weapon_xm8"
 				"weapon"				"weapon_m16a4"
 				"weapon"				"weapon_m4a1"
 				"weapon"				"weapon_m249"
 				"weapon"               	"weapon_mg4"
 				"weapon"               	"weapon_mk46"
 				"weapon"				"weapon_m40a1"
+				"weapon"				"weapon_m200"
 				"weapon"				"weapon_mk18"
 				"weapon"				"weapon_hk416c"
 				"weapon"				"weapon_m590"
@@ -3939,6 +4043,12 @@
 					"fov_wpn_ironsight"			"52"
 					"fov_wpn_focus"				"58"
 				}
+
+				"weapon_m200"
+				{
+					"fov_wpn_ironsight"			"52"
+					"fov_wpn_focus"				"58"
+				}
 				
 				"weapon_m590"
 				{
@@ -4053,6 +4163,12 @@
 					"fov_wpn_ironsight"			"72"
 					"fov_wpn_focus"				"80"
 				}
+
+				"weapon_xm8"
+				{
+					"fov_wpn_ironsight"			"72"
+					"fov_wpn_focus"				"80"
+				}
 			}
 		}
 		
@@ -4084,9 +4200,11 @@
 
 				// security weapons
 				"weapon"				"weapon_galil_sar"
+				"weapon"				"weapon_xm8"
 				"weapon"				"weapon_m16a4"
 				"weapon"				"weapon_m4a1"
 				"weapon"				"weapon_m40a1"
+				"weapon"				"weapon_m200"
 				"weapon"				"weapon_mk18"
 				"weapon"				"weapon_hk416c"
 				"weapon"				"weapon_m590"
@@ -4205,6 +4323,12 @@
 				}
 
 				"weapon_galil_sar"
+				{
+					"fov_wpn_ironsight"			"65"
+					"fov_wpn_focus"				"70"
+				}
+
+				"weapon_xm8"
 				{
 					"fov_wpn_ironsight"			"65"
 					"fov_wpn_focus"				"70"
@@ -4329,6 +4453,12 @@
 					"fov_wpn_ironsight"			"48"
 					"fov_wpn_focus"				"56"
 				}
+
+				"weapon_m200"
+				{
+					"fov_wpn_ironsight"			"48"
+					"fov_wpn_focus"				"56"
+				}
 				
 				"weapon_m590"
 				{
@@ -4363,11 +4493,13 @@
 
 				// security weapons
 				"weapon"				"weapon_galil_sar"
+				"weapon"				"weapon_xm8"
 				"weapon"				"weapon_m16a4"
 				"weapon"				"weapon_m249"
 				"weapon"				"weapon_mg4"
 				"weapon"				"weapon_mk46"
 				"weapon"				"weapon_m40a1"
+				"weapon"				"weapon_m200"
 				"weapon"				"weapon_mk18"
 				"weapon"				"weapon_hk416c"
 				"weapon"				"weapon_mini14"
@@ -4401,6 +4533,7 @@
 						"weapon"				"weapon_mk46"
 						"weapon"				"weapon_galil"
 						"weapon"				"weapon_galil_sar"
+						"weapon"				"weapon_xm8"
 					}
 				}
 				"POScope_Large"
@@ -4443,6 +4576,7 @@
 						"weapon"				"weapon_mk46"
 						"weapon"				"weapon_galil"
 						"weapon"				"weapon_galil_sar"
+						"weapon"				"weapon_xm8"
 					}
 				}
 			}
@@ -4486,6 +4620,12 @@
 				}
 
 				"weapon_galil_sar"
+				{
+					"fov_wpn_ironsight"			"59"
+					"fov_wpn_focus"				"61"
+				}
+
+				"weapon_xm8"
 				{
 					"fov_wpn_ironsight"			"59"
 					"fov_wpn_focus"				"61"
@@ -4594,6 +4734,12 @@
 				}
 				
 				"weapon_m40a1"
+				{
+					"fov_wpn_ironsight"			"40"
+					"fov_wpn_focus"				"45"
+				}
+
+				"weapon_m200"
 				{
 					"fov_wpn_ironsight"			"40"
 					"fov_wpn_focus"				"45"
@@ -4735,6 +4881,7 @@
 			"allowed_weapons"
 			{
 				"weapon"				"weapon_m40a1"
+				"weapon"				"weapon_m200"
 				"weapon"				"weapon_m14"
 				"weapon"				"weapon_m16a4"
 			}
@@ -4751,6 +4898,21 @@
 					"weapons"
 					{
 						"weapon"				"weapon_m40a1"
+						"weapon"				"weapon_m200"
+					}
+				}
+
+				"scope_m200"
+				{
+					"model"					"models/weapons/upgrades/a_optic_cm2.mdl"
+					"AnimIronSights"			"scope_zoom"
+					"AnimIdle"				"scope_idle"
+					"Gesture"				"delta_scope"
+					"Main"					"1"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_m200"
 					}
 				}
 				
@@ -4781,6 +4943,13 @@
 					"fov_wpn_ironsight"			"46"
 					"fov_wpn_focus"				"50"
 				}
+
+				"weapon_m200"
+				{
+					"fov_wpn_scope"				"10"
+					"fov_wpn_ironsight"			"46"
+					"fov_wpn_focus"				"50"
+				}
 				
 				"weapon_m14"
 				{
@@ -4801,6 +4970,20 @@
 				"Scope"
 				{
 					"model"					"models/weapons/upgrades/w_scope_m40.mdl"
+					"weapons"
+					{
+						"weapon"				"weapon_m40a1"
+						"weapon"				"weapon_m14"
+						"weapon"				"weapon_m16a4"
+					}
+				}
+				"Scopem200"
+				{
+					"model"					"models/weapons/upgrades/w_scope_cm2.mdl"
+					"weapons"
+					{
+						"weapon"				"weapon_m200"
+					}
 				}
 			}
 		}
@@ -5043,6 +5226,7 @@
 			{
 				"weapon"				"weapon_galil"
 				"weapon"				"weapon_galil_sar"
+				"weapon"				"weapon_xm8"
 			}
 			"ammo_type_override"		"556_tracer_35box"
 		}
@@ -5054,6 +5238,7 @@
 			{
 				"weapon"				"weapon_galil"
 				"weapon"				"weapon_galil_sar"
+				"weapon"				"weapon_xm8"
 			}
 			"ammo_type_override"		"556_hp_35box"
 		}
@@ -5065,6 +5250,7 @@
 			{
 				"weapon"				"weapon_galil"
 				"weapon"				"weapon_galil_sar"
+				"weapon"				"weapon_xm8"
 			}
 			"ammo_type_override"		"556_ap_35box"
 		}
@@ -5431,6 +5617,7 @@
 			"allowed_weapons"
 			{
 				"weapon"				"weapon_m40a1"
+				"weapon"				"weapon_m200"
 			}
 			"ammo_type_override"			"762x51mm_ap"
 		}
@@ -5636,6 +5823,16 @@
 						"weapon"				"weapon_galil"
 					}
 				}
+
+				// "Standard_XM8"
+				// {
+				// 	"model"					"models/weapons/upgrades/a_standard_hkxm8.mdl"
+					
+				// 	"weapons"
+				// 	{
+				// 		"weapon"				"weapon_xm8"
+				// 	}
+				// }
 			}
 			"world_attachments"
 			{
@@ -5834,6 +6031,7 @@
 				"weapon"				"weapon_type97"
 				"weapon"				"weapon_m590"
 				"weapon"				"weapon_galil_sar"
+				"weapon"				"weapon_xm8"
 				"weapon"				"weapon_l1a1"
 			}
 			"viewmodel_attachments"
@@ -5851,6 +6049,7 @@
 						"weapon_type97"				"0.45"
 						"weapon_m590"				"0.55"
 						"weapon_galil_sar"			"0.45"
+						"weapon_xm8"				"0.45"
 						"weapon_l1a1"				"0.45"
 					}
 				}
@@ -5862,6 +6061,16 @@
 					"weapons"
 					{
 						"weapon"				"weapon_galil_sar"
+					}
+				}
+
+				"Standard_XM8"
+				{
+					"model"					"models/weapons/upgrades/a_standard_hkxm8.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_xm8"
 					}
 				}
 			}
@@ -5884,6 +6093,7 @@
 			"allowed_weapons"
 			{
 				"weapon"				"weapon_galil_sar"
+				"weapon"				"weapon_xm8"
 				"weapon"				"weapon_m16a4"
 				"weapon"				"weapon_m4a1"
 				"weapon"				"weapon_m14"
@@ -5892,6 +6102,7 @@
 				"weapon"				"weapon_mp5"
 				"weapon"				"weapon_ump45"
 				"weapon"				"weapon_m40a1"
+				"weapon"				"weapon_m200"
 				"weapon"				"weapon_l1a1"
 				"weapon"				"weapon_galil"
 
@@ -5928,6 +6139,7 @@
 						"weapon_krissvector"		"0.75"
 						"weapon_ump45"				"0.75"
 						"weapon_m40a1"				"1.0"
+						"weapon_m200"				"1.0"
 						"weapon_remingtonmsr"		"1.0"
 						"weapon_gol"				"1.0"
 						"weapon_sks"				"0.85"
@@ -5941,6 +6153,7 @@
 						"weapon_mosin"				"0.7"
 						"weapon_kar98"				"0.7"
 						"weapon_galil_sar"			"0.8"
+						"weapon_xm8"				"0.8"
 						"weapon_ak74"				"0.8"
 						"weapon_akm"				"0.9"
 						"weapon_m1a1"				"0.75"
@@ -6013,6 +6226,7 @@
 				"weapon"				"weapon_ak74"
 				"weapon"				"weapon_aks74u"
 				"weapon"				"weapon_galil_sar"
+				"weapon"				"weapon_xm8"
 				"weapon"				"weapon_galil"
 			}
 			
@@ -6044,6 +6258,7 @@
 						"weapon"				"weapon_mosin"
 						"weapon"				"weapon_kar98"
 						"weapon"				"weapon_galil_sar"
+						"weapon"				"weapon_xm8"
 						"weapon"				"weapon_galil"
 
 					}
@@ -6319,6 +6534,7 @@
 			{
 				// security
 				"weapon"				"weapon_galil_sar"
+				"weapon"				"weapon_xm8"
 				"weapon"				"weapon_mini14"
 				"weapon"				"weapon_type97"
 				"weapon"				"weapon_mp5"
@@ -6377,6 +6593,7 @@
 			{
 				"weapon"				"weapon_m590"
 				"weapon"				"weapon_m40a1"
+				"weapon"				"weapon_m200"
 			}
 			"viewmodel_attachments"
 			{
@@ -6485,6 +6702,7 @@
 			{
 				"weapon"				"weapon_m14"
 				"weapon"				"weapon_m40a1"
+				"weapon"				"weapon_m200"
 				"weapon"				"weapon_m16a4"
 				"weapon"				"weapon_fal"
 				"weapon"				"weapon_l1a1"
@@ -6492,6 +6710,7 @@
 				"weapon"				"weapon_sks"
 				"weapon"				"weapon_galil"
 				"weapon"				"weapon_galil_sar"
+				"weapon"				"weapon_xm8"
 			}
 			
 			"viewmodel_attachments"
@@ -6531,6 +6750,16 @@
 					"weapons"
 					{
 						"weapon"				"weapon_m40a1"
+					}
+				}
+
+				"Bipod_M200"
+				{
+					"model"					"models/weapons/upgrades/a_bipod_cm2.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_m200"
 					}
 				}
 
@@ -6575,6 +6804,16 @@
 						"weapon"				"weapon_galil_sar"
 					}
 				}
+
+				"Bipod_XM8"
+				{
+					"model"					"models/weapons/upgrades/a_bipod_hkxm8.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_xm8"
+					}
+				}
 			}
 			"world_attachments"
 			{
@@ -6587,6 +6826,16 @@
 						"weapon"				"weapon_m14"
 						"weapon"				"weapon_m40a1"
 						"weapon"				"weapon_m16a4"
+					}
+				}
+
+				"underbarrel_bipod_m200"
+				{
+					"model"					"models/weapons/upgrades/w_bipod_cm2.mdl"
+
+					"weapons"
+					{
+						"weapon"				"weapon_m200"
 					}
 				}
 
@@ -6611,6 +6860,16 @@
 					{
 						"weapon"				"weapon_galil"
 						"weapon"				"weapon_galil_sar"
+					}
+				}
+
+				"underbarrel_bipod_xm8"
+				{
+					"model"					"models/weapons/upgrades/w_bipod_hkxm8.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_xm8"
 					}
 				}
 			}
