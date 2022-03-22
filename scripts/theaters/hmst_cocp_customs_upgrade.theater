@@ -2386,7 +2386,7 @@
 			{
 				"weapon"				"weapon_galil"
 				"weapon"				"weapon_galil_sar"
-				"weapon"				"weapon_xm8"
+				//"weapon"				"weapon_xm8"
 			}
 
 			"viewmodel_attachments"
@@ -2404,6 +2404,67 @@
 					}
 				}
 
+				// "magazine_xm8"
+				// {
+				// 	"ActSuffix"			"_MAG1"
+				// 	"model"				"models/weapons/upgrades/a_magazine_hkxm8_75.mdl"
+				// 	"Main"				"1"
+
+				// 	"weapons"
+				// 	{
+				// 		"weapon"		"weapon_xm8"
+				// 	}
+				// }
+			}
+			"world_attachments"
+			{
+				"magazine_galil"
+				{
+					"model"				"models/weapons/upgrades/w_magazine_galil_75.mdl"					
+				}
+				// "magazine_xm8"
+				// {
+				// 	"model"				"models/weapons/upgrades/w_magazine_hkxm8_75.mdl"					
+				// }				
+			}
+		}
+
+		"magazine_drum_100rd"
+		{
+			"upgrade_slot"				"magazine"
+			"upgrade_cost"				"3"
+			"class_restricted"			"1"
+			"team_acces"				"security, insurgent"
+			"weight"					"96"
+			
+			"print_name"				"#weapon_upgrade_magazine100_drum"
+			"print_desc"				"#weapon_upgrade_magazine100_extended_desc"
+			
+			"magsize_override"			"100"
+			"maxcarry_override"			"3"
+
+			"allowed_weapons"
+			{
+				//"weapon"				"weapon_galil"
+				//"weapon"				"weapon_galil_sar"
+				"weapon"				"weapon_xm8"
+			}
+
+			"viewmodel_attachments"
+			{
+				// "magazine_galil"
+				// {
+				// 	"ActSuffix"			"_MAG1"
+				// 	"model"				"models/weapons/upgrades/a_magazine_galil_75.mdl"
+				// 	"Main"				"1"
+
+				// 	"weapons"
+				// 	{
+				// 		"weapon"		"weapon_galil"
+				// 		"weapon"		"weapon_galil_sar"
+				// 	}
+				// }
+
 				"magazine_xm8"
 				{
 					"ActSuffix"			"_MAG1"
@@ -2418,16 +2479,17 @@
 			}
 			"world_attachments"
 			{
-				"magazine_galil"
-				{
-					"model"				"models/weapons/upgrades/w_magazine_galil_75.mdl"					
-				}
+				// "magazine_galil"
+				// {
+				// 	"model"				"models/weapons/upgrades/w_magazine_galil_75.mdl"					
+				// }
 				"magazine_xm8"
 				{
 					"model"				"models/weapons/upgrades/w_magazine_hkxm8_75.mdl"					
 				}				
 			}
 		}
+
 		"magazine_speedloader"
 		{
 			"upgrade_slot"				"magazine"
