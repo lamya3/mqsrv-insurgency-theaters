@@ -1024,7 +1024,7 @@
 "Weapon_type97.Single"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"	    "1.0"
+	"volume"	    "0.65"
     "pitch"			"100,105"
 	"soundlevel"  	"SNDLVL_94dB "
 	"rndwave"
@@ -1072,7 +1072,7 @@
 "Weapon_type97.SingleDistant"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"1.0"
+	"volume"		"0.8"
     "pitch"			"100,105"
 	"soundlevel"  	"SNDLVL_110dB"
 	"wave"			")weapons/type97/mini14_dist.wav"
@@ -1099,7 +1099,7 @@
 "Weapon_type97.SingleLocal"
 {
 	"channel"	    "CHAN_WEAPON"
-	"volume"	    "1.0"
+	"volume"	    "0.65"
     "pitch"			"100,105"
     "soundlevel"	"SNDLVL_GUNFIRE"
     "wave"	"weapons/type97/mini14_fp.wav"
@@ -1253,7 +1253,7 @@
 "Weapon_ak12.Single"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"	    "1.0"
+	"volume"	    "0.7"
     "pitch"			"100,105"
 	"soundlevel"  	"SNDLVL_94dB "
 	"rndwave"
@@ -1301,7 +1301,7 @@
 "Weapon_ak12.SingleLocal"
 {
 	"channel"	    "CHAN_WEAPON"
-	"volume"	    "1.0"
+	"volume"	    "0.7"
     "pitch"			"100,105"
     "soundlevel"	"SNDLVL_GUNFIRE"
 	"wave"	"weapons/ak12/ak74_fp.wav"
