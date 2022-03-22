@@ -140,6 +140,7 @@
 			"weapon_weight"				"130"	// (2.8kg[weapon] + (0.4kg[ammo] * (1+8)[mags]) )*10[kg->hg for int]  +16[encumbrance]
 			"weapon_cost"				"3"
 			"barrel_length"				"20"
+			"class_restricted"			"0"	
 			
 			"viewmodel_attachments"	//totally use .mdl files in mod pack
 			{
@@ -629,7 +630,7 @@
 			"ballistics"
 			{
 				"spread"				"0.5 0.5 0.5"
-				"FireModes"				"semi"
+				"FireModes"				"semi,burst"
 				"bulletcount"				"1"
 				"maxrange"				"6000"
 			}
@@ -726,7 +727,7 @@
 				"ammo_type"				"4buckshot"
 				"clip_max"				"12"
 				"clip_max_rounds"		"6"
-				"clip_default"			"4"
+				"clip_default"			"6"
 				"lose_rounds_reload"	"1"
 			}
 			"attachments"
@@ -1174,7 +1175,8 @@
 			"weapon_abilities"			"ironsight"
 			"weapon_weight"				"320"	// (6.6kg[weapon] + (0.2kg[ammo] * (1+16)[mags]) )*10[kg->hg for int]  +32[encumbrance]
 			"barrel_length"				"38"
-			
+			"class_restricted"			"0"
+
 			"viewmodel_attachments"
 			{
 				"optics"
@@ -1269,6 +1271,7 @@
 			"weapon_weight"				"178"	// (2.8kg[weapon] + (0.4kg[ammo] * (1+8)[mags]) )*10[kg->hg for int]  +16[encumbrance]
 			"weapon_cost"				"3"
 			"barrel_length"				"24"
+			"class_restricted"			"0"
 			
 			"viewmodel_attachments"
 			{
