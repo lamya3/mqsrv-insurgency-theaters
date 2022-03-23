@@ -1448,6 +1448,37 @@
 		}
 
 		// ========================================
+		// ak12
+		// ========================================
+		"545x39_drum"
+		{
+			"import"				"545x39"
+			"carry"					"6"
+			"magsize"				"75"
+			"tracer_frequency"			"3"
+			"tracer_type"				"whiz_with_line"
+			"tracer_lowammo"			"7"
+		}
+		"762x38_hp_drum"
+		{
+			"import"				"545x39_hp"
+			"carry"					"6"
+			"magsize"				"75"
+			"tracer_frequency"			"3"
+			"tracer_type"				"whiz_with_line"
+			"tracer_lowammo"			"7"
+		}
+		"762x38_ap_drum"
+		{
+			"import"				"545x39_ap"
+			"carry"					"6"
+			"magsize"				"75"
+			"tracer_frequency"			"3"
+			"tracer_type"				"whiz_with_line"
+			"tracer_lowammo"			"7"
+		}
+		
+		// ========================================
 		// XM8
 		// ========================================
 		// 556X45
