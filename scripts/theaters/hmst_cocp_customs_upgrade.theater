@@ -5216,7 +5216,7 @@
 			"allowed_weapons"
 			{
 				"weapon"				"weapon_ak74"
-				"weapon"				"weapon_ak12"
+				//"weapon"				"weapon_ak12"
 			}
 			"ammo_type_override"			"545x39_tracer"
 		}
@@ -5227,7 +5227,7 @@
 			"allowed_weapons"
 			{
 				"weapon"				"weapon_ak74"
-				"weapon"				"weapon_ak12"
+				//"weapon"				"weapon_ak12"
 			}
 			"ammo_type_override"			"545x39_hp"
 		}
@@ -5238,9 +5238,34 @@
 			"allowed_weapons"
 			{
 				"weapon"				"weapon_ak74"
-				"weapon"				"weapon_ak12"
+				//"weapon"				"weapon_ak12"
 			}
 			"ammo_type_override"			"545x39_ap"
+		}
+
+		// ========================================
+		// AK-12 SPECIFIC UPGRADES
+		// ========================================
+		}
+		"ammo_hp_ak12"
+		{
+			"import"				"base_ammo_hp"
+			"upgrade_cost"				"1"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_ak12"
+			}
+			"ammo_type_override"			"762x38_hp_drum"
+		}
+		"ammo_ap_ak12"
+		{
+			"import"				"base_ammo_ap"
+			"upgrade_cost"				"2"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_ak12"
+			}
+			"ammo_type_override"			"762x38_ap_drum"
 		}
 		
 		// ========================================
