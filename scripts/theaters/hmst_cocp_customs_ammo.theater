@@ -686,6 +686,72 @@
 			"import"				"762x51_ap"
 			"brass_model"			"models/weapons/shells/762x54.mdl"
 		}
+
+				
+		"1036x77"	// 419gr 910 m/s 11,352J
+		{
+			"import"				"default"
+			"SuppressionIncrement"			"180"//"90"
+			"brass_model"				"models/weapons/shells/762x51.mdl"
+			"Damage"
+			{
+				"10"					"400"//"160"
+				"20000"					"240"//"100"
+			}
+			"PenetrationPower"
+			{
+				"10"					"2200"//"1100"
+				"20000"					"1000"//"600"
+			}
+		}
+		
+		"1036x77_tracer"
+		{
+			"import"				"1036x77"
+			"tracer_frequency"			"4"
+			"tracer_type"				"whiz_with_line"
+			"tracer_lowammo"			"5"
+		}
+		
+		"1036x77_hp"
+		{
+			"import"				"1036x77"
+			
+			"DamageHitgroups"
+			{
+				"HITGROUP_HEAD"				"1.50"
+				"HITGROUP_CHEST"			"1.20"
+				"HITGROUP_STOMACH"			"1.00"
+				"HITGROUP_LEFTARM"			"2.00"
+				"HITGROUP_RIGHTARM"			"2.00"
+				"HITGROUP_LEFTLEG"			"3.00"
+				"HITGROUP_RIGHTLEG"			"3.00"
+			}
+			"PenetrationPower"
+			{
+				"10"					"1000"//"400"
+				"12000"					"480"//"200"
+			}
+		}
+		
+		"1036x77_ap"
+		{
+			"import"				"1036x77"
+
+			"PenetrationPower"
+			{
+				"10"					"3800"//"1500"
+				"20000"					"1920"//"800"
+			}
+
+			"PenetrationDamage"
+			{
+				"0"						"1"
+				"800"					"0.5"
+				"1500"					"0.1"
+			}
+		}
+		
 		
 		"00buck"
 		{
@@ -1358,6 +1424,33 @@
 				"8000"					"300"
 			}
 		}
+
+		// ========================================
+		// M200
+		// ========================================
+		"1036x77mm"
+		{
+			"import"				"1036x77"
+			"carry"					"120"
+			"flags_clear"				"AMMO_USE_MAGAZINES"
+		}
+		"1036x77mm_ap"
+		{
+			"import"				"1036x77_ap"
+			"carry"					"120"
+			"flags_clear"				"AMMO_USE_MAGAZINES"
+		}
+		"1036x77mm_hp"
+		{
+			"import"				"1036x77_hp"
+			"carry"					"120"
+			"flags_clear"				"AMMO_USE_MAGAZINES"
+		}
+
+		// ========================================
+		// XM8
+		// ========================================
+		// 556X45
 
 		// ========================================
 		// H&K USP

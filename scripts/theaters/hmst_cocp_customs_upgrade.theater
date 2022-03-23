@@ -5216,6 +5216,7 @@
 			"allowed_weapons"
 			{
 				"weapon"				"weapon_ak74"
+				"weapon"				"weapon_ak12"
 			}
 			"ammo_type_override"			"545x39_tracer"
 		}
@@ -5226,6 +5227,7 @@
 			"allowed_weapons"
 			{
 				"weapon"				"weapon_ak74"
+				"weapon"				"weapon_ak12"
 			}
 			"ammo_type_override"			"545x39_hp"
 		}
@@ -5236,6 +5238,7 @@
 			"allowed_weapons"
 			{
 				"weapon"				"weapon_ak74"
+				"weapon"				"weapon_ak12"
 			}
 			"ammo_type_override"			"545x39_ap"
 		}
@@ -5287,7 +5290,7 @@
 			{
 				"weapon"				"weapon_galil"
 				"weapon"				"weapon_galil_sar"
-				"weapon"				"weapon_xm8"
+				//"weapon"				"weapon_xm8"
 			}
 			"ammo_type_override"		"556_tracer_35box"
 		}
@@ -5299,7 +5302,7 @@
 			{
 				"weapon"				"weapon_galil"
 				"weapon"				"weapon_galil_sar"
-				"weapon"				"weapon_xm8"
+				//"weapon"				"weapon_xm8"
 			}
 			"ammo_type_override"		"556_hp_35box"
 		}
@@ -5311,7 +5314,7 @@
 			{
 				"weapon"				"weapon_galil"
 				"weapon"				"weapon_galil_sar"
-				"weapon"				"weapon_xm8"
+				//"weapon"				"weapon_xm8"
 			}
 			"ammo_type_override"		"556_ap_35box"
 		}
@@ -5536,6 +5539,7 @@
 			{
 				"weapon"				"weapon_mini14"
 				"weapon"				"weapon_type97"
+				"weapon"				"weapon_xm8"
 			}
 			"ammo_type_override"			"556_tracer_box"
 		}
@@ -5547,6 +5551,7 @@
 			{
 				"weapon"				"weapon_mini14"
 				"weapon"				"weapon_type97"
+				"weapon"				"weapon_xm8"
 			}
 			"ammo_type_override"			"556_hp_box"
 		}
@@ -5558,6 +5563,7 @@
 			{
 				"weapon"				"weapon_mini14"
 				"weapon"				"weapon_type97"
+				"weapon"				"weapon_xm8"
 			}
 			"ammo_type_override"			"556_ap_box"
 		}
@@ -5678,9 +5684,32 @@
 			"allowed_weapons"
 			{
 				"weapon"				"weapon_m40a1"
-				"weapon"				"weapon_m200"
 			}
 			"ammo_type_override"			"762x51mm_ap"
+		}
+
+		// ========================================
+		// M200 SPECIFIC UPGRADES
+		// ========================================
+		"ammo_ap_m200"
+		{
+			"import"				"base_ammo_ap"
+			"upgrade_cost"				"4"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m200"
+			}
+			"ammo_type_override"			"1036x77mm_ap"
+		}
+		"ammo_hp_m200"
+		{
+			"import"				"base_ammo_ap"
+			"upgrade_cost"				"3"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m200"
+			}
+			"ammo_type_override"			"1036x77mm_hp"
 		}
 		
 		// ========================================
@@ -5717,7 +5746,6 @@
 			"allowed_weapons"
 			{
 				"weapon"				"weapon_rpk"
-				"weapon"				"weapon_ak12"
 			}
 			"ammo_type_override"			"762x38_hp_drum"
 		}
@@ -5728,7 +5756,6 @@
 			"allowed_weapons"
 			{
 				"weapon"				"weapon_rpk"
-				"weapon"				"weapon_ak12"
 			}
 			"ammo_type_override"			"762x38_ap_drum"
 		}

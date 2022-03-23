@@ -816,7 +816,7 @@
 			{
 				"ammo_type"				"556_box"
 				"clip_max"				"12"
-				"clip_max_rounds"			"20"
+				"clip_max_rounds"			"30"//"20" up to 30
 				"clip_default"				"3"
 			}
 			"attachments"
@@ -902,7 +902,7 @@
 			}
 			"ammo_clip"
 			{
-				"ammo_type"				"762x38_drum"
+				"ammo_type"				"545x39"//FMJ 5.45X39 "762x38_drum"
 				"clip_max"				"4"
 				"clip_max_rounds"			"75"
 				"clip_default"				"1"
@@ -1240,9 +1240,9 @@
 			}
 			"ammo_clip"
 			{
-				"ammo_type"				"762x51mm"
+				"ammo_type"				"1036x77mm"
 				"clip_max"				"60"
-				"clip_max_rounds"			"5"
+				"clip_max_rounds"			"7"
 				"clip_default"				"15"
 			}
 			"attachments"
@@ -1351,7 +1351,7 @@
 			}
 			"ammo_clip"
 			{
-				"ammo_type"				"556_35box"
+				"ammo_type"				"556_box"
 				"clip_max"				"12"
 				"clip_max_rounds"		"30"
 				"clip_default"			"3"
