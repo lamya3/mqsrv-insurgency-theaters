@@ -246,9 +246,9 @@
 			"view_model"				"models/weapons/v_ppsh.mdl"
 			"world_model"				"models/weapons/w_ppsh.mdl"
 			"rounds_per_minute"			"1000"
-			"weapon_slot"				"secondary"
-			"weapon_max_subslot"			"1"	// Up to the 2nd subslot only
-			"weapon_max_subslot"		"0"	// first slot only
+			"weapon_slot"				"primary"
+			//"weapon_max_subslot"			"1"	// Up to the 2nd subslot only
+			//"weapon_max_subslot"		"0"	// first slot only
 			"act_table"					"rifle_ak2"
 			"closed_bolt"				"0"
 			"weapon_abilities"			"ironsight"
@@ -470,7 +470,7 @@
 			"rounds_per_minute"			"1250"
 			"closed_bolt"				"0"
 			"weapon_slot"				"secondary"
-			"weapon_max_subslot"			"1"	// Up to the 2nd subslot only
+			//"weapon_max_subslot"			"1"	// Up to the 2nd subslot only
 			"act_table"					"smg_magheld"
 			"weapon_abilities"			"ironsight"
 			"weapon_weight"				"0"	// (4.0kg[weapon] + (0.4kg[ammo] * (1+8)[mags]) )*10[kg->hg for int]  +8[encumbrance]
@@ -661,7 +661,7 @@
 			"print_desc"				"#weapon_taurusjudge_desc"
 			"view_model"				"models/weapons/v_judge.mdl"
 			"world_model"				"models/weapons/w_judge.mdl"
-			"rounds_per_minute"			"600"
+			"rounds_per_minute"			"90"
 			"weapon_slot"				"secondary"
 			"act_table"					"pistol"
 			"weapon_abilities"			"ironsight"
@@ -670,7 +670,7 @@
 			"class_restricted"			"0"
 			"barrel_length"				"0"
 			"closed_bolt"				"0"
-			"trigger_delay"				"0.02"		
+			"trigger_delay"				"0.45"//"0.02"		
 			
 
 			"fov"
@@ -754,7 +754,7 @@
 			"print_desc"				"#weapon_type97_desc"
 			"view_model"				"models/weapons/v_type97.mdl"
 			"world_model"				"models/weapons/w_type97.mdl"
-			"rounds_per_minute"			"720"
+			"rounds_per_minute"			"650"
 			"weapon_slot"				"primary"
 			"act_table"					"rifle_ak2"
 			"weapon_abilities"			"ironsight"
@@ -839,7 +839,7 @@
 			"weapon_cost"				"2"
 			"print_name"				"#weapon_ak12"
 			"print_desc"				"#weapon_ak12_desc"
-			"rounds_per_minute"			"600"
+			"rounds_per_minute"			"700"
 			"weapon_slot"				"primary"
 			"act_table"					"rifle_ak"
 			"weapon_abilities"			"ironsight, bipod"
@@ -865,12 +865,12 @@
 			
 			"recoil"
 			{
-				"recoil_lateral_range"			"-1.15 1.35"
-				"recoil_vertical_range"			"2.925 3.375"
-				"recoil_aim_punch"			"0.4 0.5"
+				"recoil_lateral_range"			"-1.05 1.25"//"-1.15 1.35"
+				"recoil_vertical_range"			"2.75 3.0"//"2.925 3.375"
+				"recoil_aim_punch"			"0.4 0.6"//"0.4 0.5"
 				"recoil_rest_rate"			"7"
 				"recoil_rest_delay"			"0.12"
-				"recoil_roll_range"			"-2.0 -2.0"
+				"recoil_roll_range"			"-1.9 -1.9"//"-2.0 -2.0"
 				"recoil_roll_rest_rate"			"190"
 				
 				"recoil_additional_rest_per_shot"	"2.5"	// Amount of rest per additional shot (added to rest rate) (default = 2.5)
@@ -949,7 +949,7 @@
 			"print_desc"				"#weapon_mg4_desc"
 			"view_model"				"models/weapons/v_omg4.mdl"
 			"world_model"				"models/weapons/w_omg4.mdl"
-			"rounds_per_minute"			"775"
+			"rounds_per_minute"			"800"
 			"weapon_slot"				"primary"
 			"act_table"				"lmg"
 			"weapon_abilities"			"ironsight, bipod"
@@ -993,12 +993,12 @@
 			}
 			"recoil"
 			{
-				"recoil_lateral_range"			"-2.5 4"
-				"recoil_vertical_range"			"2.6 4.2"
-				"recoil_aim_punch"			"0.65 0.85"
+				"recoil_lateral_range"			"-2.7 4.3"//"-2.5 4"
+				"recoil_vertical_range"			"2.5 4.3"//"2.6 4.2"
+				"recoil_aim_punch"			"0.6 0.80"//"0.65 0.85"
 				"recoil_rest_rate"			"10"
 				"recoil_rest_delay"			".09"
-				"recoil_roll_range"			"-2 -2"	// Vibration strength
+				"recoil_roll_range"			"-2.1 -2.1"	// Vibration strength
 				"recoil_roll_rest_rate"			"200"	// Vibration Speed
 				"recoil_additional_rest_per_shot"	"2.5"	// Amount of rest per additional shot (added to rest rate) (default = 2.5)
 				"recoil_shot_reset_time"		"0.6"	// Time delay for resetting the shots fired counter for the above (default = 0.3)
@@ -1059,7 +1059,7 @@
 			"print_desc"				"#weapon_mk46_desc"
 			"view_model"				"models/weapons/v_mk46.mdl"
 			"world_model"				"models/weapons/w_mk46.mdl"
-			"rounds_per_minute"			"775"
+			"rounds_per_minute"			"780"
 			"weapon_slot"				"primary"
 			"act_table"				"lmg"
 			"weapon_abilities"			"ironsight, bipod"
@@ -1103,8 +1103,8 @@
 			}
 			"recoil"
 			{
-				"recoil_lateral_range"			"-2.5 4"
-				"recoil_vertical_range"			"2.6 4.2"
+				"recoil_lateral_range"			"-2.6 4.1"//"-2.5 4"
+				"recoil_vertical_range"			"2.6 4.3"//"2.6 4.2"
 				"recoil_aim_punch"			"0.65 0.85"
 				"recoil_rest_rate"			"10"
 				"recoil_rest_delay"			".09"
@@ -1264,7 +1264,7 @@
 			"print_desc"				"#weapon_xm8_desc"
 			"view_model"				"models/weapons/v_hkxm8_sar.mdl"
 			"world_model"				"models/weapons/w_hkxm8_sar.mdl"
-			"rounds_per_minute"			"650"
+			"rounds_per_minute"			"750"
 			"weapon_slot"				"primary"
 			"act_table"					"rifle_ak"
 			"weapon_abilities"			"ironsight"
@@ -1329,7 +1329,7 @@
 			"recoil"
 			{
 				"recoil_lateral_range"			"-1 1.4"
-				"recoil_vertical_range"			"2.5 3.2"
+				"recoil_vertical_range"			"2.4 3.0"//"2.5 3.2"
 				"recoil_aim_punch"				"0.4 0.7"
 				"recoil_rest_rate"				"5"
 				"recoil_rest_delay"				"0.12"
@@ -5512,6 +5512,7 @@
 	//Why ammo here? because there are some glitch that
 	//will make weapon_taurusjudge's clip always keep 0 when ammo type = 4buckshot,00buckshot...etc.
 	//whatever you do what.
+	//This bug also for M200
 
 	"ammo"
 	{
@@ -5533,6 +5534,25 @@
 		{
 			"import"				"rifledslug"
 			"carry"					"72"
+			"flags_clear"				"AMMO_USE_MAGAZINES"
+		}
+		//Fix M200 0 BULLET
+		"1036x77mm"
+		{
+			"import"				"1036x77"
+			"carry"					"120"
+			"flags_clear"				"AMMO_USE_MAGAZINES"
+		}
+		"1036x77mm_ap"
+		{
+			"import"				"1036x77_ap"
+			"carry"					"120"
+			"flags_clear"				"AMMO_USE_MAGAZINES"
+		}
+		"1036x77mm_hp"
+		{
+			"import"				"1036x77_hp"
+			"carry"					"120"
 			"flags_clear"				"AMMO_USE_MAGAZINES"
 		}
 	}
