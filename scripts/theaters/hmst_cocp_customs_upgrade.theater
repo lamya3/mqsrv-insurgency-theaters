@@ -4312,7 +4312,7 @@
 		}
 		"ammo_hp_m200"
 		{
-			"import"				"base_ammo_ap"
+			"import"				"base_ammo_hp"
 			"upgrade_cost"				"3"
 			"allowed_weapons"
 			{
