@@ -245,6 +245,7 @@
 					"weapon_ak74"						"1"
 					"weapon_akm"						"-1"
 					"weapon_makarov"					"2"
+					"weapon_hkusp"						"1"
 					//"weapon_m9"							"1"
 				}
 				"gear"
@@ -344,6 +345,12 @@
 				"weapon_upgrade"			"ammo_slugs"
 				"weapon_upgrade"			"ammo_ap_mosin"
 				"weapon_upgrade"			"magazine_speedloader"
+				"weapon_upgrade"			"magazine_drum_100rd"
+				"weapon_upgrade"			"ammo_ap_m200"
+				"weapon_upgrade"			"ammo_hp_m200"
+				"weapon_upgrade"			"ammo_00buckshot"
+				"weapon_upgrade"			"ammo_rifledslug"
+				"weapon_upgrade"			"worn_m1garand"
 				"gear"						"sec_light_armor"
 				"gear"						"sec_heavy_armor"
 				"gear"						"sec_chest_rig"
@@ -355,6 +362,9 @@
 				{
 					"weapon_m16a4"						"1"
 					"weapon_makarov"					"2"
+					"weapon_m1garand"					"1"
+					"weapon_ak12"						"1"
+					"weapon_xm8"						"1"
 				}
 				"gear"
 				{
@@ -363,9 +373,9 @@
 				"weapon_upgrade"
 				{
 					"underbarrel_bipod"					"1"
-					"barrel_silencer_sec1"				"-1"
+					"barrel_silencer_sec1"				"1"
 					"barrel_silencer_pistol"			"-1"
-					"barrel_silencer_ins1"				"-1"
+					"barrel_silencer_ins1"				"1"
 					"barrel_silencer_heavy"				"-1"
 					"underbarrel_foregrip_sec1"			"1"
 					"underbarrel_foregrip_sec2"			"1"
@@ -457,6 +467,9 @@
 					"weapon_ump45"						"-1"
 					"weapon_makarov"					"1"
 					"weapon_m9"							"1"
+					"weapon_mac10"						"-1"
+					"weapon_hkusp"						"1"
+					"weapon_glock17"					"1"
 				}
 				"gear"
 				{
@@ -543,6 +556,7 @@
 				//"weapon_upgrade"			"barrel_silencer_heavy"
 				//"weapon_upgrade"			"barrel_silencer_integrated"
 				"weapon_upgrade"			"underbarrel_bipod"
+				"weapon_upgrade"			"barrel_heavybarrel"
 				"weapon_upgrades"			"underbarrel_bipod"
 				"weapon_upgrade"			"underbarrel_foregrip_ins2"
 				"weapon_upgrade"			"underbarrel_woodgrip"
@@ -556,6 +570,13 @@
 				"weapon_upgrade"			"siderail_lasersight_shotgun_ins"
 				"weapon_upgrade"			"siderail_lasersight_shotgun_sec"
 				"weapon_upgrade"			"magazine_speedloader"
+				"weapon_upgrade"			"optic_scope_4x"
+				"weapon_upgrade"			"magazine_drum_100rd"
+				"weapon_upgrade"			"worn_m1garand"
+				"weapon_upgrade"			"worn_m1garand"
+				"weapon_upgrade"			"optic_pistoldot"
+				"weapon_upgrade"			"tactical_spring"
+				"weapon_upgrade"			"perk_speed_holster"
 				"gear"						"sec_light_armor"
 				"gear"						"sec_heavy_armor"
 				"gear"						"sec_chest_rig"
@@ -567,6 +588,7 @@
 				{
 					"weapon_sks"						"-1"
 					"weapon_fal"						"1"
+					"weapon_xm8"						"1"
 					//"weapon_m4a1"						"1"
 					"weapon_makarov"					"1"
 					"weapon_m9"							"1"
@@ -688,6 +710,10 @@
 				"weapon_upgrade"			"siderail_lasersight_shotgun_sec"
 				"weapon_upgrade"			"ammo_slugs"
 				"weapon_upgrade"			"ammo_ap_mosin"
+				"weapon_upgrade"			"magazine_extended_ppsh41"
+				"weapon_upgrade"			"weapon_mod_rof_250"
+				"weapon_upgrade"			"barrel_heavybarrel"
+				"weapon_upgrade"			"tactical_spring"
 				"gear"						"sec_light_armor"
 				"gear"						"sec_heavy_armor"
 				"gear"						"sec_chest_rig"
@@ -701,6 +727,7 @@
 					//"weapon_akm"						"-1"
 					"weapon_makarov"					"2"
 					"weapon_m9"							"1"
+					"weapon_m1garand"					"1"
 				}
 				"gear"
 				{
@@ -808,7 +835,8 @@
 			{
 				"weapon"
 				{
-					"weapon_galil_sar"					"1"
+					"weapon_galil_sar"					"-1"
+					"weapon_xm8"						"-1"
 					"weapon_rpk"						"-1"
 					"weapon_model10"					"1"
 					"weapon_m1911"						"1"
@@ -908,6 +936,14 @@
 				"weapon_upgrade"			"siderail_lasersight_shotgun_ins"
 				"weapon_upgrade"			"siderail_lasersight_shotgun_sec"
 				"weapon_upgrade"			"ammo_ap_mosin"
+				"weapon_upgrade"			"optic_scope_4x"
+				"weapon_upgrade"			"worn_m1garand"
+				"weapon_upgrade"			"ammo_ap_m200"
+				"weapon_upgrade"			"ammo_hp_m200"
+				"weapon_upgrade"			"ammo_00buckshot"
+				"weapon_upgrade"			"ammo_rifledslug"
+				"weapon_upgrade"			"magazine_speedloader"
+				"weapon_upgrade"			"optic_pistoldot"
 				"gear"						"sec_light_armor"
 				"gear"						"sec_heavy_armor"
 				"gear"						"sec_chest_rig"
@@ -919,8 +955,10 @@
 				{
 					"weapon_mosin"						"-1"
 					//"weapon_akm"						"-1"
-					"weapon_makarov"					"2"
+					"weapon_makarov"					"1"
 					"weapon_m9"							"1"
+					"weapon_m200"						"-1"
+					"weapon_hkusp"						"1"
 					//"weapon_m45"						"1"
 				}
 				"gear"
@@ -935,6 +973,8 @@
 					"optic_scope_mk4"					"-1"
 					"optic_scope_7x"					"-1"
 					"underbarrel_foregrip_sec2"			"1"
+					"ammo_ap_m200"						"-1"
+					"ammo_hp_m200"						"-1"
 					//"barrel_silencer_sec1"			"-1"
 					//"barrel_silencer_sec2"			"-1"
 					//"barrel_silencer_pistol"			"-1"
@@ -1022,6 +1062,7 @@
 				"weapon_upgrade"			"siderail_lasersight_shotgun_sec"
 				"weapon_upgrade"			"ammo_slugs"
 				"weapon_upgrade"			"ammo_ap_mosin"
+				"weapon_upgrade"			"barrel_heavybarrel"
 				//"weapon_upgrade"			"underbarrel_foregrip_ins2"
 				"gear"						"sec_light_armor"
 				"gear"						"sec_heavy_armor"
@@ -1036,6 +1077,7 @@
 					"weapon_mosin"						"-1"
 					"weapon_makarov"					"2"
 					"weapon_m9"							"2"
+					"weapon_mk46"						"1"
 				}
 				"gear"
 				{
@@ -1142,6 +1184,8 @@
 				"weapon_upgrade"			"siderail_lasersight_shotgun_sec"
 				"weapon_upgrade"			"ammo_ap_mosin"
 				"weapon_upgrade"			"magazine_speedloader"
+				"weapon_upgrade"			"ammo_00buckshot"
+				"weapon_upgrade"			"ammo_rifledslug"
 				"gear"						"sec_light_armor"
 				"gear"						"sec_heavy_armor"
 				"gear"						"sec_chest_rig"
@@ -1156,6 +1200,8 @@
 					"weapon_m4a1"						"1"
 					"weapon_makarov"					"1"
 					"weapon_m9"							"1"
+					"weapon_hk416c"						"-1"
+					"weapon_ppsh41"						"-1"
 				}
 				"gear"
 				{
@@ -1246,7 +1292,7 @@
 				"weapon_upgrade"			"barrel_silencer_sec2"
 				//"weapon_upgrade"			"barrel_silencer_pistol"
 				//"weapon_upgrade"			"barrel_silencer_ins1"
-				//"weapon_upgrade"			"barrel_silencer_heavy"
+				"weapon_upgrade"			"barrel_silencer_heavy"
 				"weapon_upgrade"			"barrel_silencer_integrated"
 				//"weapon_upgrade"			"underbarrel_bipod"
 				//"weapon_upgrade"			"underbarrel_bipod"
@@ -1260,6 +1306,8 @@
 				"weapon_upgrade"			"siderail_lasersight_shotgun_ins"
 				"weapon_upgrade"			"siderail_lasersight_shotgun_sec"
 				"weapon_upgrade"			"magazine_speedloader"
+				"weapon_upgrade"			"barrel_heavybarrel"
+				"weapon_upgrade"			"tactical_spring"				
 				"gear"						"sec_light_armor"
 				"gear"						"sec_heavy_armor"
 				"gear"						"sec_chest_rig"
@@ -1272,6 +1320,10 @@
 					"weapon_mp40"						"-1"
 					"weapon_aks74u"						"1"
 					"weapon_makarov"					"2"
+					"weapon_ppsh41"						"-2"
+					"weapon_ak12"						"1"
+					"weapon_ump45"						"-1"
+					"weapon_glock17"					"1"
 					//"weapon_m9"						"1"
 				}
 				"gear"
@@ -1368,6 +1420,12 @@
 				//"weapon_upgrade"			"siderail_lasersight_rail"
 				//"weapon_upgrade"			"siderail_lasersight_shotgun_ins"
 				//"weapon_upgrade"			"siderail_lasersight_shotgun_sec"
+				"weapon_upgrade"			"ammo_00buckshot"
+				"weapon_upgrade"			"ammo_rifledslug"
+				"weapon_upgrade"			"perk_speed_holster"
+				"weapon_upgrade"			"perk_quick_reload"
+				"weapon_upgrade"			"weapon_mod_speed_reload"
+				"weapon_upgrade"			"perk_tactical_sling"
 				//"gear"					"ins_light_armor"
 				"gear"						"sec_heavy_armor"
 				"gear"						"ins_chest_rig"
@@ -1387,6 +1445,8 @@
 					"weapon_toz"						"8"//9
 					"weapon_mosin"						"8"//9
 					"weapon_model10"					"2"//2
+					"weapon_taurusjudge"				"1"
+					"weapon_m200"						"7"
 					"weapon_molotov"					"-1"//1
 				}
 				"gear"
@@ -2040,15 +2100,19 @@
 				"weapon"				"weapon_mosin"
 				"weapon"				"weapon_mp40"
 				"weapon"				"weapon_rpk"
+				"weapon"				"weapon_ak12"
 				"weapon"				"weapon_sks"
 				"weapon"				"weapon_sterling"
 
 				// security weapons
 				"weapon"				"weapon_m16a4"
 				"weapon"				"weapon_m249"
+				"weapon"				"weapon_mg4"
+				"weapon"				"weapon_mk46"
 				"weapon"				"weapon_m40a1"
 				"weapon"				"weapon_mk18"
 				"weapon"				"weapon_mini14"
+				"weapon"				"weapon_type97"
 				"weapon"				"weapon_mp5"
 				"weapon"				"weapon_ump45"
 
@@ -2330,7 +2394,79 @@
 		"siderail_lasersight_shotgun_sec"
 		{
 			"class_restricted"			"1"//Available when listed ONLY
-		}		
+		}
+
+		//customs weapons upgrades limited
+		"optic_pistoldot"
+		{
+			"class_restricted"			"1"
+		}
+
+		"worn_m1garand"
+		{
+			"class_restricted"			"1"
+		}
+
+		"optic_scope_4x"
+		{
+			"class_restricted"			"1"
+		}
+
+		"perk_speed_holster"
+		{
+			"class_restricted"			"1"
+		}
+
+		"perk_quick_reload"
+		{
+			"class_restricted"			"1"
+		}
+
+		"weapon_mod_speed_reload"
+		{
+			"class_restricted"			"1"
+		}
+
+		"magazine_extended_ppsh41"
+		{
+			"class_restricted"			"1"
+		}
+
+		"weapon_mod_rof_250"
+		{
+			"class_restricted"			"1"
+		}
+
+		"perk_tactical_sling"
+		{
+			"class_restricted"			"1"
+		}
+
+		"tactical_spring"
+		{
+			"class_restricted"			"1"
+		}
+
+		"ammo_ap_m200"
+		{
+			"class_restricted"			"1"
+		}
+
+		"ammo_hp_m200"
+		{
+			"class_restricted"			"1"
+		}
+
+		"ammo_00buckshot"
+		{
+			"class_restricted"			"1"
+		}
+
+		"ammo_rifledslug"
+		{
+			"class_restricted"			"1"
+		}
+
 	}
 
 	"player_gear"
