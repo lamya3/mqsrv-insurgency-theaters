@@ -691,7 +691,7 @@
 		{
 		
 			"upgrade_slot" 				"magazine"
-			"upgrade_cost"				"1"
+			"upgrade_cost"				"2"
 			"team_access"				"security, insurgent"
 			
 			"print_name"				"#weapon_upgrade_magazine_extended"
@@ -4002,6 +4002,8 @@
 				"weapon"				"weapon_mk18"
 				"weapon"				"weapon_hk416c"
 				"weapon"				"weapon_m4a1"
+				"weapon"				"weapon_type97"
+				"weapon"				"weapon_xm8"
 			}
 			"ammo_type_override"			"556_tracer_stanag_m4"
 		}
@@ -4014,6 +4016,8 @@
 				"weapon"				"weapon_mk18"
 				"weapon"				"weapon_hk416c"
 				"weapon"				"weapon_m4a1"
+				"weapon"				"weapon_type97"
+				"weapon"				"weapon_xm8"
 			}
 			"ammo_type_override"			"556_hp_stanag_m4"
 		}
@@ -4026,6 +4030,8 @@
 				"weapon"				"weapon_mk18"
 				"weapon"				"weapon_hk416c"
 				"weapon"				"weapon_m4a1"
+				"weapon"				"weapon_type97"
+				"weapon"				"weapon_xm8"
 			}
 			"ammo_type_override"			"556_ap_stanag_m4"
 		}
@@ -4147,8 +4153,6 @@
 			"allowed_weapons"
 			{
 				"weapon"				"weapon_mini14"
-				"weapon"				"weapon_type97"
-				"weapon"				"weapon_xm8"
 			}
 			"ammo_type_override"			"556_tracer_box"
 		}
@@ -4159,8 +4163,6 @@
 			"allowed_weapons"
 			{
 				"weapon"				"weapon_mini14"
-				"weapon"				"weapon_type97"
-				"weapon"				"weapon_xm8"
 			}
 			"ammo_type_override"			"556_hp_box"
 		}
@@ -4171,8 +4173,6 @@
 			"allowed_weapons"
 			{
 				"weapon"				"weapon_mini14"
-				"weapon"				"weapon_type97"
-				"weapon"				"weapon_xm8"
 			}
 			"ammo_type_override"			"556_ap_box"
 		}
