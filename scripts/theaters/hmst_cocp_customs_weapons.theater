@@ -25,10 +25,10 @@
 			"act_table"					"rifle_clip"
 			"weapon_abilities"			"ironsight"
 			"weapon_weight"				"0"
-			"weapon_cost"				"2"
+			"weapon_cost"				"1"
 			"barrel_length"				"38"
 			"closed_bolt"				"0"
-			"class_restricted"			"0"	
+			"class_restricted"			"1"	
 			
 			"fov"
 			{
@@ -140,7 +140,7 @@
 			"weapon_weight"				"130"	// (2.8kg[weapon] + (0.4kg[ammo] * (1+8)[mags]) )*10[kg->hg for int]  +16[encumbrance]
 			"weapon_cost"				"3"
 			"barrel_length"				"20"
-			"class_restricted"			"0"	
+			"class_restricted"			"1"	
 			
 			"viewmodel_attachments"	//totally use .mdl files in mod pack
 			{
@@ -255,7 +255,7 @@
 			"weapon_weight"				"0"	
 			"weapon_cost"				"2"
 			"barrel_length"				"0"
-			"class_restricted"			"0"
+			"class_restricted"			"1"
 			
 			"viewmodel_attachments"
 			{
@@ -361,8 +361,8 @@
 			"act_table"					"pistol"
 			"weapon_abilities"			"ironsight"
 			"weapon_weight"				"0"
-			"weapon_cost"				"0"
-			"class_restricted"			"0"
+			"weapon_cost"				"1"
+			"class_restricted"			"1"
 			"barrel_length"				"0"
 			
 			
@@ -476,7 +476,7 @@
 			"weapon_weight"				"0"	// (4.0kg[weapon] + (0.4kg[ammo] * (1+8)[mags]) )*10[kg->hg for int]  +8[encumbrance]
 			"weapon_cost"				"2"
 			"barrel_length"				"0"
-			"class_restricted"			"0"
+			"class_restricted"			"1"
 
 			"fov"
 			{
@@ -561,8 +561,8 @@
 			"act_table"					"pistol"
 			"weapon_abilities"			"ironsight"
 			"weapon_weight"				"0"
-			"weapon_cost"				"0"
-			"class_restricted"			"0"
+			"weapon_cost"				"1"
+			"class_restricted"			"1"
 			"barrel_length"				"0"
 			
 			
@@ -666,8 +666,8 @@
 			"act_table"					"pistol"
 			"weapon_abilities"			"ironsight"
 			"weapon_weight"				"0"
-			"weapon_cost"				"0"
-			"class_restricted"			"0"
+			"weapon_cost"				"2"
+			"class_restricted"			"1"
 			"barrel_length"				"0"
 			"closed_bolt"				"0"
 			"trigger_delay"				"0.1"//"0.02"		
@@ -761,7 +761,7 @@
 			"weapon_weight"				"160"	// (2.9kg[weapon] + (0.3kg[ammo] * (1+10)[mags]) )*10[kg->hg for int]  +16[encumbrance]
 			"weapon_cost"				"2"
 			"barrel_length"				"20"
-			"class_restricted"			"0"
+			"class_restricted"			"1"
 			
 			"fov"
 			{
@@ -836,7 +836,7 @@
 			"view_model"				"models/weapons/v_ak2.mdl"
 			"world_model"				"models/weapons/w_ak2.mdl"
 			"weapon_class"				"lmg"
-			"weapon_cost"				"2"
+			"weapon_cost"				"3"
 			"print_name"				"#weapon_ak12"
 			"print_desc"				"#weapon_ak12_desc"
 			"rounds_per_minute"			"700"
@@ -845,7 +845,7 @@
 			"weapon_abilities"			"ironsight, bipod"
 			"weapon_weight"				"320"	// (4.8kg[weapon] + (2.0kg[ammo] * (1+2)[mags]) )*10[kg->hg for int]  +50[encumbrance]
 			"barrel_length"				"26"
-			"class_restricted"			"0"
+			"class_restricted"			"1"
 			
 			"fov"
 			{
@@ -944,7 +944,7 @@
 		{
 			"import"				"ballistic_base"
 			"weapon_class"				"lmg"
-			"weapon_cost"				"4"
+			"weapon_cost"				"5"
 			"print_name"				"#weapon_mg4"
 			"print_desc"				"#weapon_mg4_desc"
 			"view_model"				"models/weapons/v_omg4.mdl"
@@ -956,7 +956,7 @@
 			"weapon_weight"				"320"	// (7.5kg[weapon] + (2.5kg[ammo] * (1+1)[mags]) )*10[kg->hg for int]  +150[encumbrance]
 			"closed_bolt"				"0"
 			"barrel_length"				"28"
-			"class_restricted"			"0"
+			"class_restricted"			"1"
 			
 			"fov"
 			{
@@ -1066,7 +1066,7 @@
 			"weapon_weight"				"320"	// (7.5kg[weapon] + (2.5kg[ammo] * (1+1)[mags]) )*10[kg->hg for int]  +150[encumbrance]
 			"closed_bolt"				"0"
 			"barrel_length"				"28"
-			"class_restricted"			"0"
+			"class_restricted"			"1"
 			
 			"fov"
 			{
@@ -1164,7 +1164,7 @@
 		{
 			"import"				"ballistic_base"
 			"weapon_class"				"sniper_rifle"
-			"weapon_cost"				"1"
+			"weapon_cost"				"3"
 			"print_name"				"#weapon_m200"
 			"print_desc"				"#weapon_m200_desc"
 			"view_model"				"models/weapons/v_cm200.mdl"
@@ -1175,7 +1175,7 @@
 			"weapon_abilities"			"ironsight"
 			"weapon_weight"				"320"	// (6.6kg[weapon] + (0.2kg[ammo] * (1+16)[mags]) )*10[kg->hg for int]  +32[encumbrance]
 			"barrel_length"				"38"
-			"class_restricted"			"0"
+			"class_restricted"			"1"
 
 			"viewmodel_attachments"
 			{
@@ -1271,7 +1271,7 @@
 			"weapon_weight"				"178"	// (2.8kg[weapon] + (0.4kg[ammo] * (1+8)[mags]) )*10[kg->hg for int]  +16[encumbrance]
 			"weapon_cost"				"3"
 			"barrel_length"				"24"
-			"class_restricted"			"0"
+			"class_restricted"			"1"
 			
 			"viewmodel_attachments"
 			{
@@ -5552,6 +5552,45 @@
 		"1036x77mm_hp"
 		{
 			"import"				"1036x77_hp"
+			"carry"					"120"
+			"flags_clear"				"AMMO_USE_MAGAZINES"
+		}
+		//FIX shotguns
+		"buckshot"
+		{
+			"import"				"00buck"
+			"carry"					"72"
+			"flags_clear"				"AMMO_USE_MAGAZINES"
+		}
+		"slugs"
+		{
+			"import"				"slug"
+			"carry"					"72"
+			"flags_clear"				"AMMO_USE_MAGAZINES"
+		}
+		//FIX mosin
+		"762x54mm"
+		{
+			"import"				"762x54"
+			"carry"					"120"
+			"flags_clear"				"AMMO_USE_MAGAZINES"
+		}
+		"762x54mm_ap"
+		{
+			"import"				"762x54_ap"
+			"carry"					"120"
+			"flags_clear"				"AMMO_USE_MAGAZINES"
+		}
+		//FIX M40A1 (EVEN NO BUGS)
+		"762x51mm"
+		{
+			"import"				"762x51"
+			"carry"					"120"
+			"flags_clear"				"AMMO_USE_MAGAZINES"
+		}
+		"762x51mm_ap"
+		{
+			"import"				"762x51_ap"
 			"carry"					"120"
 			"flags_clear"				"AMMO_USE_MAGAZINES"
 		}

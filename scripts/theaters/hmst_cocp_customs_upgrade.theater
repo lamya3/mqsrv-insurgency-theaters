@@ -52,13 +52,13 @@
 		"enfield_sling"//belt 
 		{
 			"import"					"base_stock"
-			"upgrade_cost"				"0"
+			"upgrade_cost"				"1"
 			"upgrade_slot"				"stock"
 			"print_name"				"#nam_sling"
 			"print_desc"				"#tactical_sling_desc"
 			
 			"class_restricted"			"0"
-			"team_access"				"security"
+			"team_access"				"security, insurgent"
 			
 			"draw_speed"				"1.5"
 			"holster_speed"				"1.5"
@@ -202,7 +202,8 @@
 			"print_desc"				"#m1garand_worn_desc"
 			"upgrade_cost"				"2"
 			"reload_speed"				"1.6"
-			"upgrade_slot"				"aesthetic"			
+			"upgrade_slot"				"aesthetic"
+			"class_restricted"			"0"			
 			
 			"allowed_weapons"
 			{
@@ -579,6 +580,7 @@
 			"print_name"				"#weapon_upgrade_pistoldot"
 			"print_desc"				"#weapon_upgrade_pistoldot_desc"
 			"team_access"				"security"
+			"class_restricted"			"0"
 			
 			"allowed_weapons"
 			{
@@ -628,6 +630,7 @@
 			"print_name"				"#weapon_upgrade_compensator"
 			"print_desc"				"#weapon_upgrade_heavybarrel_desc"
 			"team_access"				"security, insurgent"
+			"class_restricted"			"0"
 			
 			"freeaim"
 			{
@@ -688,6 +691,7 @@
 			"print_desc"				"#weapon_upgrade_magazine_extended_desc"
 			
 			"magsize_override"		    "33"
+			"class_restricted"			"0"
 			
 			"allowed_weapons"
 			{
@@ -735,6 +739,7 @@
 			"print_desc"				"#weapon_upgrade_magazine_extended_desc"
 			
 			"magsize_override"		    "20"
+			"class_restricted"			"0"
 			
 			"allowed_weapons"
 			{
@@ -1007,7 +1012,7 @@
 			"upgrade_slot"				"magazine"
 			"upgrade_cost"				"3"
 			"class_restricted"			"1"
-			"team_acces"				"security, insurgent"
+			"team_access"				"security, insurgent"
 			"weight"					"96"
 			
 			"print_name"				"#weapon_upgrade_magazine100_drum"
@@ -4771,7 +4776,7 @@
 		{
 			"import"					"base_silencer"
 			"upgrade_cost"				"2"
-			"class_restricted"			"0"
+			"class_restricted"			"1"
 			"length"					"12"
 			"team_access"				"security, insurgent"
 			
@@ -4862,7 +4867,7 @@
 		{
 			"import"					"base_silencer"
 			"upgrade_cost"				"2"
-			"class_restricted"			"0"
+			"class_restricted"			"1"
 			"length"					"12"
 			"team_access"				"security, insurgent"
 			
@@ -4895,7 +4900,7 @@
 		{
 			"import"					"base_silencer"
 			"upgrade_cost"				"2"
-			"class_restricted"			"0"
+			"class_restricted"			"1"
 			"length"					"12"
 			
 			"allowed_weapons"
@@ -5017,7 +5022,7 @@
 		{
 			"import"					"base_silencer"
 			"upgrade_cost"				"1"
-			"class_restricted"			"0"
+			"class_restricted"			"1"
 			"length"					"8"
 			"team_access"				"security, insurgent"
 			
