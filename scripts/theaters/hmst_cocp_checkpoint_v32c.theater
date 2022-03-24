@@ -191,6 +191,11 @@
 			}
 			"allowed_items"
 			{
+				"weapon"				"weapon_type97"
+				"weapon"				"weapon_hk416c"
+				"weapon"				"weapon_xm8"
+				"weapon"				"weapon_hkusp"
+				//
 				"weapon"				"weapon_m16a4"
 				"weapon"				"weapon_ak74"
 				"weapon"				"weapon_akm"
@@ -296,6 +301,12 @@
 			}
 			"allowed_items"
 			{
+				"weapon"				"weapon_m1garand"
+				"weapon"				"weapon_ak12"
+				"weapon"				"weapon_xm8"
+				"weapon"				"weapon_taurusjudge"
+				"weapon"				"weapon_m200"
+				//
 				"weapon"				"weapon_mosin"
 				"weapon"				"weapon_m590"
 				"weapon"				"weapon_mp5"
@@ -394,6 +405,11 @@
 			}
 			"allowed_items"
 			{
+				"weapon"				"weapon_mac10"
+				"weapon"				"weapon_glock17"
+				"weapon"				"weapon_type97"
+				"weapon"				"weapon_hkusp"				
+				//
 				"weapon"				"weapon_mp5"
 				"weapon"				"weapon_ump45"
 				"weapon"				"weapon_mini14"
@@ -495,6 +511,11 @@
 			}
 			"allowed_items"
 			{
+				"weapon"				"weapon_m1garand"
+				"weapon"				"weapon_hkusp"
+				"weapon"				"weapon_glock17"
+				"weapon"				"weapon_xm8"
+				//
 				//"weapon"				"weapon_mini14"
 				//"weapon"				"weapon_m16a4"
 				"weapon"				"weapon_sks"
@@ -620,6 +641,12 @@
 			}
 			"allowed_items"
 			{
+				"weapon"				"weapon_m1garand"
+				"weapon"				"weapon_ppsh41"
+				"weapon"				"weapon_mac10"
+				"weapon"				"weapon_glock17"
+				"weapon"				"weapon_mg4"
+				//
 				"weapon"				"weapon_mosin"
 				"weapon"				"weapon_m590"
 				"weapon"				"weapon_mp40"
@@ -728,6 +755,11 @@
 			}
 			"allowed_items"
 			{
+				"weapon"				"weapon_mg4"
+				"weapon"				"weapon_mk46"
+				"weapon"				"weapon_ak12"
+				"weapon"				"weapon_xm8"
+				//
 				"weapon"				"weapon_m1a1"
 				"weapon"				"weapon_galil_sar"
 				"weapon"				"weapon_m249"
@@ -756,6 +788,7 @@
 				//"weapon_upgrade"			"underbarrel_bipod"
 				//"weapon_upgrade"			"underbarrel_bipod"
 				"weapon_upgrade"			"magazine_drum_75rd"
+				"weapon_upgrade"			"magazine_drum_100rd"
 				"weapon_upgrade"			"siderail_flashlight_band"
 				"weapon_upgrade"			"siderail_flashlight_pistol"
 				"weapon_upgrade"			"siderail_flashlight_rail"
@@ -835,6 +868,11 @@
 			}
 			"allowed_items"
 			{
+				"weapon"				"weapon_m200"
+				"weapon"				"weapon_taurusjudge"
+				"weapon"				"weapon_hkusp"
+				"weapon"				"weapon_m1garand"
+				//
 				"weapon"				"weapon_mosin"
 				"weapon"				"weapon_m40a1"
 				"weapon"				"weapon_l1a1"
@@ -942,6 +980,11 @@
 			}
 			"allowed_items"
 			{
+				"weapon"				"weapon_ppsh41"
+				"weapon"				"weapon_mac10"
+				"weapon"				"weapon_glock17"
+				"weapon"				"weapon_mk46"
+				//
 				"weapon"				"weapon_mosin"
 				"weapon"				"weapon_toz"
 				"weapon"				"weapon_mp5"
@@ -1052,6 +1095,11 @@
 			}
 			"allowed_items"
 			{
+				"weapon"				"weapon_type97"
+				"weapon"				"weapon_hk416c"
+				"weapon"				"weapon_taurusjudge"
+				"weapon"				"weapon_ppsh41"
+				//
 				"weapon"				"weapon_mosin"
 				"weapon"				"weapon_m4a1"
 				"weapon"				"weapon_m16a4"
@@ -1167,6 +1215,12 @@
 			}
 			"allowed_items"
 			{
+				"weapon"				"weapon_hk416c"
+				"weapon"				"weapon_xm8"
+				"weapon"				"weapon_glock17"
+				"weapon"				"weapon_ppsh41"
+				"weapon"				"weapon_ak12"
+				//
 				"weapon"				"weapon_mp40"
 				"weapon"				"weapon_ump45"
 				"weapon"				"weapon_sterling"
@@ -1271,6 +1325,9 @@
 			}
 			"allowed_items"
 			{
+				"weapon"				"weapon_m200"
+				"weapon"				"weapon_taurusjudge"
+				//
 				//"weapon"				"weapon_mp40"
 				//"weapon"				"weapon_ump45"
 				//"weapon"				"weapon_sterling"
