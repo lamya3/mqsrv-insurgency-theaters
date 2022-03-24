@@ -268,6 +268,9 @@
 			"allowed_weapons"
 			{
 				"weapon"				"weapon_mac10"
+				"weapon"				"weapon_mosin"
+				"weapon"				"weapon_toz"
+				"weapon"				"weapon_m200"
 			}
 			
 			"team_access"				"security, insurgent"
@@ -277,13 +280,17 @@
 		{
 			"print_name"				"#quick_reload"
 			"print_desc"				"#quick_reload_desc"
-			"upgrade_cost"				"2"
+			"upgrade_cost"				"1"
 			"upgrade_slot"				"aesthetic"
 			"reload_speed"				"1.5"
 			
 			"allowed_weapons"
 			{
 				"weapon"				"weapon_taurusjudge"
+				"weapon"				"weapon_model10"
+				"weapon"				"weapon_m200"
+				"weapon"				"weapon_mosin"
+				"weapon"				"weapon_toz"
 			}
 
 			
@@ -579,7 +586,7 @@
 			"upgrade_cost"				"1"
 			"print_name"				"#weapon_upgrade_pistoldot"
 			"print_desc"				"#weapon_upgrade_pistoldot_desc"
-			"team_access"				"security"
+			"team_access"				"security, insurgent"
 			"class_restricted"			"0"
 			
 			"allowed_weapons"
@@ -2217,7 +2224,7 @@
 			"upgrade_cost"				"3"
 			"print_name"				"#weapon_upgrade_elcan"
 			"print_desc"				"#weapon_upgrade_elcan_desc"
-			"team_access"				"security"
+			"team_access"				"security,insurgent"
 			
 			"allowed_weapons"
 			{
@@ -3114,7 +3121,7 @@
 			"upgrade_cost"				"3"
 			"print_name"				"#weapon_upgrade_po4x24"
 			"print_desc"				"#weapon_upgrade_po4x24_desc"
-			"team_access"				"insurgent"
+			"team_access"				"security,insurgent"
 			
 			"allowed_weapons"
 			{
