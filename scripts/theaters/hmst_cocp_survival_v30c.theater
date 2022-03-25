@@ -1823,5 +1823,11 @@
 			"team_access"				"security, insurgents"
 		}
 
+		"underbarrel_bipod"
+		{
+			"class_restricted"			"0"
+			"team_access"				"security, insurgents"
+		}
+
 	}
 }
