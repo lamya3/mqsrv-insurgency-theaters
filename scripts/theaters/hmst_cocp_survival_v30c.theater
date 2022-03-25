@@ -1830,4 +1830,11 @@
 		}
 
 	}
+	"ammo"//Fix no bullets for Taurus Judge
+	{
+		"4buck" // 4 Buck 0.24in 344lb
+		{
+			//Yeah as you see it, we just put "ammo"{"4buck"{}} here, this glitch will be fixed
+		}
+	}
 }
