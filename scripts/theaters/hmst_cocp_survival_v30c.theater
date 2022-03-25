@@ -1793,5 +1793,35 @@
 			"team_access"				"security, insurgents"
 		}
 
+		"underbarrel_foregrip_ins1"
+		{
+			"class_restricted"			"0"
+			"team_access"				"security, insurgents"
+		}
+
+		"underbarrel_foregrip_ins2"
+		{
+			"class_restricted"			"0"
+			"team_access"				"security, insurgents"
+		}
+
+		"underbarrel_woodgrip"
+		{
+			"class_restricted"			"0"
+			"team_access"				"security, insurgents"
+		}
+
+		"underbarrel_foregrip_sec1"
+		{
+			"class_restricted"			"0"
+			"team_access"				"security, insurgents"
+		}
+
+		"underbarrel_foregrip_sec2"
+		{
+			"class_restricted"			"0"
+			"team_access"				"security, insurgents"
+		}
+
 	}
 }
