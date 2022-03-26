@@ -1370,173 +1370,173 @@
 		{
 			"weapon_cost"				"0"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		"weapon_m9"
 		{
 			"weapon_cost"				"1"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		"weapon_m1911"
 		{
 			"weapon_cost"				"1"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		"weapon_m45"
 		{
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		"weapon_model10"
 		{
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		"weapon_mosin"
 		{
 			"weapon_cost"				"1"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		"weapon_m1a1"
 		{
 			"weapon_cost"				"3"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		"weapon_toz"
 		{
 			"weapon_cost"				"2"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		"weapon_sks"
 		{
 			"weapon_cost"				"2"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		"weapon_mp40"
 		{
 			"weapon_cost"				"3"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		"weapon_sterling"
 		{
 			"weapon_cost"				"3"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		"weapon_akm"
 		{
 			"weapon_cost"				"5"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		"weapon_aks74u"
 		{
 			"weapon_cost"				"3"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		"weapon_ak74"
 		{
 			"weapon_cost"				"5"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		"weapon_fal"
 		{
 			"weapon_cost"				"6"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		"weapon_l1a1"
 		{
 			"weapon_cost"				"6"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		"weapon_rpk"
 		{
 			"weapon_cost"				"8"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		"weapon_m16a4"
 		{
 			"weapon_cost"				"8"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		"weapon_galil"
 		{
 			"weapon_cost"				"8"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}		
 		"weapon_m590"
 		{
 			"weapon_cost"				"6"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		"weapon_m4a1"
 		{
 			"weapon_cost"				"10"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		"weapon_mk18"
 		{
 			"weapon_cost"				"10"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		"weapon_galil_sar"
 		{
 			"weapon_cost"				"10"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		"weapon_ump45"
 		{
 			"weapon_cost"				"8"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		"weapon_mp5"
 		{
 			"weapon_cost"				"8"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		"weapon_mini14"
 		{
 			"weapon_cost"				"8"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		"weapon_m14"
 		{
 			"weapon_cost"				"8"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		"weapon_m249"
 		{
 			"weapon_cost"				"11"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		"weapon_m40a1"
 		{
 			"weapon_cost"				"8"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		"weapon_m18"
 		{
@@ -1553,7 +1553,7 @@
 		"weapon_anm14"
 		{
 			"weapon_cost"				"6"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		"weapon_f1"
 		{
@@ -1562,106 +1562,106 @@
 		"weapon_m67"
 		{
 			"weapon_cost"				"3"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		"weapon_c4_ied"
 		{
 			"weapon_cost"				"4"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		"weapon_c4_clicker"
 		{
 			"weapon_cost"				"4"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		"weapon_rpg7"
 		{
 			"weapon_cost"				"8"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		"weapon_at4"
 		{
 			"weapon_cost"				"8"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		//customs
 		"weapon_m1garand"
 		{
 			"weapon_cost"				"6"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		"weapon_hk416c"
 		{
 			"weapon_cost"				"10"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		"weapon_ppsh41"
 		{
 			"weapon_cost"				"4"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		"weapon_hkusp"
 		{
 			"weapon_cost"				"1"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		"weapon_mac10"
 		{
 			"weapon_cost"				"3"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		"weapon_glock17"
 		{
 			"weapon_cost"				"2"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		"weapon_taurusjudge"
 		{
 			"weapon_cost"				"2"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		"weapon_type97"
 		{
 			"weapon_cost"				"6"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		"weapon_ak12"
 		{
 			"weapon_cost"				"9"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		"weapon_mg4"
 		{
 			"weapon_cost"				"11"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		"weapon_mk46"
 		{
 			"weapon_cost"				"10"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		"weapon_m200"
 		{
 			"weapon_cost"				"9"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		"weapon_xm8"
 		{
 			"weapon_cost"				"8"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 
 	}
@@ -1677,13 +1677,13 @@
 		"underbarrel_m203_he"
 		{
 			"class_restricted"			"1"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 
 		"underbarrel_gp25_he"
 		{
 			"class_restricted"			"1"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		
 		//class not be restricted items
@@ -1697,141 +1697,141 @@
 		{
 			"upgrade_cost"				"2"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		
 		"barrel_silencer_pistol"
 		{
 			"upgrade_cost"				"2"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		
 		"barrel_silencer_ins1"
 		{
 			"upgrade_cost"				"4"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		
 		"barrel_silencer_sec1"
 		{
 			"upgrade_cost"				"4"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		
 		"barrel_silencer_sec2"
 		{
 			"upgrade_cost"				"4"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		
 		"barrel_silencer_heavy"
 		{
 			"upgrade_cost"				"4"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 
 		"barrel_silencer_integrated"
 		{
 			"upgrade_cost"				"4"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 		
 		"magazine_drum_75rd"
 		{
 			"upgrade_cost"				"3"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 
 		"magazine_drum_100rd"
 		{
 			"upgrade_cost"				"4"
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 
 		"optic_aimpoint"
 		{
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 
 		"optic_eotech"
 		{
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 
 		"optic_kobra"
 		{
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 
 		"optic_scope_7x"
 		{
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 
 		"optic_scope_mk4"
 		{
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 
 		"underbarrel_m203_smoke"
 		{
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 
 		"underbarrel_gp25_smoke"
 		{
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 
 		"underbarrel_foregrip_ins1"
 		{
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 
 		"underbarrel_foregrip_ins2"
 		{
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 
 		"underbarrel_woodgrip"
 		{
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 
 		"underbarrel_foregrip_sec1"
 		{
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 
 		"underbarrel_foregrip_sec2"
 		{
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 
 		"underbarrel_bipod"
 		{
 			"class_restricted"			"0"
-			"team_access"				"security, insurgents"
+			"team_access"				"security, insurgent"
 		}
 
 	}
