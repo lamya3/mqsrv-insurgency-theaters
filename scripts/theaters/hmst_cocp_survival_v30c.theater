@@ -1528,7 +1528,7 @@
 		}
 		"weapon_m249"
 		{
-			"weapon_cost"				"14"
+			"weapon_cost"				"11"
 			"class_restricted"			"0"
 			"team_access"				"security, insurgents"
 		}
@@ -1688,6 +1688,11 @@
 		
 		//class not be restricted items
 
+		"magazine_extended_usp"
+		{
+			"upgrade_cost"				"2"
+		}
+		
 		"barrel_silencer_pistol"
 		{
 			"upgrade_cost"				"2"
