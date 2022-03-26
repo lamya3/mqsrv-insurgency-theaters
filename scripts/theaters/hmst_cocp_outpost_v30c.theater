@@ -1,4 +1,4 @@
-"#base" "base_player.theater"
+"#base" "default_base.theater"
 "#base" "hmst_cocp_customs_weapons.theater"		//instead "default.theater",main theater
 
 "theater"
