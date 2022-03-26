@@ -216,6 +216,7 @@
 				"weapon"				"weapon_m84"
 				"weapon"				"weapon_molotov"
 				"weapon_upgrade"			"magazine_drum_75rd"
+				"weapon_upgrade"			"magazine_drum_100rd"
 				"weapon_upgrade"			"magazine_extended_carbine_30rd"
 				"weapon_upgrade"			"magazine_extended_rifle_30rd"
 				"weapon_upgrade"			"magazine_extended_pistol"
@@ -340,6 +341,7 @@
 				"weapon"				"weapon_f1"
 				"weapon"				"weapon_m84"
 				"weapon"				"weapon_molotov"
+				"weapon_upgrade"			"magazine_drum_100rd"
 				"weapon_upgrade"			"magazine_drum_75rd"
 				"weapon_upgrade"			"magazine_extended_carbine_30rd"
 				"weapon_upgrade"			"magazine_extended_rifle_30rd"
@@ -436,6 +438,7 @@
 				"weapon"				"weapon_m84"
 				"weapon"				"weapon_anm14"
 				"weapon_upgrade"			"magazine_drum_75rd"
+				"weapon_upgrade"			"magazine_drum_100rd"
 				"weapon_upgrade"			"magazine_extended_carbine_30rd"
 				"weapon_upgrade"			"magazine_extended_rifle_30rd"
 				"weapon_upgrade"			"magazine_extended_pistol"
@@ -537,6 +540,7 @@
 				"weapon"				"weapon_m84"
 				"weapon"				"weapon_molotov"						//配燃烧瓶
 				"weapon_upgrade"			"magazine_drum_75rd"
+				"weapon_upgrade"			"magazine_drum_100rd"
 				"weapon_upgrade"			"magazine_extended_carbine_30rd"
 				"weapon_upgrade"			"magazine_extended_rifle_30rd"
 				"weapon_upgrade"			"magazine_extended_pistol"
@@ -650,6 +654,7 @@
 				"weapon"				"weapon_m18"
 				"weapon"				"weapon_anm14"						//配燃烧弹
 				"weapon_upgrade"			"magazine_drum_75rd"
+				"weapon_upgrade"			"magazine_drum_100rd"
 				"weapon_upgrade"			"magazine_extended_carbine_30rd"
 				"weapon_upgrade"			"magazine_extended_rifle_30rd"
 				"weapon_upgrade"			"magazine_extended_pistol"
@@ -751,6 +756,7 @@
 				"weapon"				"weapon_m84"
 				"weapon"				"weapon_molotov"						//配燃烧瓶
 				"weapon_upgrade"			"magazine_drum_75rd"
+				"weapon_upgrade"			"magazine_drum_100rd"
 				"weapon_upgrade"			"magazine_extended_carbine_30rd"
 				"weapon_upgrade"			"magazine_extended_rifle_30rd"
 				"weapon_upgrade"			"magazine_extended_pistol"
@@ -1084,35 +1090,6 @@
 		"optic_po4x24"
 		{
 			"team_access"				"security, insurgent"
-
-			"allowed_weapons"
-			{
-				// insurgent weapons
-				"weapon"				"weapon_akm"
-				"weapon"				"weapon_ak74"
-				"weapon"				"weapon_aks74u"
-				"weapon"				"weapon_fal"
-				"weapon"				"weapon_galil"
-				"weapon"				"weapon_l1a1"
-				"weapon"				"weapon_m1a1"
-				"weapon"				"weapon_mosin"
-				"weapon"				"weapon_mp40"
-				"weapon"				"weapon_rpk"
-				"weapon"				"weapon_sks"
-				"weapon"				"weapon_sterling"
-
-				// security weapons
-				"weapon"				"weapon_m16a4"
-				"weapon"				"weapon_m249"
-				"weapon"				"weapon_m40a1"
-				"weapon"				"weapon_mk18"
-				"weapon"				"weapon_mini14"
-				"weapon"				"weapon_mp5"
-				"weapon"				"weapon_ump45"
-
-				// team agnostic
-				"weapon"				"weapon_galil"
-			}
 		}
 	}
 	"player_gear"
