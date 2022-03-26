@@ -1091,6 +1091,11 @@
 		{
 			"team_access"				"security, insurgent"
 		}
+
+		"barrel_silencer_heavy"
+		{
+			"upgrade_cost"				"3"
+		}
 	}
 	"player_gear"
 	{
