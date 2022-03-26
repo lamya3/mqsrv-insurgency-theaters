@@ -80,6 +80,10 @@
 		{
 			"carry"					"1"
 		}
+		"grenade_ied"
+		{
+			"carry"					"1"
+		}
 		"grenade_m203_he"
 		{
 			"carry"					"3"
