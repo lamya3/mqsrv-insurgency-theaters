@@ -1,11 +1,5 @@
-"#base" "base_player.theater"
-"#base" "base_common_ammo_test.theater"
-
-"#base" "default_gear_test.theater"
-"#base" "default_weapon.theater"
-"#base" "default_weapon_upgrades.theater"
-
 "#base" "default_base.theater"
+"#base" "hmst_cocp_customs_weapons.theater"		//instead "default.theater",main theater
 
 "theater"
 {
@@ -22,6 +16,10 @@
 			"sounds"			"scripts/ins_sounds_responses_security.txt"
 			"sounds"			"scripts/ins_sounds_responses_insurgent.txt"
 			"sounds"			"scripts/ins_sounds_hq.txt"
+
+			//customs
+			"sounds"			"scripts/hmst_custom_sounds.txt"		//modify
+			"localize"			"resource/ui/custom_schinese.txt"		//modify
 			
 			// coop specific
 			"sounds"			"scripts/ins_sounds_voice_coop.txt"
@@ -190,6 +188,11 @@
 			}
 			"allowed_items"
 			{
+				"weapon"				"weapon_m1garand"
+				"weapon"				"weapon_hk416c"
+				"weapon"				"weapon_type97"
+				"weapon"				"weapon_xm8"
+				//
 				"weapon"				"weapon_m16a4"
 				"weapon"				"weapon_mini14"
 				"weapon"				"weapon_fal"
@@ -213,6 +216,7 @@
 				"weapon_upgrade"			"barrel_silencer_integrated"
 				"weapon_upgrade"			"underbarrel_bipod"
 				"weapon_upgrade"			"underbarrel_bipod"
+				"weapon_upgrade"			"worn_m1garand"
 			}
 			"cost_modifiers"
 			{
@@ -261,6 +265,12 @@
 			}
 			"allowed_items"
 			{
+				"weapon"				"weapon_ppsh41"
+				"weapon"				"weapon_mac10"
+				"weapon"				"weapon_hkusp"
+				"weapon"				"weapon_ak12"
+				"weapon"				"weapon_type97"
+				//
 				"weapon"				"weapon_mk18"
 				"weapon"				"weapon_ump45"
 				"weapon"				"weapon_mp5"
@@ -316,6 +326,12 @@
 			}
 			"allowed_items"
 			{
+				"weapon"				"weapon_hk416c"
+				"weapon"				"weapon_ppsh41"
+				"weapon"				"weapon_mac10"
+				"weapon"				"weapon_xm8"
+				"weapon"				"weapon_glock17"
+				//
 				"weapon"				"weapon_mp5"
 				"weapon"				"weapon_ump45"
 				"weapon"				"weapon_sterling"
@@ -338,6 +354,10 @@
 				"weapon_upgrade"			"barrel_silencer_integrated"
 				"weapon_upgrade"			"underbarrel_bipod"
 				"weapon_upgrade"			"underbarrel_bipod"
+				"weapon_upgrade"			"magazine_extended_glock"
+				"weapon_upgrade"			"magazine_extended_usp"
+				"weapon_upgrade"			"weapon_mod_rof_250"
+				"weapon_upgrade"			"perk_tactical_sling"
 			}
 		}
 		"template_designated_marksman_security_coop"
@@ -370,6 +390,12 @@
 			}
 			"allowed_items"
 			{
+				"weapon"				"weapon_m1garand"
+				"weapon"				"weapon_taurusjudge"
+				"weapon"				"weapon_m200"
+				"weapon"				"weapon_type97"
+				"weapon"				"weapon_hkusp"
+				//
 				"weapon"				"weapon_mini14"
 				"weapon"				"weapon_m14"
 				"weapon"				"weapon_m16a4"
@@ -388,6 +414,10 @@
 				"weapon_upgrades"			"underbarrel_bipod"
 				"weapon_upgrade"			"underbarrel_foregrip_ins2"
 				"weapon_upgrade"			"underbarrel_woodgrip"
+				"weapon_upgrade"			"optic_scope_4x"
+				"weapon_upgrade"			"worn_m1garand"
+				"weapon_upgrade"			"optic_pistoldot"
+				"weapon_upgrade"			"magazine_speedloader"
 			}
 			
 			"cost_modifiers"
@@ -427,6 +457,12 @@
 			}
 			"allowed_items"
 			{
+				"weapon"				"weapon_mac10"
+				"weapon"				"weapon_ppsh41"
+				"weapon"				"weapon_ak12"
+				"weapon"				"weapon_hk416c"
+				"weapon"				"weapon_glock17"
+				//
 				"weapon"				"weapon_m590"
 				"weapon"				"weapon_m16a4"
 				"weapon"				"weapon_mk18"
@@ -450,6 +486,10 @@
 				"weapon_upgrade"			"underbarrel_woodgrip"
 				"weapon_upgrade"			"underbarrel_bipod"
 				"weapon_upgrade"			"underbarrel_bipod"
+				"weapon_upgrade"			"magazine_extended_glock"
+				"weapon_upgrade"			"magazine_extended_usp"
+				"weapon_upgrade"			"perk_tactical_sling"
+				"weapon_upgrade"			"magazine_extended_ppsh41"
 			}
 			"cost_modifiers"
 			{
@@ -494,6 +534,12 @@
 			}
 			"allowed_items"
 			{
+				"weapon"				"weapon_mg4"
+				"weapon"				"weapon_mk46"
+				"weapon"				"weapon_ak12"
+				"weapon"				"weapon_xm8"
+				"weapon"				"weapon_glock17"
+				//
 				"weapon"				"weapon_m249"
 				"weapon"				"weapon_m4a1"
 				"weapon"				"weapon_rpk"
@@ -515,6 +561,7 @@
 				"weapon_upgrade"			"underbarrel_bipod"
 				"weapon_upgrade"			"underbarrel_bipod"
 				"weapon_upgrade"			"magazine_drum_75rd"
+				"weapon_upgrade"			"magazine_drum_100rd"
 			}
 			"cost_modifiers"
 			{
@@ -560,6 +607,12 @@
 			}
 			"allowed_items"
 			{
+				"weapon"				"weapon_m1garand"
+				"weapon"				"weapon_m200"
+				"weapon"				"weapon_xm8"
+				"weapon"				"weapon_taurusjudge"
+				"weapon"				"weapon_hkusp"
+				//
 				"weapon"				"weapon_m40a1"
 				"weapon"				"weapon_fal"
 				"weapon"				"weapon_m14"
@@ -578,6 +631,9 @@
 				"weapon_upgrade"			"barrel_silencer_integrated"
 				"weapon_upgrade"			"underbarrel_bipod"
 				"weapon_upgrade"			"underbarrel_bipod"
+				"weapon_upgrade"			"optic_scope_4x"
+				"weapon_upgrade"			"worn_m1garand"
+				"weapon_upgrade"			"optic_pistoldot"
 			}
 			"cost_modifiers"
 			{
@@ -615,6 +671,12 @@
 			}
 			"allowed_items"
 			{
+				"weapon"				"weapon_glock17"
+				"weapon"				"weapon_ppsh41"
+				"weapon"				"weapon_mac10"
+				"weapon"				"weapon_ak12"
+				"weapon"				"weapon_type97"
+				//
 				"weapon"				"weapon_ump45"
 				"weapon"				"weapon_m590"
 				"weapon"				"weapon_m4a1"
@@ -639,6 +701,10 @@
 				"weapon_upgrade"			"barrel_silencer_integrated"
 				"weapon_upgrade"			"underbarrel_bipod"
 				"weapon_upgrade"			"underbarrel_bipod"
+				"weapon_upgrade"			"magazine_extended_glock"
+				"weapon_upgrade"			"magazine_extended_usp"
+				"weapon_upgrade"			"perk_tactical_sling"
+				"weapon_upgrade"			"magazine_extended_ppsh41"
 			}
 			"cost_modifiers"
 			{
@@ -684,6 +750,12 @@
 			}
 			"allowed_items"
 			{
+				"weapon"				"weapon_hk416c"
+				"weapon"				"weapon_ppsh41"
+				"weapon"				"weapon_mac10"
+				"weapon"				"weapon_hkusp"
+				"weapon"				"weapon_ak12"
+				//
 				"weapon"				"weapon_mp5"	// duplicate to get around night map bug
 				"weapon"				"weapon_mp5"
 				"weapon"				"weapon_mk18"
@@ -702,6 +774,11 @@
 				"weapon_upgrade"		"barrel_silencer_pistol"
 				"weapon_upgrade"		"underbarrel_m203_smoke"
 				"weapon_upgrade"		"magazine_drum_75rd"
+				"weapon_upgrade"			"underbarrel_foregrip_sec1"
+				"weapon_upgrade"			"underbarrel_foregrip_sec2"
+				"weapon_upgrade"			"underbarrel_foregrip_ins1"
+				"weapon_upgrade"			"underbarrel_foregrip_ins2"
+				"weapon_upgrade"			"underbarrel_woodgrip"
 			}
 			"cost_modifiers"
 			{
@@ -741,6 +818,12 @@
 			}
 			"allowed_items"
 			{
+				"weapon"				"weapon_xm8"
+				"weapon"				"weapon_m1garand"
+				"weapon"				"weapon_hk416c"
+				"weapon"				"weapon_type97"
+				"weapon"				"weapon_taurusjudge"
+				//
 				"weapon"				"weapon_galil_sar"
 				"weapon"				"weapon_m16a4"
 				"weapon"				"weapon_l1a1"
@@ -748,6 +831,14 @@
 				"weapon"				"weapon_m84"
 				"weapon"				"weapon_m18"
 				"weapon"				"weapon_anm14"
+				"weapon_upgrade"			"worn_m1garand"
+				"weapon_upgrade"			"underbarrel_foregrip_sec1"
+				"weapon_upgrade"			"underbarrel_foregrip_sec2"
+				"weapon_upgrade"			"underbarrel_foregrip_ins1"
+				"weapon_upgrade"			"underbarrel_foregrip_ins2"
+				"weapon_upgrade"			"underbarrel_woodgrip"
+				"weapon_upgrade"			"magazine_speedloader"
+				"weapon_upgrade"			"barrel_heavybarrel"
 			}
 			"cost_modifiers"
 			{
@@ -794,6 +885,12 @@
 			}
 			"allowed_items"
 			{
+				"weapon"				"weapon_mac10"
+				"weapon"				"weapon_ppsh41"
+				"weapon"				"weapon_ak12"
+				"weapon"				"weapon_hk416c"
+				"weapon"				"weapon_taurusjudge"
+				//
 				"weapon"				"weapon_m16a4"
 				"weapon"				"weapon_mp5"
 				"weapon"				"weapon_m590"
@@ -802,9 +899,15 @@
 				"weapon"				"weapon_m18"
 				"weapon"				"weapon_c4_clicker"
 				"weapon"				"weapon_anm14"
-				"weapon_upgrade"		"barrel_silencer_sec1"
-				"weapon_upgrade"		"barrel_silencer_sec2"
-				"weapon_upgrade"		"barrel_silencer_pistol"
+				// "weapon_upgrade"		"barrel_silencer_sec1"
+				// "weapon_upgrade"		"barrel_silencer_sec2"
+				// "weapon_upgrade"		"barrel_silencer_pistol"
+				"weapon_upgrade"			"magazine_extended_glock"
+				"weapon_upgrade"			"magazine_extended_usp"
+				"weapon_upgrade"			"perk_tactical_sling"
+				"weapon_upgrade"			"magazine_extended_ppsh41"
+				"weapon_upgrade"			"barrel_heavybarrel"
+				//"weapon_upgrade"			"barrel_silencer_heavy"
 			}
 		}
 		
@@ -838,6 +941,12 @@
 			}
 			"allowed_items"
 			{
+				"weapon"				"weapon_m1garand"
+				"weapon"				"weapon_type97"
+				"weapon"				"weapon_mac10"
+				"weapon"				"weapon_ppsh41"
+				"weapon"				"weapon_hkusp"
+				//
 				"weapon"				"weapon_m4a1"
 				"weapon"				"weapon_m16a4"
 				"weapon"				"weapon_mp5"
@@ -845,6 +954,10 @@
 				"weapon"				"weapon_anm14"
 				"weapon_upgrade"		"underbarrel_m203_he"
 				"weapon_upgrade"		"underbarrel_m203_smoke"
+				"weapon_upgrade"			"magazine_extended_glock"
+				"weapon_upgrade"			"magazine_extended_usp"
+				"weapon_upgrade"			"weapon_mod_rof_250"
+				"weapon_upgrade"			"magazine_extended_ppsh41"
 			}
 		}
 		"template_support_security_classic"
@@ -876,6 +989,12 @@
 			}
 			"allowed_items"
 			{
+				"weapon"				"weapon_mg4"
+				"weapon"				"weapon_mk46"
+				"weapon"				"weapon_ak12"
+				"weapon"				"weapon_xm8"
+				"weapon"				"weapon_glock17"
+				//
 				"weapon"				"weapon_m249"
 				"weapon"				"weapon_m249"
 				"weapon"				"weapon_m14"
@@ -889,6 +1008,8 @@
 				}
 				"weapon_upgrade"		"underbarrel_bipod"
 				"weapon_upgrade"		"magazine_drum_75rd"
+				"weapon_upgrade"		"magazine_drum_100rd"
+				"weapon_upgrade"		"barrel_heavybarrel"
 			}
 			"cost_modifiers"
 			{
@@ -932,6 +1053,12 @@
 			}
 			"allowed_items"
 			{
+				"weapon"				"weapon_hk416c"
+				"weapon"				"weapon_ppsh41"
+				"weapon"				"weapon_mac10"
+				"weapon"				"weapon_xm8"
+				"weapon"				"weapon_hkusp"
+				//
 				"weapon"				"weapon_mini14"
 				"weapon"				"weapon_mp5"
 				"weapon"				"weapon_ump45"
@@ -947,6 +1074,15 @@
 				"weapon_upgrade"		"barrel_silencer_sec2"
 				"weapon_upgrade"		"barrel_silencer_pistol"
 				"weapon_upgrade"		"underbarrel_m203_smoke"
+				"weapon_upgrade"			"magazine_extended_glock"
+				"weapon_upgrade"			"magazine_extended_usp"
+				"weapon_upgrade"			"weapon_mod_rof_250"
+				"weapon_upgrade"			"perk_tactical_sling"
+				"weapon_upgrade"			"underbarrel_foregrip_sec1"
+				"weapon_upgrade"			"underbarrel_foregrip_sec2"
+				"weapon_upgrade"			"underbarrel_foregrip_ins1"
+				"weapon_upgrade"			"underbarrel_foregrip_ins2"
+				"weapon_upgrade"			"magazine_drum_100rd"
 			}
 		}
 		"template_sniper_security_classic"
@@ -979,6 +1115,12 @@
 			}
 			"allowed_items"
 			{
+				"weapon"				"weapon_m1garand"
+				"weapon"				"weapon_m200"
+				"weapon"				"weapon_xm8"
+				"weapon"				"weapon_taurusjudge"
+				"weapon"				"weapon_hkusp"
+				//
 				"weapon"				"weapon_m16a4"
 				"weapon"				"weapon_m40a1"
 				"weapon"				"weapon_m14"
@@ -990,6 +1132,9 @@
 				"weapon_upgrade"		"barrel_silencer_sec2"
 				"weapon_upgrade"		"barrel_silencer_pistol"
 				"weapon_upgrade"		"underbarrel_bipod"
+				"weapon_upgrade"			"optic_scope_4x"
+				"weapon_upgrade"			"worn_m1garand"
+				"weapon_upgrade"			"optic_pistoldot"
 			}
 			"cost_modifiers"
 			{
@@ -1282,6 +1427,65 @@
 	
 	"weapon_upgrades"
 	{
+		
+		//customs
+		"perk_quick_reload"
+		{
+			"class_restricted"			"1"
+			"team_access"				"security, insurgent"
+		}
+		"weapon_mod_speed_reload"
+		{
+			"class_restricted"			"1"
+			"team_access"				"security, insurgent"
+		}
+		"perk_speed_holster"
+		{
+			"class_restricted"			"1"
+			"team_access"				"security, insurgent"
+		}
+		"perk_tactical_sling"
+		{
+			"class_restricted"			"1"
+			"team_access"				"security, insurgent"
+		}
+		"magazine_extended_ppsh41"
+		{
+			"class_restricted"			"1"
+			"team_access"				"security, insurgent"
+		}
+		"optic_pistoldot"
+		{
+			"class_restricted"			"1"
+			"team_access"				"security, insurgent"
+		}
+
+		"magazine_extended_glock"
+		{
+		
+			"class_restricted"			"1"
+			"team_access"				"security, insurgent"
+		}
+
+		"magazine_extended_usp"
+		{
+			"class_restricted"			"1"
+			"team_access"				"security, insurgent"
+		}
+
+		"optic_scope_4x"
+		{
+			"class_restricted"			"1"
+			"team_access"				"security, insurgent"
+		}
+		"worn_m1garand"
+		{
+			"class_restricted"			"1"
+			"team_access"				"security, insurgent"
+		}
+
+
+		
 		"optic_kobra"
 		{
 			"team_access"				"security, insurgent"
@@ -1290,36 +1494,19 @@
 		"optic_po4x24"
 		{
 			"team_access"				"security, insurgent"
-
-			"allowed_weapons"
-			{
-				// insurgent weapons
-				"weapon"				"weapon_akm"
-				"weapon"				"weapon_ak74"
-				"weapon"				"weapon_aks74u"
-				"weapon"				"weapon_fal"
-				"weapon"				"weapon_galil"
-				"weapon"				"weapon_l1a1"
-				"weapon"				"weapon_m1a1"
-				"weapon"				"weapon_mosin"
-				"weapon"				"weapon_mp40"
-				"weapon"				"weapon_rpk"
-				"weapon"				"weapon_sks"
-				"weapon"				"weapon_sterling"
-
-				// security weapons
-				"weapon"				"weapon_m16a4"
-				"weapon"				"weapon_m249"
-				"weapon"				"weapon_m40a1"
-				"weapon"				"weapon_mk18"
-				"weapon"				"weapon_mini14"
-				"weapon"				"weapon_mp5"
-				"weapon"				"weapon_ump45"
-
-				// team agnostic
-				"weapon"				"weapon_galil"
-			}
 		}
+
+		"optic_scope_7x"
+		{
+			"team_access"				"security, insurgent"
+		}
+		"barrel_heavybarrel"
+		{
+			"class_restricted"			"1"
+			"team_access"				"security, insurgent"
+		}
+
+
 	}
 	"player_gear"
 	{
@@ -1329,6 +1516,13 @@
 			{
 				"gear_cost"				"0"
 			}
+		}
+	}
+	"ammo"//Fix no bullets for Taurus Judge
+	{
+		"4buck" // 4 Buck 0.24in 344lb
+		{
+			//Yeah as you see it, we just put "ammo"{"4buck"{}} here, this glitch will be fixed
 		}
 	}
 }
