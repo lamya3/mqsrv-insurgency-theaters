@@ -584,6 +584,7 @@
 				"weapon_upgrade"			"impact_fuse"
 				"weapon_upgrade"			"at4_mininbomb"
 				"weapon_upgrade"			"at4_wtf"
+				"gear"						"sec_heavy_expcarrier"
 			}
 			"cost_modifiers"
 			{
@@ -797,6 +798,7 @@
 				"weapon_upgrade"			"barrel_silencer_integrated"
 				"weapon_upgrade"			"barrel_heavybarrel"
 				"weapon_upgrade"			"at4_molotov"
+				"gear"						"sec_heavy_expcarrier"
 			}
 			"cost_modifiers"
 			{
@@ -1557,6 +1559,7 @@
 			"print_desc"				"#gear_heavy_expcarrier_desc"
 			"gear_slot"				"vest"
 			"gear_cost"				"14"
+			"class_restricted"			"1"
 			"gear_weight"				"175"	// 50 (5.0kg) + 50 encumbrance
 			"extra_ammo"
 			{
