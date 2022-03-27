@@ -1078,6 +1078,112 @@
 		{
 			"weapon_cost"				"1"
 		}
+
+		"weapon_rpg7"
+		{
+			"weapon_cost"				"3"
+			"weapon_max_subslot"		"5"
+			"ammo_clip"
+			{
+				"ammo_type"				"rocket_rpg7"// "rocket_rpg7"
+				"clip_max_rounds"		"1"	// 1 rpg per mag
+				"clip_max"				"2"	// 1
+				"clip_default"			"2"	// 1
+			}
+		}
+
+		"weapon_c4_clicker"
+		{
+			"weapon_cost"				"4"
+			"weapon_max_subslot"		"5"
+			"ammo_clip"
+			{
+				"ammo_type"				"grenade_c4"
+				"clip_max_rounds"			"-1"	// no clips
+				"clip_default"				"1"
+			}
+		}
+
+		"weapon_c4_ied"
+		{
+			"weapon_cost"				"4"
+			"weapon_max_subslot"		"5"
+			"ammo_clip"
+			{
+				"ammo_type"				"grenade_ied"
+				"clip_max_rounds"			"-1"	// no clips
+				"clip_default"				"1"
+			}
+		}
+
+	}
+
+	"explosives"
+	{
+		
+		"grenade_c4_impact"
+		{
+			"import"						"baseGrenade"
+			"entity_class"					"grenade_frag"
+			"Model"							"models/weapons/w_c4.mdl"
+			
+			"DetonateDamage"				"380"
+			"DetonateDamageRadius"			"1000"
+			"DetonatePenetrationRadius"		"70"
+			"FuseTime"						"9999"
+			"ImpactDetonation"				"1"
+			
+			"Deafen"						"1"
+			"DeafenDelay"					"0.05"
+			"Health"						"50"
+			"ReactExplosions"				"1"
+			"ReactBullets"					"1"
+			
+			"Particles"
+			{
+				"DetonateParticle"			"ins_c4_explosion"
+				"DetonateWaterParticle"		"ins_water_explosion"
+			}
+			
+			"Sounds"
+			{
+				"DetonateSound"				"C4.Explode"
+				"DetonateWaterSound"		"C4.ExplodeWater"
+				"BounceSound"				"Weapon_C4.Bounce"
+			}
+		}
+
+		"grenade_ied_impact"
+		{
+			"import"						"baseGrenade"
+			"entity_class"					"grenade_frag"
+			"Model"							"models/weapons/w_ied.mdl"
+			"DetonateDamage"				"380"
+			"DetonateDamageRadius"			"1000"
+			"DetonatePenetrationRadius"		"70"
+			"FuseTime"						"9999"
+			"ImpactDetonation"				"1"
+			
+			"Deafen"						"1"
+			"DeafenDelay"					"0.05"
+			"Health"						"50"
+			"ReactExplosions"				"1"
+			"ReactBullets"					"1"
+			
+			"Particles"
+			{
+				"DetonateParticle"			"ins_c4_explosion"
+				"DetonateWaterParticle"		"ins_water_explosion"
+			}
+			
+			"Sounds"
+			{
+				"DetonateSound"				"IED.Explode"
+				"DetonateWaterSound"		"IED.ExplodeWater"
+				"BounceSound"				"Weapon_IED.Bounce"
+			}
+		}
+		
 	}
 	
 	"weapon_upgrades"
@@ -1096,9 +1202,120 @@
 		{
 			"upgrade_cost"				"3"
 		}
+
+		"impact_fuse"
+		{
+        	"upgrade_slot"				"ammo"
+			"print_name"				"#impact_fuse"
+			"print_desc"				"#impact_fuse_desc"
+			"class_restricted"			"0"
+			"upgrade_cost"				"0"
+			"team_access"				"security, insurgent"  
+			
+			"weapon_mods"
+			{
+				"weapon_c4_clicker"
+				{
+					"explosives"
+					{
+						"entity"					"grenade_c4_impact"
+						"GrenadeRollSpeed"			"400"
+						"GrenadeRollSpeedProne"		"300"
+						"GrenadeRollUpSpeed"		"250"
+						"GrenadeRollUpSpeedProne"	"150"
+						"GrenadeThrowSpeed"			"800"
+						"GrenadeThrowSpeedProne"	"550"
+						"RemoteDetonation"			"0"
+						"AllowPlant"				"0"
+					}
+				}	
+				"weapon_c4_ied"
+				{
+					"explosives"
+					{
+						"entity"					"grenade_ied_impact"
+						"GrenadeRollSpeed"			"400"
+						"GrenadeRollSpeedProne"		"300"
+						"GrenadeRollUpSpeed"		"250"
+						"GrenadeRollUpSpeedProne"	"150"
+						"GrenadeThrowSpeed"			"800"
+						"GrenadeThrowSpeedProne"	"550"
+						"RemoteDetonation"			"0"
+						"AllowPlant"				"0"
+					}
+				}
+			}
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_c4_clicker"
+				"weapon"				"weapon_c4_ied"
+			}
+		}
+
 	}
+
 	"player_gear"
 	{
+		
+		"sec_heavy_ammocarrier"
+		{
+			"print_name"				"#gear_heavy_ammocarrier"
+			"print_desc"				"#gear_heavy_ammocarrier_desc"
+			"gear_slot"				"vest"
+			"gear_cost"				"10"
+			"gear_weight"				"150"	// 50 (5.0kg) + 50 encumbrance
+			"extra_ammo"
+			{
+				"primary"				"11"//"3"
+				"secondary"				"15"//"4"
+				
+				"explosive"
+				{
+					"6"				"3"	// an extra explosive in the second slot only, sub-slots are 0 indexed
+				}
+			}
+			"weapon_slots"
+			{
+				"explosive"				"-1"
+			}
+			"player_model_bodygroups"
+			{
+				"kit"					"2"
+				"backpack"				"1"
+			}
+			"team_access"				"security"
+		}
+		
+		"sec_heavy_expcarrier"
+		{
+			"print_name"				"#gear_heavy_expcarrier"
+			"print_desc"				"#gear_heavy_expcarrier_desc"
+			"gear_slot"				"vest"
+			"gear_cost"				"12"
+			"gear_weight"				"175"	// 50 (5.0kg) + 50 encumbrance
+			"extra_ammo"
+			{
+				"primary"				"5"
+				"secondary"				"6"
+				
+				"explosive"
+				{
+					"14"					"7"	// an extra explosive in the second slot only, sub-slots are 0 indexed
+				}
+			}
+			"weapon_slots"
+			{
+				"primary"				"-1"
+				"explosive"				"5"
+			}
+			"player_model_bodygroups"
+			{
+				"kit"					"2"
+				"backpack"				"1"
+			}
+			"team_access"				"security"
+		}
+
 		"?nightmap"
 		{
 			"sec_nightvision"
@@ -1112,6 +1329,19 @@
 		"4buck" // 4 Buck 0.24in 344lb
 		{
 			//Yeah as you see it, we just put "ammo"{"4buck"{}} here, this glitch will be fixed
+		}
+
+		"rocket_rpg7"
+		{
+			"carry"					"99"
+		}
+		"grenade_c4"
+		{
+			"carry"					"99"
+		}
+		"grenade_ied"
+		{
+			"carry"					"99"
 		}
 	}
 }
