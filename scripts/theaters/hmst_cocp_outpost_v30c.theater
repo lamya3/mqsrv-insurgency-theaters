@@ -532,7 +532,8 @@
 				"weapon"				"weapon_ak74"
 				"weapon"				"weapon_m16a4"
 				"weapon"				"weapon_m4a1"
-				"weapon"				"weapon_rpk"							//人手机枪
+				"weapon"				"weapon_rpk"
+				"weapon"				"weapon_at4"							//人手机枪
 				"weapon"				"weapon_c4_clicker"
 				"weapon"				"weapon_c4_ied"
 				"weapon"				"weapon_m18"
@@ -580,6 +581,9 @@
 				"weapon_upgrade"			"underbarrel_m203_he"
 				"weapon_upgrade"			"underbarrel_gp25_smoke"
 				"weapon_upgrade"			"underbarrel_gp25_smoke"
+				"weapon_upgrade"			"impact_fuse"
+				"weapon_upgrade"			"at4_mininbomb"
+				"weapon_upgrade"			"at4_wtf"
 			}
 			"cost_modifiers"
 			{
@@ -792,6 +796,7 @@
 				"weapon_upgrade"			"barrel_silencer_heavy"
 				"weapon_upgrade"			"barrel_silencer_integrated"
 				"weapon_upgrade"			"barrel_heavybarrel"
+				"weapon_upgrade"			"at4_molotov"
 			}
 			"cost_modifiers"
 			{
@@ -1116,6 +1121,18 @@
 			}
 		}
 
+		"weapon_at4"
+		{
+			"weapon_cost"				"4"
+			"weapon_max_subslot"		"0"
+			"ammo_clip"
+			{
+				"ammo_type"				"no_carry"
+				"clip_max_rounds"			"1"	// no clips
+				"clip_default"				"1"
+			}
+		}
+		
 	}
 
 	"explosives"
@@ -1183,7 +1200,129 @@
 				"BounceSound"				"Weapon_IED.Bounce"
 			}
 		}
-		
+
+		"grenade_molotov_at4"
+		{
+			"import"				"baseGrenade"
+			"entity_class"				"grenade_aoe"
+			"Model"					"models/weapons/w_molotov.mdl"
+			"DamageType"				"DMG_BURN, DMG_PREVENT_PHYSICS_FORCE"
+			"DetonateDamage"			"100"	// det damage is for when it first goes off
+			"DetonatePenetrationRadius"		"0"
+			"DetonateDamageRadius"			"240"
+			"FuseTime"				"0"
+			"Cookable"				"0"
+			"DetonateUnderwater"			"0"
+			"ImpactDetonation"			"1"
+			"RocketStartSpeed"			"3000"//"2000"
+			"ShakeAmplitude"			"0"
+			"UseVPhysics"				"0"
+			
+			"Elasticity"				"0.0"
+			
+			"Deafen"				"0"
+			"AreaDamageTime"			"16"//"24"
+			"AreaDamageFrequency"			"0.38"//"0.44"
+			"AreaDamageMinRadius"			"390"//"240"
+			"AreaDamageMaxRadius"			"410"//"260"
+			"AreaDamageGrowSpeed"			"9"
+			"AreaDamageAmount"			"46"//"18"
+			
+			"Health"				"50"
+			"ReactExplosions"			"1"
+			"ReactBullets"				"1"
+			
+			"Particles"
+			{
+				"DetonateParticle"			"ins_molotov_explosion"
+				"DetonateWaterParticle"			"ins_molotov_explosion"
+				"TrailParticle"				"molotov_trail"
+				"BroadcastAll"				"1"
+				"FollowOrigin"				"1"
+				"NormalUp"				"1"
+			}
+			"Sounds"
+			{
+				"DetonateSound"				"Molotov.Burn"
+				"BounceSound"				"Weapon_M67.Bounce"
+				"ExtinguishSound"			"Molotov.Extinguish"
+			}
+		}
+
+		"grenade_mininbomb_at4"
+		{
+			"import"				"baseGrenade"
+			"entity_class"				"remote"
+			"Model"					"models/weapons/w_flare_projectile.mdl"
+			
+			"DetonateDamage"			"450"//"380"
+			"DetonateDamageRadius"			"3800"//"1200"
+			"DetonatePenetrationRadius"		"1200"//"240"
+			"FuseTime"				"0.0"
+			
+			"Health"				"50"
+			"ReactExplosions"			"1"
+			"ReactBullets"				"0"
+
+			"ArmDelay"				"0.25"
+			"ImpactDetonation"				"1"
+			"RocketStartSpeed"			"3000"//"2000"
+			
+			"Particles"
+			{
+				"DetonateParticle"			"ins_c4_explosion"
+				"DetonateWaterParticle"			"ins_water_explosion"
+				"TrailParticle"				"ins_flaregun_trail"
+				"BroadcastAll"				"1"
+				"FollowOrigin"				"1"
+				"NormalUp"				"1"
+			}
+			
+			"Sounds"
+			{
+				"DetonateSound"				"IED.Explode"
+				"DetonateWaterSound"		"IED.ExplodeWater"
+				"BounceSound"				"Weapon_IED.Bounce"
+			}
+		}
+
+		"grenade_wtf_at4"
+		{
+			"import"				"baseGrenade"
+			"entity_class"				"remote"
+			"Model"					"models/characters/insurgent_heavy.mdl"
+			
+			"DetonateDamage"			"2500"//"380"
+			"DetonateDamageRadius"			"4500"//"1200"
+			"DetonatePenetrationRadius"		"4000"//"240"
+			"FuseTime"				"20"
+			
+			"Health"				"50"
+			"ReactExplosions"			"0"
+			"ReactBullets"				"0"
+
+			//"ArmDelay"				"0.25"
+			"ImpactDetonation"				"1"
+			"RocketStartSpeed"			"350"//"2000"
+			
+			"Particles"
+			{
+				"DetonateParticle"			"ins_c4_explosion"
+				"DetonateWaterParticle"			"ins_water_explosion"
+				"TrailParticle"				"ins_flaregun_trail"
+				"BroadcastAll"				"1"
+				"FollowOrigin"				"1"
+				"NormalUp"				"1"
+			}
+			
+			"Sounds"
+			{
+				"DetonateSound"				"IED.Explode"
+				"DetonateWaterSound"		"IED.ExplodeWater"
+				"BounceSound"				"Weapon_IED.Bounce"
+			}
+
+		}
 	}
 	
 	"weapon_upgrades"
@@ -1209,7 +1348,7 @@
 			"print_name"				"#impact_fuse"
 			"print_desc"				"#impact_fuse_desc"
 			"class_restricted"			"0"
-			"upgrade_cost"				"0"
+			"upgrade_cost"				"2"
 			"team_access"				"security, insurgent"  
 			
 			"weapon_mods"
@@ -1252,6 +1391,132 @@
 			}
 		}
 
+		"at4_molotov"
+		{
+        	"upgrade_slot"				"ammo"
+			"print_name"				"#at4_molotov"
+			"print_desc"				"#at4_molotov_desc"
+			"class_restricted"			"1"
+			"upgrade_cost"				"4"
+			"team_access"				"security, insurgent"  
+			
+			"weapon_mods"
+			{
+				"weapon_at4"
+				{
+					"explosives"
+					{
+						"entity"					"grenade_molotov_at4"
+						"GrenadeRollSpeed"			"400"
+						"GrenadeRollSpeedProne"		"300"
+						"GrenadeRollUpSpeed"		"250"
+						"GrenadeRollUpSpeedProne"	"150"
+						"GrenadeThrowSpeed"			"2000"//"800"
+						"GrenadeThrowSpeedProne"	"550"
+						"RemoteDetonation"			"0"
+						"AllowPlant"				"0"
+					}
+					"ballistics"
+					{
+						"spread"				"6.0 6.0 0.0"
+					}
+					"sounds"
+					{
+						"shot_single"				"Weapon_gp30.Single"
+						"shot_single_local"			"Weapon_gp30.SingleLocal"
+					}
+				}	
+			}
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_at4"
+			}
+		}
+
+		"at4_mininbomb"
+		{
+        	"upgrade_slot"				"ammo"
+			"print_name"				"#at4_mininbomb"
+			"print_desc"				"#at4_mininbomb_desc"
+			"class_restricted"			"1"
+			"upgrade_cost"				"6"
+			"team_access"				"security, insurgent"  
+			
+			"weapon_mods"
+			{
+				"weapon_at4"
+				{
+					"explosives"
+					{
+						"entity"					"grenade_mininbomb_at4"
+						"GrenadeRollSpeed"			"400"
+						"GrenadeRollSpeedProne"		"300"
+						"GrenadeRollUpSpeed"		"250"
+						"GrenadeRollUpSpeedProne"	"150"
+						"GrenadeThrowSpeed"			"3000"//"800"
+						"GrenadeThrowSpeedProne"	"550"
+						"RemoteDetonation"			"0"
+						"AllowPlant"				"0"
+					}
+					"ballistics"
+					{
+						"spread"				"6.0 6.0 0.0"
+					}
+					"sounds"
+					{
+						"shot_single"				"Weapon_gp30.Single"
+						"shot_single_local"			"Weapon_gp30.SingleLocal"
+					}
+				}	
+			}
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_at4"
+			}
+		}
+
+		"at4_wtf"
+		{
+        	"upgrade_slot"				"ammo"
+			"print_name"				"#at4_wtf"
+			"print_desc"				"#at4_wtf_desc"
+			"class_restricted"			"1"
+			"upgrade_cost"				"12"
+			"team_access"				"security, insurgent"  
+			
+			"weapon_mods"
+			{
+				"weapon_at4"
+				{
+					"explosives"
+					{
+						"entity"					"grenade_wtf_at4"
+						"GrenadeRollSpeed"			"400"
+						"GrenadeRollSpeedProne"		"300"
+						"GrenadeRollUpSpeed"		"250"
+						"GrenadeRollUpSpeedProne"	"150"
+						"GrenadeThrowSpeed"			"350"//"800"
+						"GrenadeThrowSpeedProne"	"550"
+						"RemoteDetonation"			"0"
+						"AllowPlant"				"0"
+					}
+					"ballistics"
+					{
+						"spread"				"6.0 6.0 0.0"
+					}
+					"sounds"
+					{
+						"shot_single"				"Weapon_gp30.Single"
+						"shot_single_local"			"Weapon_gp30.SingleLocal"
+					}
+				}	
+			}
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_at4"
+			}
+		}
+
 	}
 
 	"player_gear"
@@ -1262,7 +1527,7 @@
 			"print_name"				"#gear_heavy_ammocarrier"
 			"print_desc"				"#gear_heavy_ammocarrier_desc"
 			"gear_slot"				"vest"
-			"gear_cost"				"10"
+			"gear_cost"				"9"
 			"gear_weight"				"150"	// 50 (5.0kg) + 50 encumbrance
 			"extra_ammo"
 			{
@@ -1291,12 +1556,12 @@
 			"print_name"				"#gear_heavy_expcarrier"
 			"print_desc"				"#gear_heavy_expcarrier_desc"
 			"gear_slot"				"vest"
-			"gear_cost"				"12"
+			"gear_cost"				"14"
 			"gear_weight"				"175"	// 50 (5.0kg) + 50 encumbrance
 			"extra_ammo"
 			{
 				"primary"				"5"
-				"secondary"				"6"
+				"secondary"				"3"//"6"
 				
 				"explosive"
 				{
@@ -1324,6 +1589,7 @@
 			}
 		}
 	}
+
 	"ammo"//Fix no bullets for Taurus Judge
 	{
 		"4buck" // 4 Buck 0.24in 344lb
@@ -1335,11 +1601,28 @@
 		{
 			"carry"					"99"
 		}
+
 		"grenade_c4"
 		{
 			"carry"					"99"
 		}
+
 		"grenade_ied"
+		{
+			"carry"					"99"
+		}
+
+		"grenade_molotov_at4"
+		{
+			"carry"					"99"
+		}
+
+		"grenade_mininbomb_at4"
+		{
+			"carry"					"99"
+		}
+
+		"grenade_wtf_at4"
 		{
 			"carry"					"99"
 		}
