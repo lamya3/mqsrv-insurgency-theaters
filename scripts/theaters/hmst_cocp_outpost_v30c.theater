@@ -1094,7 +1094,7 @@
 			{
 				"ammo_type"				"rocket_rpg7"// "rocket_rpg7"
 				"clip_max_rounds"		"1"	// 1 rpg per mag
-				"clip_max"				"2"	// 1
+				//"clip_max"				"2"	// 1
 				"clip_default"			"2"	// 1
 			}
 		}
@@ -1342,6 +1342,16 @@
 		"barrel_silencer_heavy"
 		{
 			"upgrade_cost"				"3"
+		}
+
+		"magazine_drum_75rd"
+		{
+			"maxcarry_override"			"500"
+		}
+
+		"magazine_drum_100rd"
+		{
+			"maxcarry_override"			"500"
 		}
 
 		"impact_fuse"
@@ -1595,39 +1605,444 @@
 
 	"ammo"//Fix no bullets for Taurus Judge
 	{
+		
 		"4buck" // 4 Buck 0.24in 344lb
 		{
 			//Yeah as you see it, we just put "ammo"{"4buck"{}} here, this glitch will be fixed
 		}
+		
+		//unlock ammo limited
+
+		"default"
+		{
+			"carry"					"500"
+		}
 
 		"rocket_rpg7"
 		{
-			"carry"					"99"
+			"carry"					"500"
 		}
 
 		"grenade_c4"
 		{
-			"carry"					"99"
+			"carry"					"500"
 		}
 
 		"grenade_ied"
 		{
-			"carry"					"99"
+			"carry"					"500"
 		}
 
 		"grenade_molotov_at4"
 		{
-			"carry"					"99"
+			"carry"					"500"
 		}
 
 		"grenade_mininbomb_at4"
 		{
-			"carry"					"99"
+			"carry"					"500"
 		}
 
 		"grenade_wtf_at4"
 		{
-			"carry"					"99"
+			"carry"					"500"
+		}
+
+		"grenade_m67"
+		{
+			"carry"					"500"
+		}
+
+		"grenade_f1"
+		{
+			"carry"					"500"
+		}
+
+		"grenade_m18"
+		{
+			"carry"					"500"
+		}
+
+		"grenade_m84"
+		{
+			"carry"					"500"
+		}
+
+		"grenade_m203_he"
+		{
+			"carry"					"500"
+		}
+
+		"grenade_gp25_he"
+		{
+			"carry"					"500"
+		}
+
+		"grenade_gp25_smoke"
+		{
+			"carry"					"500"
+		}
+
+		"grenade_m203_smoke"
+		{
+			"carry"					"500"
+		}
+
+		"grenade_m203_smoke"
+		{
+			"carry"					"500"
+		}
+
+		"grenade_anm14"
+		{
+			"carry"					"500"
+		}
+
+		"grenade_molotov"
+		{
+			"carry"					"500"
+		}
+
+		"grenade_flares"
+		{
+			"carry"					"500"
+		}
+
+		"38special"
+		{
+			"carry"					"500"
+		}
+
+		"45acp"
+		{
+			"carry"				"500"
+		}
+
+		"45acp_pistol"
+		{
+			"carry"				"500"
+		}
+
+		"45acp_hp_pistol"
+		{
+			"carry"				"500"
+		}
+
+		"545x39"
+		{
+			"carry"				"500"
+		}
+		
+		"9x18mm"
+		{
+			"carry"				"500"
+		}
+
+		"9x18mm_hp"
+		{
+			"carry"				"500"
+		}
+
+		"9x18mm_ap"
+		{
+			"carry"				"500"
+		}
+
+		"9x19mm"
+		{
+			"carry"				"500"
+		}
+
+		"9x19mm_hp"
+		{
+			"carry"				"500"
+		}
+
+		"9x19mm_ap"
+		{
+			"carry"				"500"
+		}
+
+		"762x51_box_20rnd"
+		{
+			"carry"				"500"
+		}
+
+		"762x51_hp_box_20rnd"
+		{
+			"carry"				"500"
+		}
+
+		"762x51_ap_box_20rnd"
+		{
+			"carry"				"500"
+		}
+
+		"762x51_tracer_box_20rnd"
+		{
+			"carry"				"500"
+		}
+
+		"556_35box"
+		{
+			"carry"				"500"
+		}
+
+		"556_hp_35box"
+		{
+			"carry"				"500"
+		}
+
+		"556_ap_35box"
+		{
+			"carry"				"500"
+		}
+
+		"556_tracer_35box"
+		{
+			"carry"				"500"
+		}
+
+		"9x19mm_smg"
+		{
+			"carry"				"500"
+		}
+
+		"9x19mm_hp_smg"
+		{
+			"carry"				"500"
+		}
+
+		"9x19mm_ap_smg"
+		{
+			"carry"				"500"
+		}
+
+		"9x19mm_tracer_smg"
+		{
+			"carry"				"500"
+		}
+
+		"45acp_ump"
+		{
+			"carry"				"500"
+		}
+
+		"45acp_hp_ump"
+		{
+			"carry"				"500"
+		}
+
+		"45acp_ap_ump"
+		{
+			"carry"				"500"
+		}
+
+		"45acp_tracer_ump"
+		{
+			"carry"				"500"
+		}
+
+		"762x51_mag"
+		{
+			"carry"				"500"
+		}
+
+		"762x51_mag_ap"
+		{
+			"carry"				"500"
+		}
+
+		"762x51_mag_hp"
+		{
+			"carry"				"500"
+		}
+
+		"556_box"
+		{
+			"carry"				"500"
+		}
+
+		"556_hp_box"
+		{
+			"carry"				"500"
+		}
+
+		"556_ap_box"
+		{
+			"carry"				"500"
+		}
+
+		"556_tracer_box"
+		{
+			"carry"				"500"
+		}
+
+		"30_carbine"
+		{
+			"carry"				"500"
+		}
+
+		"30_carbine_hp"
+		{
+			"carry"				"500"
+		}
+
+		"30_carbine_ap"
+		{
+			"carry"				"500"
+		}
+
+		"30_carbine_tracer"
+		{
+			"carry"				"500"
+		}
+
+		"762x38mm_clip"
+		{
+			"carry"				"500"
+		}
+		
+		"762x38mm_hp_clip"
+		{
+			"carry"				"500"
+		}
+
+		"762x38mm_ap_clip"
+		{
+			"carry"				"500"
+		}
+
+		"762x38mm_tracer_clip"
+		{
+			"carry"				"500"
+		}
+
+		"556_m27"
+		{
+			"carry"				"500"
+		}
+
+		"556_m27_hp"
+		{
+			"carry"				"500"
+		}
+
+		"556_m27_ap"
+		{
+			"carry"				"500"
+		}
+
+		"762x38_drum"
+		{
+			"carry"				"500"
+		}
+
+		"762x38_hp_drum"
+		{
+			"carry"				"500"
+		}
+
+		"762x38_ap_drum"
+		{
+			"carry"				"500"
+		}
+		// ========================================
+		// NOT MAGAZINES
+		// ========================================
+		"762x51mm"
+		{
+			"carry"					"500"
+		}
+
+		"762x51mm_ap"
+		{
+			"carry"					"500"
+		}
+
+		"762x54mm"
+		{
+			"carry"					"500"
+		}
+
+		"762x54mm_ap"
+		{
+			"carry"					"500"
+		}
+
+		"buckshot"
+		{
+			"carry"					"500"
+		}
+
+		"slugs"
+		{
+			"carry"					"500"
+		}
+
+		"762x51_mag_8rnd"
+		{	
+			"carry"				"500"
+		}
+
+		"sl762x51_hp_mag_8rndugs"
+		{
+			"carry"				"500"
+		}
+
+		"762x51_ap_mag_8rnd"
+		{
+			"carry"				"500"
+		}
+
+		"762x51_tracer_mag_8rnd"
+		{
+			"carry"				"500"
+		}
+
+		"1036x77mm"
+		{
+			"carry"					"500"
+		}
+
+		"1036x77mm_ap"
+		{
+			"carry"					"500"
+		}
+
+		"1036x77mm_hp"
+		{
+			"carry"					"500"
+		}
+		
+		"545x39_drum"
+		{
+			"carry"				"500"
+		}
+
+		"762x38_hp_drum"
+		{
+			"carry"				"500"
+		}
+
+		"762x38_ap_drum"
+		{
+			"carry"				"500"
+		}
+
+		"4buckshot"
+		{
+			"carry"					"500"
+		}
+
+		"00buckshot"
+		{
+			"carry"					"500"
+		}
+
+		"rifledslugs"
+		{
+			"carry"					"500"
 		}
 	}
 }
