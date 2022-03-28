@@ -965,7 +965,7 @@
 			"print_desc"				"#weapon_upgrade_magazine_extended_desc"
 			
 			"magsize_override"			"75"
-			"maxcarry_override"			"4"
+			"maxcarry_override"			"18"
 
 			"allowed_weapons"
 			{
@@ -1026,7 +1026,7 @@
 			"print_desc"				"#weapon_upgrade_magazine100_extended_desc"
 			
 			"magsize_override"			"100"
-			"maxcarry_override"			"3"
+			"maxcarry_override"			"18"
 
 			"allowed_weapons"
 			{
