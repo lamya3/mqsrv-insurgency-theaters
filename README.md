@@ -10,7 +10,7 @@ A repository for game insurgency2, only theaters or base scripts files (EOL).
 
 see [Issues](https://gitee.com/polarised/insurgency-theater/issues?assignee_id=&author_id=&branch=&collaborator_ids=&issue_search=&label_ids=&label_text=&milestone_id=&priority=&private_issue=&program_id=&project_id=polarised%2Finsurgency-theater&project_type=&scope=&sort=&state=all&target_project=) . If any questions,create an [Issue](https://gitee.com/polarised/insurgency-theater/issues/new).
 
-请访问 [Issues](https://gitee.com/polarised/insurgency-theater/issues?assignee_id=&author_id=&branch=&collaborator_ids=&issue_search=&label_ids=&label_text=&milestone_id=&priority=&private_issue=&program_id=&project_id=polarised%2Finsurgency-theater&project_type=&scope=&sort=&state=all&target_project=) 页面.如有任何问题，请在 [Issue](https://gitee.com/polarised/insurgency-theater/issues/new) 中发表新贴。
+请访问 [Issues](https://gitee.com/polarised/insurgency-theater/issues?assignee_id=&author_id=&branch=&collaborator_ids=&issue_search=&label_ids=&label_text=&milestone_id=&priority=&private_issue=&program_id=&project_id=polarised%2Finsurgency-theater&project_type=&scope=&sort=&state=all&target_project=) 页面。如有任何问题，请在 [Issue](https://gitee.com/polarised/insurgency-theater/issues/new) 中发表新贴。
 
 
 ## License
@@ -34,7 +34,7 @@ For particular,see [LICENSE](https://gitee.com/polarised/insurgency-theater/raw/
 
 所有脚本源代码基于游戏"叛乱2"，©[New World Interactive](https://newworldinteractive.com/) 版权所有。
 
-其中一些脚本设计来自于:
+其中一些脚本设计来自于：
 
 [jaredballou/insurgency-theaters](https://github.com/jaredballou/insurgency-theaters)
 
