@@ -2,9 +2,9 @@
 
 ## Intro
 
-A repository for game insurgency2, only theaters or base scripts files.
+A repository for game insurgency2, only theaters or base scripts files (EOL).
 
-一个用于游戏"叛乱2"的存储库,仅包含游戏剧本与其他基本的脚本文件。
+一个用于游戏"叛乱2"的存储库,仅包含游戏剧本与其他基本的脚本文件（项目终止）。
 
 ## Issues & requests
 
