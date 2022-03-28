@@ -44,9 +44,9 @@ For particular,see [LICENSE](https://gitee.com/polarised/insurgency-theater/raw/
 
 继承他们的许可证（如有）。如有错误, 请第一时间联系我。
 
-我所新增的脚本内容与变更, 使用 [WTFPL v2](https://directory.fsf.org/wiki/License:WTFPL) 许可证。
+我所新增的脚本内容与变更，使用 [WTFPL v2](https://directory.fsf.org/wiki/License:WTFPL) 许可证。
 
-更多细节信息,请查看存储库内 [LICENSE](https://gitee.com/polarised/insurgency-theater/raw/master/LICENSE) 许可证文档。
+更多细节信息，请查看存储库内 [LICENSE](https://gitee.com/polarised/insurgency-theater/raw/master/LICENSE) 许可证文档。
 
 ## Contact
 
