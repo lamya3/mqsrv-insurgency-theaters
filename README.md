@@ -4,7 +4,21 @@
 
 A repository for game insurgency2, only theaters or base scripts files (EOL).
 
+Some items require to subscribe to a specific workshop to make sure they all work regularly:
+
+>[hmst_coop checkpoint theater v3.0.0](https://gitee.com/polarised/insurgency-theater/releases/v3.0.0): not required `-workshop`, only use in checkpoint mode.
+
+>[hmst cocp theater v3XC series](https://gitee.com/polarised/insurgency-theater/releases/v3.X.C): required `-workshop`, only use in cooperative mode (PVE), required subscribe items:
+>[Moe Q Master server resources full:ID2785864868](https://steamcommunity.com/sharedfiles/filedetails/?id=2785864868).
+
 一个用于游戏"叛乱2"的存储库,仅包含游戏剧本与其他基本的脚本文件（项目终止）。
+
+一些物品需要订阅指定的创意工坊，以确保他们能够正常工作:
+
+>[hmst_coop checkpoint theater v3.0.0](https://gitee.com/polarised/insurgency-theater/releases/v3.0.0)：不要求 `-workshop`，只能用在检查点模式。
+
+>[hmst cocp theater v3XC series](https://gitee.com/polarised/insurgency-theater/releases/v3.X.C)：要求 `-workshop`，只能用在合作模式（PVE）， 需要订阅物品：
+>[Moe Q Master server resources full:ID2785864868](https://steamcommunity.com/sharedfiles/filedetails/?id=2785864868).
 
 ## Issues & requests
 
