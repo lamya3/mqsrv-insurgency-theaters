@@ -58,6 +58,15 @@ After EOL, Not entertained any update requests. You still can create an [Issue](
 
 在项目到达终点之后（EOL），不接受任何更新请求。您可以继续在 [Issue](https://gitee.com/polarised/insurgency-theater/issues/new) 发帖来让我决定是否进行处理。
 
+## Donation
+
+If this repository helped you, you can consider giving me a star, or buy me a coffee (donate).
+
+如果此存储库对你有帮助，您可以考虑给我个star，或者请我一杯奶茶（捐赠）。
+
+<div align=center><img src="https://gitee.com/polarised/gendat/raw/master/wcpqr.png" width = "300" height = "346" />
+
+
 
 
 
