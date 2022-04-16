@@ -825,6 +825,7 @@
 			"models"
 			{
 				"player"				"models/characters/insurgent_light.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_ins_l.mdl"
 			
 				"bodygroups"
 				{
@@ -862,6 +863,7 @@
 			"models"
 			{
 				"player"				"models/characters/insurgent_light.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_ins_l.mdl"
 			
 				"bodygroups"
 				{
@@ -898,6 +900,7 @@
 			"models"
 			{
 				"player"				"models/characters/insurgent_light.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_ins_l.mdl"
 			
 				"bodygroups"
 				{
@@ -929,6 +932,7 @@
 			"models"
 			{
 				"player"				"models/characters/insurgent_light.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_ins_l.mdl"
 			
 				"bodygroups"
 				{
@@ -961,6 +965,7 @@
 			"models"
 			{
 				"player"				"models/characters/insurgent_light.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_ins_l.mdl"
 			
 				"bodygroups"
 				{
