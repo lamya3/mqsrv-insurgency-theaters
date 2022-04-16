@@ -74,7 +74,7 @@ After EOL, Not entertained any update requests. You still can create an [Issue](
 
 ## Donation
 
-If this repository helped you, you can consider giving me a star, or buy me a coffee (donate) .
+If this repository helped you, you can consider giving me a star, or buy me a coffee (donate).
 
 如果此存储库对你有帮助，您可以考虑给我个star，或者请我一杯奶茶（捐赠）。
 
