@@ -1,3 +1,2 @@
-*.theater linguist-language=java
-*.txt linguist-language=java
-*.md linguist-language=java
+*.theater linguist-language=conf
+*.md linguist-language=markdown
