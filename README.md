@@ -68,9 +68,13 @@ Mail to me: lamya3@qq.com, or find me in QQ group: 348955160, GLHF.
 
 After EOL, Not entertained any update requests. You still can create an [Issue](https://gitee.com/polarised/insurgency-theater/issues/new) to let me decide whether to deal with it.
 
+2022/7/28 (CST): this repository move form gitee(It s**ks) to github, some issues maybe not clone to github's repository.
+
 站内私信或邮件给我 lamya3@qq.com，或者在QQ群中找我：348955160，祝君好运。
 
-在项目到达终点之后（EOL），不接受任何更新请求。您可以继续在 [Issue](https://gitee.com/polarised/insurgency-theater/issues/new) 发帖来让我决定是否进行处理。
+在项目到达终点之后（EOL），不接受任何更新请求。您可以继续在 [Issue](https://gitee.com/polarised/insurgency-theater/issues/new) 发帖来让我决定是否进行处理。+
+
+2022/7/28 (CST): 此仓库由码云转移到github(垃圾gitee)，你可能看不到一些在码云已有的Issues.
 
 ## Donation
 
