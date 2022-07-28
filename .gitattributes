@@ -1,2 +1,2 @@
-*.theater linguist-language=conf
 *.md linguist-language=markdown
+*.theater linguist-language=other
